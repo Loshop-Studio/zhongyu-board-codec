@@ -1,0 +1,3 @@
+INSTRUMENTATION_RESULT: nativeView=SimpleBoardView rendered the web export and saved 3 paths after touch input
+INSTRUMENTATION_RESULT: page=Verified native router, command, touch source, graph and source index
+INSTRUMENTATION_CODE: -1

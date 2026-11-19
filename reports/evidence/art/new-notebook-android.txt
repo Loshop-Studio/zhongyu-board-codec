@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: notebook=two fresh native controllers replayed both root commands, one stroke and one text, matching snapshot RGBA; visible pixels=[226, 983]
+INSTRUMENTATION_CODE: -1

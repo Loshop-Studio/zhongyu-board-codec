@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.blackboard.core.action.newSelectAtion.function.BaseSelectFunction",
+    "method": {
+      "name": "handleRotate",
+      "reported_signature": "handleRotate(float, float): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(FF)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    private final void handleRotate(float x3, float y2) {\n        PointF pointFMapPoint = PointUtils.INSTANCE.mapPoint(this.selectRectF.centerX(), this.selectRectF.centerY(), this.transformMatrix);\n        this.singleMatrix.setRotate((float) Math.toDegrees(calculateRadians(x3 - pointFMapPoint.x, y2 - pointFMapPoint.y) - calculateRadians(this.firstX - pointFMapPoint.x, this.firstY - pointFMapPoint.y)), pointFMapPoint.x, pointFMapPoint.y);\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_b508f26a515fa484dce6f8e6759426878c0f32e50b93d754846e8f2889653d72"
+}

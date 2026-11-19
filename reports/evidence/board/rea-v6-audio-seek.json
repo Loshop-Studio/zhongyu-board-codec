@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.blackboard.core.play.AudioCommandThread",
+    "method": {
+      "name": "readCommandAndPause",
+      "reported_signature": "readCommandAndPause(java.util.ListIterator<com.zykj.board.EzyCommand$CommandSource$CommandInfo>, r6.a): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/util/ListIterator;Lr6/a;)Z"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    private final boolean readCommandAndPause(ListIterator<EzyCommand$CommandSource.CommandInfo> iterator, r6.a callBack) throws IOException {\n        while (iterator.hasNext()) {\n            EzyCommand$CommandSource.CommandInfo next = iterator.next();\n            if (this.nextCommandTime < next.getDelayTime()) {\n                if (!iterator.hasPrevious()) {\n                    return true;\n                }\n                iterator.previous();\n                return true;\n            }\n            if (isNeedPlay(next)) {\n                syncExecuteCommandWithPause(next, this.nextCommandTime - next.getDelayTime());\n                callBack.invoke();\n            }\n            this.nextCommandTime -= next.getDuration() + next.getDelayTime();\n        }\n        return false;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_1e43b6f26219398bde8c23561c9facfc11d7344b3d7ac430abedf4566c865fe3"
+}

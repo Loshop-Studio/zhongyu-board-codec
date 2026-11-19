@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.view.simpleBoard.DrawControl",
+    "method": {
+      "name": "handleEraser",
+      "reported_signature": "handleEraser(android.graphics.PointF): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/graphics/PointF;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void handleEraser(@NotNull PointF currentPointF) {\n        a aVar;\n        k.g(currentPointF, \"currentPointF\");\n        PointF pointFMapPoint = GraphExtKt.mapPoint(this.mCameraMatrix, currentPointF);\n        this.mTempPath.reset();\n        this.mTempPath.addCircle(pointFMapPoint.x, pointFMapPoint.y, this.mBoardConfig.getEraserSize(), Path.Direction.CW);\n        initEraserPaint(this.mTempPaint);\n        Iterator<WritePath> it = this.mPathList.iterator();\n        k.f(it, \"iterator(...)\");\n        boolean z8 = false;\n        while (it.hasNext()) {\n            WritePath next = it.next();\n            k.f(next, \"next(...)\");\n            WritePath writePath = next;\n            if (writePath.getRectF().contains(currentPointF.x, currentPointF.y) && checkPointFUnionPath(currentPointF, writePath.getPointList(), MatrixExtKt.invert(this.mCameraMatrix).mapRadius(this.mBoardConfig.getEraserSize()))) {\n                it.remove();\n                z8 = true;\n            }\n        }\n        if (z8 && (aVar = this.mActionListener) != null) {\n            aVar.invoke();\n        }\n        this.mDrawView.updatePathView();\n        this.mDrawView.updateTempPathView();\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_bb5af295f306be6a12d99e43ed16b5f2836eebfb2d06783ea11b72091961d1cf"
+}

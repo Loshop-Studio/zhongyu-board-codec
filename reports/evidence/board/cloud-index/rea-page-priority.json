@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "中育云笔记.apk",
+    "digest": {
+      "sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/中育云笔记.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.friday.common.helper.NotePageOrder",
+    "method": {
+      "name": "c",
+      "reported_signature": "c(com.friday.common.entity.ResourceEntity): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/friday/common/entity/ResourceEntity;)I"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final int c(ResourceEntity resourceEntity) {\n        File file = new File(resourceEntity.getId());\n        File parentFile = file.getParentFile();\n        if (u.b(parentFile != null ? parentFile.getName() : null, \"page_mdb\") && u.b(file.getName(), \"data.mdb\")) {\n            return 0;\n        }\n        File parentFile2 = file.getParentFile();\n        if (u.b(parentFile2 != null ? parentFile2.getName() : null, \"page_mdb\") && u.b(file.getName(), \"lock.mdb\")) {\n            return 1;\n        }\n        if (u.b(file.getName(), \"screenshot.png\")) {\n            return 2;\n        }\n        return u.b(file.getName(), \"snapshot.bin\") ? 3 : 4;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_39b39ab4c29bbf8d68cf47dd260ac14a0a145a33476a97a3352dcb9894830aed"
+}

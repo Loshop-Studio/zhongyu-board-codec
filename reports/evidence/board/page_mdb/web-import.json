@@ -1,0 +1,1342 @@
+{
+  "format": "ObjectBox page_mdb",
+  "catalog_entities": 24,
+  "rows_decoded": 38,
+  "entities": [
+    {
+      "id": 1,
+      "name": "FileRecordEntity",
+      "uid": "8807702116810287113",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "2860392549289493867",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "4135892801542342702",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "1211937380881226049",
+          "name": "validate",
+          "type": 9
+        },
+        {
+          "id": 4,
+          "uid": "581255084365138855",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "fileName": "3_file.bin",
+          "validate": "5553354e8b243932437cb48c763f613dba013eba389ae33f3ab2f10724d4c9a8",
+          "recordId": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "TextRecordEntity",
+      "uid": "1953065482304442309",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "426926565622954679",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "4748695942157109661",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "7311582035276321573",
+          "name": "validate",
+          "type": 9
+        },
+        {
+          "id": 4,
+          "uid": "916312698009440053",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "fileName": "1_text.bin",
+          "validate": "8b54b24b9df805cbe3186d1572cf25a4d0c8d51706899ad60621f48ca667397",
+          "recordId": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "AudioRecordEntity",
+      "uid": "1457477822342009278",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "2649292414664316102",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "4207956140881163343",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "1042370756165343078",
+          "name": "validate",
+          "type": 9
+        },
+        {
+          "id": 4,
+          "uid": "1106508257692437091",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": []
+    },
+    {
+      "id": 4,
+      "name": "TouchEventEntity",
+      "uid": "2827749220184605293",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "1093335407985999731",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "3683603152498651467",
+          "name": "width",
+          "type": 7
+        },
+        {
+          "id": 3,
+          "uid": "8576374943297591956",
+          "name": "color",
+          "type": 5
+        },
+        {
+          "id": 4,
+          "uid": "3208489922790624359",
+          "name": "spacing",
+          "type": 7
+        },
+        {
+          "id": 5,
+          "uid": "3713427572138150910",
+          "name": "itemLength",
+          "type": 7
+        },
+        {
+          "id": 6,
+          "uid": "4579135818203399571",
+          "name": "style",
+          "type": 5
+        },
+        {
+          "id": 7,
+          "uid": "5903315449039480136",
+          "name": "textSize",
+          "type": 7
+        },
+        {
+          "id": 8,
+          "uid": "4506550704609864717",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "width": 3.0,
+          "color": -14600138,
+          "spacing": 0.0,
+          "itemLength": 0.0,
+          "style": 0,
+          "textSize": 0.0,
+          "recordId": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "CommandInfoEntity",
+      "uid": "7743195144794219448",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "6108579328042481490",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "7495600893346042381",
+          "name": "delayTime",
+          "type": 6
+        },
+        {
+          "id": 3,
+          "uid": "2920998592584590400",
+          "name": "duration",
+          "type": 6
+        },
+        {
+          "id": 4,
+          "uid": "5866029188196944840",
+          "name": "isPlay",
+          "type": 1
+        },
+        {
+          "id": 5,
+          "uid": "2864037025762273844",
+          "name": "commandEnum",
+          "type": 5
+        },
+        {
+          "id": 6,
+          "uid": "7102134513203239881",
+          "name": "data",
+          "type": 23
+        },
+        {
+          "id": 7,
+          "uid": "1129747418098677705",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "delayTime": 0,
+          "duration": 120,
+          "isPlay": true,
+          "commandEnum": 1,
+          "data": {
+            "hex": "080312117765622d313739353031393237343631351a140d57107b4315839830431dcf46dd432557107b432204726f6f742a17313739353031393237343631355f746f7563682e62696e3000"
+          },
+          "recordId": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "HeaderEntity",
+      "uid": "8452738864375470324",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "271083587316187516",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "2896554452934883007",
+          "name": "version",
+          "type": 5
+        },
+        {
+          "id": 3,
+          "uid": "2306043389845325438",
+          "name": "width",
+          "type": 5
+        },
+        {
+          "id": 4,
+          "uid": "91702869420279569",
+          "name": "height",
+          "type": 5
+        },
+        {
+          "id": 5,
+          "uid": "1599255963751619189",
+          "name": "createDate",
+          "type": 6
+        },
+        {
+          "id": 6,
+          "uid": "3987983768584614497",
+          "name": "updateDate",
+          "type": 6
+        },
+        {
+          "id": 7,
+          "uid": "6756707614908736118",
+          "name": "duration",
+          "type": 6
+        },
+        {
+          "id": 11,
+          "uid": "6421407192872309397",
+          "name": "convertUrl",
+          "type": 9
+        },
+        {
+          "id": 12,
+          "uid": "236332159395675736",
+          "name": "defaultBackgroundColor",
+          "type": 5
+        },
+        {
+          "id": 13,
+          "uid": "6841752251661063892",
+          "name": "lastBackgroundColor",
+          "type": 5
+        },
+        {
+          "id": 9,
+          "uid": "5797256570918588576",
+          "name": "pageId",
+          "type": 11
+        },
+        {
+          "id": 15,
+          "uid": "396819869407887376",
+          "name": "defaultBackgroundLineConfigId",
+          "type": 11
+        },
+        {
+          "id": 16,
+          "uid": "942905870368347727",
+          "name": "lastBackgroundLineConfigId",
+          "type": 11
+        },
+        {
+          "id": 10,
+          "uid": "6953139294800756044",
+          "name": "authorId",
+          "type": 11
+        },
+        {
+          "id": 14,
+          "uid": "7656223054002431488",
+          "name": "moveConfigId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "version": 6,
+          "width": 800,
+          "height": 600,
+          "createDate": 0,
+          "updateDate": 0,
+          "duration": 875,
+          "convertUrl": "",
+          "defaultBackgroundColor": 0,
+          "lastBackgroundColor": 0,
+          "pageId": 0,
+          "defaultBackgroundLineConfigId": 1,
+          "lastBackgroundLineConfigId": 2,
+          "authorId": 1,
+          "moveConfigId": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "FileInfoEntity",
+      "uid": "7195933198745853214",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "1594301834817904798",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "2076957862605615295",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "4333266520315125758",
+          "name": "width",
+          "type": 5
+        },
+        {
+          "id": 4,
+          "uid": "1087837405856477495",
+          "name": "height",
+          "type": 5
+        },
+        {
+          "id": 5,
+          "uid": "2682325834017592360",
+          "name": "validate",
+          "type": 9
+        },
+        {
+          "id": 6,
+          "uid": "1726522676427700178",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "fileName": "tiles.png",
+          "width": 16,
+          "height": 16,
+          "validate": "",
+          "recordId": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "RecordEntity",
+      "uid": "891357147187211080",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "9046634465887903763",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "2886945382326041233",
+          "name": "pageId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "pageId": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "MatrixInfoEntity",
+      "uid": "7339194381174988674",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "8157824128287595",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "7007943029564757631",
+          "name": "eventTime",
+          "type": 6
+        },
+        {
+          "id": 3,
+          "uid": "2687769118052329326",
+          "name": "scaleX",
+          "type": 7
+        },
+        {
+          "id": 4,
+          "uid": "6762616002731522458",
+          "name": "skewX",
+          "type": 7
+        },
+        {
+          "id": 5,
+          "uid": "6964916551845516534",
+          "name": "transX",
+          "type": 7
+        },
+        {
+          "id": 6,
+          "uid": "3311941188489375960",
+          "name": "skewY",
+          "type": 7
+        },
+        {
+          "id": 7,
+          "uid": "7877646726736821918",
+          "name": "scaleY",
+          "type": 7
+        },
+        {
+          "id": 8,
+          "uid": "1872363001763917480",
+          "name": "transY",
+          "type": 7
+        },
+        {
+          "id": 9,
+          "uid": "72471971767457762",
+          "name": "perSp0",
+          "type": 7
+        },
+        {
+          "id": 10,
+          "uid": "7024503675101809910",
+          "name": "perSp1",
+          "type": 7
+        },
+        {
+          "id": 11,
+          "uid": "2583504155705184995",
+          "name": "perSp2",
+          "type": 7
+        },
+        {
+          "id": 12,
+          "uid": "2413030854442085848",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": []
+    },
+    {
+      "id": 10,
+      "name": "TouchRecordEntity",
+      "uid": "5662561349855543958",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "2213635794541564884",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "2352706818980905508",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "1147768610097659098",
+          "name": "validate",
+          "type": 9
+        },
+        {
+          "id": 4,
+          "uid": "3403049600307654934",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "fileName": "1795019274615_touch.bin",
+          "validate": "48611108a711bc911d223d3aa4c9fcb85fb840684b2946c8837540b2dfa8bccb",
+          "recordId": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "TextInfoEntity",
+      "uid": "3085609912032192157",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "7568483579341312750",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "384227753751344089",
+          "name": "width",
+          "type": 7
+        },
+        {
+          "id": 3,
+          "uid": "5193906340737883215",
+          "name": "color",
+          "type": 5
+        },
+        {
+          "id": 4,
+          "uid": "2430925709763338506",
+          "name": "textSize",
+          "type": 7
+        },
+        {
+          "id": 5,
+          "uid": "5285358854095939391",
+          "name": "style",
+          "type": 5
+        },
+        {
+          "id": 6,
+          "uid": "5784995765710474993",
+          "name": "content",
+          "type": 9
+        },
+        {
+          "id": 7,
+          "uid": "5422326425890266339",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "width": 0.0,
+          "color": -14540254,
+          "textSize": 28.0,
+          "style": 0,
+          "content": "画板图元 / Blackboard",
+          "recordId": 0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "BlackBoardEntity",
+      "uid": "7195762691495625457",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "2829339404269053744",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "186877666806702259",
+          "name": "dir",
+          "type": 9
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "dir": "/data/user/0/local.zy.cloudstore/files/lesson"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "TouchInfoEntity",
+      "uid": "7818987629185229539",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "2195736893270403606",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "1481413978119928767",
+          "name": "eventTime",
+          "type": 6
+        },
+        {
+          "id": 3,
+          "uid": "3669544801400159911",
+          "name": "x",
+          "type": 7
+        },
+        {
+          "id": 4,
+          "uid": "2661984942507669471",
+          "name": "y",
+          "type": 7
+        },
+        {
+          "id": 6,
+          "uid": "5268719310319346431",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "eventTime": 0,
+          "x": 251.06382751464844,
+          "y": 176.5957489013672,
+          "recordId": 0
+        },
+        {
+          "id": 2,
+          "eventTime": 8,
+          "x": 264.74163818359375,
+          "y": 181.91488647460938,
+          "recordId": 0
+        },
+        {
+          "id": 3,
+          "eventTime": 16,
+          "x": 278.4194641113281,
+          "y": 187.23403930664062,
+          "recordId": 0
+        },
+        {
+          "id": 4,
+          "eventTime": 24,
+          "x": 292.0972900390625,
+          "y": 192.55319213867188,
+          "recordId": 0
+        },
+        {
+          "id": 5,
+          "eventTime": 32,
+          "x": 305.7750549316406,
+          "y": 197.87234497070312,
+          "recordId": 0
+        },
+        {
+          "id": 6,
+          "eventTime": 40,
+          "x": 319.452880859375,
+          "y": 203.1914825439453,
+          "recordId": 0
+        },
+        {
+          "id": 7,
+          "eventTime": 48,
+          "x": 333.1307067871094,
+          "y": 208.51063537597656,
+          "recordId": 0
+        },
+        {
+          "id": 8,
+          "eventTime": 56,
+          "x": 346.8085021972656,
+          "y": 213.8297882080078,
+          "recordId": 0
+        },
+        {
+          "id": 9,
+          "eventTime": 64,
+          "x": 360.486328125,
+          "y": 219.14894104003906,
+          "recordId": 0
+        },
+        {
+          "id": 10,
+          "eventTime": 72,
+          "x": 374.1641540527344,
+          "y": 224.46807861328125,
+          "recordId": 0
+        },
+        {
+          "id": 11,
+          "eventTime": 80,
+          "x": 387.8419494628906,
+          "y": 229.7872314453125,
+          "recordId": 0
+        },
+        {
+          "id": 12,
+          "eventTime": 88,
+          "x": 401.5197448730469,
+          "y": 235.10638427734375,
+          "recordId": 0
+        },
+        {
+          "id": 13,
+          "eventTime": 96,
+          "x": 415.19757080078125,
+          "y": 240.425537109375,
+          "recordId": 0
+        },
+        {
+          "id": 14,
+          "eventTime": 104,
+          "x": 428.8753967285156,
+          "y": 245.7446746826172,
+          "recordId": 0
+        },
+        {
+          "id": 15,
+          "eventTime": 112,
+          "x": 442.5531921386719,
+          "y": 251.06382751464844,
+          "recordId": 0
+        },
+        {
+          "id": 16,
+          "eventTime": 120,
+          "x": 442.5531921386719,
+          "y": 251.06382751464844,
+          "recordId": 0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "PageEntity",
+      "uid": "3184073876524851644",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "4158900098315997984",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "8144911141438072323",
+          "name": "dirName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "8953445388604105523",
+          "name": "isChange",
+          "type": 1
+        },
+        {
+          "id": 4,
+          "uid": "5799487931391644931",
+          "name": "commandFileName",
+          "type": 9
+        },
+        {
+          "id": 5,
+          "uid": "3846866282671597737",
+          "name": "commandIndex",
+          "type": 5
+        },
+        {
+          "id": 6,
+          "uid": "6370233532038825797",
+          "name": "blackBoardEntityId",
+          "type": 11
+        },
+        {
+          "id": 7,
+          "uid": "6561183928856383072",
+          "name": "recordEntityId",
+          "type": 11
+        },
+        {
+          "id": 8,
+          "uid": "7278221643870379970",
+          "name": "headerEntityId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "dirName": "p1",
+          "isChange": false,
+          "commandFileName": "",
+          "commandIndex": 0,
+          "blackBoardEntityId": 1,
+          "recordEntityId": 1,
+          "headerEntityId": 1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "MatrixEventEntity",
+      "uid": "48825879652876793",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "1294314152973867822",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "2703943048309286272",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": []
+    },
+    {
+      "id": 16,
+      "name": "AudioInfoEntity",
+      "uid": "1738897579709439220",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "4464665664412631503",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "8231899869464597710",
+          "name": "delayTime",
+          "type": 6
+        },
+        {
+          "id": 3,
+          "uid": "6113963074376351913",
+          "name": "duration",
+          "type": 6
+        },
+        {
+          "id": 4,
+          "uid": "788937259794251244",
+          "name": "isPlay",
+          "type": 1
+        },
+        {
+          "id": 5,
+          "uid": "4388561302133619468",
+          "name": "commandEnum",
+          "type": 5
+        },
+        {
+          "id": 6,
+          "uid": "6365167194610598110",
+          "name": "data",
+          "type": 23
+        },
+        {
+          "id": 7,
+          "uid": "3593987871946665066",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": []
+    },
+    {
+      "id": 17,
+      "name": "CommandRecordEntity",
+      "uid": "1533675624321273659",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "1272142568700193409",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "7756355126835864518",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "2415335769260754690",
+          "name": "validate",
+          "type": 9
+        },
+        {
+          "id": 4,
+          "uid": "1466976068188736837",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "fileName": "1795019274617_command.bin",
+          "validate": "392c25944c67fce747f961e9d345f9aa7151754e659a814eb4e40cf826af4f41",
+          "recordId": 1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "MatrixRecordEntity",
+      "uid": "7216434272107827427",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "3332239218713743535",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "3923730455450647348",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "2579243705245830986",
+          "name": "validate",
+          "type": 9
+        },
+        {
+          "id": 4,
+          "uid": "4717262115324513656",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": []
+    },
+    {
+      "id": 19,
+      "name": "AuthorEntity",
+      "uid": "4491029893095874048",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "7180003569711224053",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "7374957285231348279",
+          "name": "authorName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "5194475084078832533",
+          "name": "authorId",
+          "type": 9
+        },
+        {
+          "id": 4,
+          "uid": "1596297837259916058",
+          "name": "schoolId",
+          "type": 9
+        },
+        {
+          "id": 5,
+          "uid": "5288213926049203801",
+          "name": "url",
+          "type": 9
+        },
+        {
+          "id": 6,
+          "uid": "8884290112765498271",
+          "name": "startTime",
+          "type": 6
+        },
+        {
+          "id": 8,
+          "uid": "8744813166089570678",
+          "name": "duration",
+          "type": 6
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "authorName": "",
+          "authorId": "",
+          "schoolId": "",
+          "url": "",
+          "startTime": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "MoveConfigEntity",
+      "uid": "2661032766343741927",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "8297618772721499694",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "4386292675948115713",
+          "name": "isEnable",
+          "type": 1
+        },
+        {
+          "id": 3,
+          "uid": "6819516440817401546",
+          "name": "verticalTranslate",
+          "type": 1
+        },
+        {
+          "id": 4,
+          "uid": "6989581654964039122",
+          "name": "horizontalTranslate",
+          "type": 1
+        },
+        {
+          "id": 5,
+          "uid": "2559327698020118256",
+          "name": "scale",
+          "type": 1
+        },
+        {
+          "id": 6,
+          "uid": "3163637491624971432",
+          "name": "rotate",
+          "type": 1
+        },
+        {
+          "id": 7,
+          "uid": "6285416184997064814",
+          "name": "maxHeightTimes",
+          "type": 5
+        },
+        {
+          "id": 8,
+          "uid": "6140357146400751997",
+          "name": "maxWidthTimes",
+          "type": 5
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "isEnable": false,
+          "verticalTranslate": false,
+          "horizontalTranslate": false,
+          "scale": false,
+          "rotate": false,
+          "maxHeightTimes": 0,
+          "maxWidthTimes": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "GeometryInfoEntity",
+      "uid": "4283823219291471141",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "758369890359825821",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "6960047647875413528",
+          "name": "width",
+          "type": 7
+        },
+        {
+          "id": 3,
+          "uid": "7600926013197305234",
+          "name": "color",
+          "type": 5
+        },
+        {
+          "id": 4,
+          "uid": "4261713491849246304",
+          "name": "textSize",
+          "type": 7
+        },
+        {
+          "id": 5,
+          "uid": "7680322400492902307",
+          "name": "style",
+          "type": 5
+        },
+        {
+          "id": 6,
+          "uid": "3821197663929267481",
+          "name": "geometryType",
+          "type": 5
+        },
+        {
+          "id": 7,
+          "uid": "9052518300307403450",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "width": 4.0,
+          "color": -14132901,
+          "textSize": 0.0,
+          "style": 0,
+          "geometryType": 0,
+          "recordId": 0
+        },
+        {
+          "id": 2,
+          "width": 4.0,
+          "color": -9000000,
+          "textSize": 0.0,
+          "style": 1,
+          "geometryType": 1,
+          "recordId": 0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "GeometryRecordEntity",
+      "uid": "6578349910275058692",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "6975215749131372137",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "8731590737446971660",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": 3,
+          "uid": "222015663972846583",
+          "name": "validate",
+          "type": 9
+        },
+        {
+          "id": 4,
+          "uid": "6414865175094240391",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "fileName": "2_geometry.bin",
+          "validate": "1c05d6450d99fc5f69c806cf3400925d64f36aa0d6047f03d1f803d9b916ea25",
+          "recordId": 1
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "GeometryPointFEntity",
+      "uid": "253983218610838927",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "2460418406859650403",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "6341504903440599321",
+          "name": "x",
+          "type": 7
+        },
+        {
+          "id": 3,
+          "uid": "2119941464416690896",
+          "name": "y",
+          "type": 7
+        },
+        {
+          "id": 4,
+          "uid": "2993647435457907111",
+          "name": "recordId",
+          "type": 11
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "x": 0.0,
+          "y": 95.0,
+          "recordId": 0
+        },
+        {
+          "id": 2,
+          "x": 70.0,
+          "y": 0.0,
+          "recordId": 0
+        },
+        {
+          "id": 3,
+          "x": 135.0,
+          "y": 95.0,
+          "recordId": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "BackgroundLineConfigEntity",
+      "uid": "6354252071401414514",
+      "properties": [
+        {
+          "id": 1,
+          "uid": "3035121938545489039",
+          "name": "id",
+          "type": 6
+        },
+        {
+          "id": 2,
+          "uid": "6761466792425544627",
+          "name": "lineColor",
+          "type": 5
+        },
+        {
+          "id": 3,
+          "uid": "4039798210327797775",
+          "name": "lineSpace",
+          "type": 7
+        },
+        {
+          "id": 4,
+          "uid": "980589341662717929",
+          "name": "lineType",
+          "type": 5
+        },
+        {
+          "id": 5,
+          "uid": "4659655107554112597",
+          "name": "lineWidth",
+          "type": 7
+        }
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "lineColor": 0,
+          "lineSpace": 0.0,
+          "lineType": 0,
+          "lineWidth": 3.0
+        },
+        {
+          "id": 2,
+          "lineColor": 0,
+          "lineSpace": 0.0,
+          "lineType": 0,
+          "lineWidth": 3.0
+        }
+      ]
+    }
+  ]
+}

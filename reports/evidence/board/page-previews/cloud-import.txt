@@ -1,0 +1,56 @@
+Serving...
+All files should be loaded. Notifying the device.
+Performing Incremental Install
+Success
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+ess
+Install command complete in 140 ms
+Success
+INSTRUMENTATION_RESULT: persisted=PageEntity(id=1, dirName=p-local, isChange=true, commandFileName=1_command.bin, commandIndex=7) textId=1 content=本地画板样本
+INSTRUMENTATION_RESULT: reopenedEntityTypes=24
+INSTRUMENTATION_RESULT: webPageImport=PageEntity=2 AudioRecordEntity=0 AudioInfoEntity=0 CommandInfoEntity=8 TouchInfoEntity=22 TouchEventEntity=3 TextInfoEntity=0 GeometryInfoEntity=0 FileInfoEntity=0 MatrixInfoEntity=0 MatrixEventEntity=0
+INSTRUMENTATION_CODE: -1

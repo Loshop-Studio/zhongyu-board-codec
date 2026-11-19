@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.blackboard.core.play.CommandThread",
+    "method": {
+      "name": "fastReadCommandAndPause",
+      "reported_signature": "fastReadCommandAndPause(java.util.ListIterator<com.zykj.board.EzyCommand$CommandSource$CommandInfo>): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/util/ListIterator;)Z"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    private final boolean fastReadCommandAndPause(ListIterator<EzyCommand$CommandSource.CommandInfo> iterator) {\n        final PlayThread playThreadAsyncExecute;\n        if (iterator == null) {\n            return false;\n        }\n        while (iterator.hasNext()) {\n            final EzyCommand$CommandSource.CommandInfo next = iterator.next();\n            if (this.nextCommandTime < next.getDelayTime()) {\n                System.out.println((Object) (\"快进时，时间没到,快进即将结束 nextCommandTime = \" + this.nextCommandTime + \"  next.delayTime = \" + next.getDelayTime()));\n                if (iterator.hasPrevious()) {\n                    iterator.previous();\n                }\n                return true;\n            }\n            if (isNeedPlay(next) && next.getIsPlay()) {\n                System.out.println((Object) (\"快进到需要播放的指令 nextCommandTime = \" + this.nextCommandTime + \"  next.delayTime = \" + next.getDelayTime()));\n                IGraphControl graphControl = getGraphControl();\n                if (graphControl != null && !graphControl.isDraw()) {\n                    IGraphControl graphControl2 = getGraphControl();\n                    if (graphControl2 != null) {\n                        graphControl2.isDraw(true);\n                    }\n                    IGraphControl graphControl3 = getGraphControl();\n                    if (graphControl3 != null) {\n                        graphControl3.reDrawFixView();\n                    }\n                }\n                BaseCommandExecuteFactory baseCommandExecuteFactory = this.commandExecuteFactory;\n                if (baseCommandExecuteFactory != null && (playThreadAsyncExecute = baseCommandExecuteFactory.asyncExecute(next, this.nextCommandTime - next.getDelayTime())) != null) {\n                    System.out.println((Object) \"即将异步执行播放指令 \".concat(playThreadAsyncExecute.getClass().getName()));\n                    playThreadAsyncExecute.setPlaySpeed(getPlaySpeed());\n                    playThreadAsyncExecute.getFinishListener().add(new PlayFinishListener() { // from class: com.zykj.blackboard.core.play.CommandThread$fastReadCommandAndPause$1$1\n                        @Override // com.zykj.blackboard.core.execute.PlayFinishListener\n                        public void finish(@NotNull PlayThread thread, boolean isCompleted) {\n                            k.g(thread, \"thread\");\n                            this.this$0.threadList.remove(thread);\n                            if (!isCompleted || playThreadAsyncExecute.getSourceLoader() == null) {\n                                return;\n                            }\n                            CommandThread commandThread = this.this$0;\n                            EzyCommand$CommandSource.CommandInfo commandInfo = next;\n                            BaseCommandExecuteFactory baseCommandExecuteFactory2 = commandThread.commandExecuteFactory;\n                            if (baseCommandExecuteFactory2 != null) {\n                                baseCommandExecuteFactory2.execute(commandInfo);\n                            }\n                        }\n                    });\n                    playThreadAsyncExecute.pausePlay();\n                    this.threadList.add(playThreadAsyncExecute);\n                    this.execute.execute(playThreadAsyncExecute);\n                }\n            } else {\n                BaseCommandExecuteFactory baseCommandExecuteFactory2 = this.commandExecuteFactory;\n                if (baseCommandExecuteFactory2 != null) {\n                    baseCommandExecuteFactory2.execute(next);\n                }\n            }\n            if (next.getIsPlay()) {\n                this.nextCommandTime -= next.getDuration() + next.getDelayTime();\n            }\n            System.out.println((Object) (\"快进中 nextCommandTime = \" + this.nextCommandTime));\n        }\n        System.out.println((Object) \"快进中 没有命令啦！！！，赶快去装载下个指令集合\");\n        return false;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_5ea5b2dec8c5ff77c6bc5af32c336b5e2898dad32a91b3b729e4811f71063d37"
+}

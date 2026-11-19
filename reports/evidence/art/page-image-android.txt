@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: artwork=native replay vs snapshot identical: two image matrix commands, centre, 90 degree basis, uniform scale 1.5, original tiles.png and painted pixels verified
+INSTRUMENTATION_CODE: -1

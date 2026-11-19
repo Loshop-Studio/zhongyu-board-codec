@@ -1,0 +1,17 @@
+{
+  "native_size": [
+    640,
+    480
+  ],
+  "browser_crop": [
+    140,
+    158,
+    860,
+    698
+  ],
+  "native_dark": 1588,
+  "web_dark": 1595,
+  "same_pixel": 1570,
+  "native_near_web_1px": 1588,
+  "web_near_native_1px": 1595
+}

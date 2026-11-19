@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.sketch.core.record.RecordControl",
+    "method": {
+      "name": "thumbnail",
+      "reported_signature": "thumbnail(int, int): android.graphics.Bitmap",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(II)Landroid/graphics/Bitmap;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @NotNull\n    public final Bitmap thumbnail(int width, int height) {\n        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);\n        Canvas canvas = new Canvas(bitmap);\n        canvas.drawColor(this.graphControl.getBackgroundColor());\n        EzyDrawBoard.DrawArea drawArea = this.graphControl.getDrawArea();\n        if (drawArea != null) {\n            RectF rectF = new RectF();\n            this.graphControl.getRootGraph().getMMatrix().mapRect(rectF, new RectF(drawArea.getLeftTopPoint().getX(), drawArea.getLeftTopPoint().getY(), drawArea.getRightBottomPoint().getX(), drawArea.getRightBottomPoint().getY()));\n            canvas.clipRect(rectF);\n        }\n        this.graphControl.getRootGraph().onDrawComplete(canvas, new r6.c() { // from class: com.zykj.sketch.core.record.RecordControl.thumbnail.2\n            @Override // r6.c\n            @NotNull\n            public final Boolean invoke(@NotNull Graph it) {\n                k.g(it, \"it\");\n                return Boolean.TRUE;\n            }\n        });\n        k.f(bitmap, \"bitmap\");\n        return bitmap;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_e06589bd5a1bfff8974124a80938e01b45ecce06f01327bc5c5d981a5a3fac31"
+}

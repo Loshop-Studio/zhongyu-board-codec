@@ -1,0 +1,10 @@
+/.work/
+/android/.gradle/
+/android/*/build/
+/board_editor/.dart_tool/
+/board_editor/build/
+**/__pycache__/
+/dist/
+/中育apk/
+/original-apks.zip
+/rebuilt-apks.zip

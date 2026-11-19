@@ -1,0 +1,238 @@
+{
+  "database_sha256": "22792db6cb324a2d024529170fae89f8cff6e7a30d8b9bf8360bec2c75cbe5f5",
+  "edges": 33,
+  "matched_forward_reverse_keys": 66,
+  "relations": [
+    {
+      "id": 1,
+      "uid": "5610121978791820784",
+      "owner": "FileRecordEntity",
+      "name": "fileInfoEntity",
+      "target": "FileInfoEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "uid": "7413064398986488623",
+      "owner": "TextRecordEntity",
+      "name": "textInfoEntityList",
+      "target": "TextInfoEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 3,
+      "uid": "3006960921839278746",
+      "owner": "AudioRecordEntity",
+      "name": "audioInfoEntity",
+      "target": "AudioInfoEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 4,
+      "uid": "6506424544508794050",
+      "owner": "TouchRecordEntity",
+      "name": "touchEventList",
+      "target": "TouchEventEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 5,
+      "uid": "212650025651297158",
+      "owner": "MatrixEventEntity",
+      "name": "matrixInfo",
+      "target": "MatrixInfoEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 6,
+      "uid": "7483456025692942476",
+      "owner": "MatrixRecordEntity",
+      "name": "matrixEventEntity",
+      "target": "MatrixEventEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 7,
+      "uid": "4614426128572273347",
+      "owner": "TouchEventEntity",
+      "name": "touchInfoList",
+      "target": "TouchInfoEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 8,
+      "uid": "5120029386737400181",
+      "owner": "CommandRecordEntity",
+      "name": "commandInfoEntity",
+      "target": "CommandInfoEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 9,
+      "uid": "6672723083024400856",
+      "owner": "HeaderEntity",
+      "name": "provider",
+      "target": "AuthorEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 10,
+      "uid": "2467931522611419646",
+      "owner": "GeometryInfoEntity",
+      "name": "pointList",
+      "target": "GeometryPointFEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": 11,
+      "uid": "5953019203812425150",
+      "owner": "GeometryRecordEntity",
+      "name": "geometryInfoEntityList",
+      "target": "GeometryInfoEntity",
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    }
+  ]
+}

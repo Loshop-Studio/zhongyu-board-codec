@@ -1,0 +1,29 @@
+{
+  "media": {
+    "imageWidth": 64,
+    "style": "24px",
+    "cssImage": true,
+    "isolated": true
+  },
+  "trace": [
+    "load",
+    "Next",
+    "NxtSlide",
+    "Prev",
+    "GotoSlide:string",
+    "PrvSlide"
+  ],
+  "boardBounds": {
+    "x": 366,
+    "y": 335,
+    "width": 335,
+    "height": 209.375
+  },
+  "stroke": {
+    "x": 439.7,
+    "y": 492.03125,
+    "endX": 634
+  },
+  "exportReopened": true,
+  "previewOnlyByteIdentical": true
+}

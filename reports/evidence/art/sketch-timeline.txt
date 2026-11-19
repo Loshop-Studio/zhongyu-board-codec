@@ -1,0 +1,5 @@
+Native V1 progress=2000 ms; graph=[0, 0, 0, 50, 350, 700, 900, 950, 1200, 1200, 1200, 1400, 1800, 1950, 2000]; audio=[first.wav@0, second.wav@1200]
+Native V2 progress=2000 ms; graph=[0, 0, 0, 50, 350, 700, 900, 950, 1200, 1200, 1200, 1400, 1800, 1950, 2000]; audio=[first.wav@0, second.wav@1200]
+Native V3 progress=2000 ms; graph=[0, 50, 350, 700, 900, 950, 1200, 1200, 1400, 1800, 1950, 2000]; audio=[first.wav@0, second.wav@1200]
+Native V4 progress=2000 ms; graph=[0, 0, 0, 50, 350, 700, 900, 950, 1200, 1200, 1200, 1400, 1800, 1950, 2000]; audio=[first.wav@0, second.wav@1200]
+Native V5 progress=2000 ms; graph=[0, 0, 0, 50, 350, 700, 900, 950, 1200, 1200, 1200, 1400, 1800, 1950, 2000]; audio=[first.wav@0, second.wav@1200]

@@ -1,0 +1,65 @@
+{
+  "input_sha256": "f01cef16418ab0518e839648e14392d9e9ceb9b2699b8efcd9f4686f6a51ef3f",
+  "input": "web-transform.bin",
+  "viewport": [
+    640,
+    480
+  ],
+  "players": [
+    {
+      "app": "错题本",
+      "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+      "status": "drawn",
+      "callbacks": 43,
+      "final_strokes": 3,
+      "equal_frames": true,
+      "equal_rgba": true,
+      "rgba_sha256": "ccb1de997d67c5f57da9e9ae81fd373ad5d64a36274a378affbbed3255e6c183"
+    },
+    {
+      "app": "优课畅学",
+      "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+      "status": "drawn",
+      "callbacks": 43,
+      "final_strokes": 3,
+      "equal_frames": true,
+      "equal_rgba": true,
+      "rgba_sha256": "ccb1de997d67c5f57da9e9ae81fd373ad5d64a36274a378affbbed3255e6c183"
+    },
+    {
+      "app": "新测评",
+      "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+      "status": "drawn",
+      "callbacks": 43,
+      "final_strokes": 3,
+      "equal_frames": true,
+      "equal_rgba": true,
+      "rgba_sha256": "ccb1de997d67c5f57da9e9ae81fd373ad5d64a36274a378affbbed3255e6c183"
+    },
+    {
+      "app": "随身答",
+      "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+      "status": "drawn",
+      "callbacks": 43,
+      "final_strokes": 3,
+      "equal_frames": true,
+      "equal_rgba": true,
+      "rgba_sha256": "ccb1de997d67c5f57da9e9ae81fd373ad5d64a36274a378affbbed3255e6c183"
+    },
+    {
+      "app": "中育云笔记",
+      "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "status": "load_failed",
+      "cause": "java.lang.NoSuchMethodError: No virtual method makeExtensionsImmutable()V in class Lcom/zykj/sketch/EzyDrawBoard$BoardHead; or its super classes (declaration of 'com.zykj.sketch.EzyDrawBoard$BoardHead' appears in /data/user/0/local.zy.boardprobe/files/player-variant.apk!classes6.dex)",
+      "sketch_stack": [
+        "com.zykj.sketch.EzyDrawBoard$BoardHead.<init>(SourceFile:30)",
+        "com.zykj.sketch.EzyDrawBoard$BoardHead.<init>(SourceFile:1)",
+        "com.zykj.sketch.EzyDrawBoard$BoardHead$1.parsePartialFrom(SourceFile:2)",
+        "com.zykj.sketch.EzyDrawBoard$BoardHead$1.parsePartialFrom(SourceFile:1)",
+        "com.zykj.sketch.EzyDrawBoard$BoardHead.parseFrom(SourceFile:3)",
+        "com.zykj.sketch.core.player.PlayControl.parseDrawBoardData(SourceFile:33)",
+        "com.zykj.sketch.core.player.PlayControl.loadData(SourceFile:32)"
+      ]
+    }
+  ]
+}

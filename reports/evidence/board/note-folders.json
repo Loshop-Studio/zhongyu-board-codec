@@ -1,0 +1,40 @@
+{
+  "original_regular_files": 18,
+  "changed": [
+    "p1/router.bin",
+    "p1/snapshot.bin"
+  ],
+  "created": [
+    "p1/1795034704611_touch.bin",
+    "p1/1795034704613_command.bin",
+    "p1/screenshot.png"
+  ],
+  "archives": {
+    "native_zip": {
+      "sha256": "e84a674ca251160f912b41a472c528c09b38ce52eba6c6187529c34ae301e68e",
+      "manifest": {
+        "match": 17
+      },
+      "unlisted": []
+    },
+    "folder_export": {
+      "sha256": "1e806395a850e995e1560fc47ef86d5cfe9cbc47607835a367015c55a4146d99",
+      "manifest": {
+        "match": 17
+      },
+      "unlisted": []
+    },
+    "edited": {
+      "sha256": "0287bb13e303fa4a6b48d0cbba0ce8e8a0e4bbdac562e868a579afc8c66363e3",
+      "manifest": {
+        "match": 15,
+        "changed": 2
+      },
+      "unlisted": [
+        "p1/1795034704611_touch.bin",
+        "p1/1795034704613_command.bin",
+        "p1/screenshot.png"
+      ]
+    }
+  }
+}

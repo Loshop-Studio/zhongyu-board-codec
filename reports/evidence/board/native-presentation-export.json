@@ -1,0 +1,18 @@
+{
+  "sourceSha256": "8b442b609ae48ed1b1c9faeae7c0266229b13116e472957e9f2df2f607fc40b3",
+  "exportSha256": "2ddf0a55dce21a67744235fe435e31c6951f4500165a897ec19662c71eeb9c3c",
+  "changedMembers": [
+    "native-presentation/actions.bin"
+  ],
+  "unchangedMembers": 6,
+  "strokeRgb": [
+    33,
+    56,
+    54
+  ],
+  "adjacentSlideRgb": [
+    235,
+    186,
+    116
+  ]
+}

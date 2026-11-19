@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "新测评.apk",
+    "digest": {
+      "sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/新测评.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "w7.b",
+    "method": {
+      "name": "l",
+      "reported_signature": "l(android.graphics.PointF): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/graphics/PointF;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void l(PointF currentPointF) {\n        Function0 function0;\n        Intrinsics.checkNotNullParameter(currentPointF, \"currentPointF\");\n        PointF pointFMapPoint = GraphExtKt.mapPoint(this.f16324b, currentPointF);\n        this.f16330h.reset();\n        this.f16330h.addCircle(pointFMapPoint.x, pointFMapPoint.y, this.f16323a.d(), Path.Direction.CW);\n        q(this.f16336n);\n        Iterator it = this.f16329g.iterator();\n        Intrinsics.checkNotNullExpressionValue(it, \"iterator(...)\");\n        boolean z9 = false;\n        while (it.hasNext()) {\n            Object next = it.next();\n            Intrinsics.checkNotNullExpressionValue(next, \"next(...)\");\n            j jVar = (j) next;\n            if (jVar.d().contains(currentPointF.x, currentPointF.y) && d(currentPointF, jVar.c(), m.b(this.f16324b).mapRadius(this.f16323a.d()))) {\n                it.remove();\n                z9 = true;\n            }\n        }\n        if (z9 && (function0 = this.f16331i) != null) {\n            function0.invoke();\n        }\n        this.f16325c.c();\n        this.f16325c.b();\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_da3bf8cd7e9b6e181f8e936ca43f64a015d4488a466f5e3d720f2c230f4c1b84"
+}

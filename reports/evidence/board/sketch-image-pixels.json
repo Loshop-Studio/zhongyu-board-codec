@@ -1,0 +1,475 @@
+[
+  {
+    "name": "illustration",
+    "web_crop": [
+      119,
+      126,
+      881,
+      698
+    ],
+    "native_colour_pixels": 27535,
+    "web_colour_pixels": 27624,
+    "intersection": 27535,
+    "union": 27624,
+    "probes": [
+      {
+        "xy": [
+          314,
+          249
+        ],
+        "native_rgb": [
+          0,
+          0,
+          0
+        ],
+        "web_rgb": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "xy": [
+          300,
+          275
+        ],
+        "native_rgb": [
+          16,
+          162,
+          132
+        ],
+        "web_rgb": [
+          16,
+          160,
+          128
+        ]
+      },
+      {
+        "xy": [
+          385,
+          240
+        ],
+        "native_rgb": [
+          33,
+          65,
+          198
+        ],
+        "web_rgb": [
+          32,
+          64,
+          192
+        ]
+      },
+      {
+        "xy": [
+          285,
+          46
+        ],
+        "native_rgb": [
+          231,
+          40,
+          66
+        ],
+        "web_rgb": [
+          227,
+          44,
+          69
+        ]
+      }
+    ]
+  },
+  {
+    "name": "image-edit",
+    "web_crop": [
+      140,
+      158,
+      860,
+      698
+    ],
+    "native_colour_pixels": 35469,
+    "web_colour_pixels": 35666,
+    "intersection": 35453,
+    "union": 35682,
+    "probes": [
+      {
+        "xy": [
+          314,
+          249
+        ],
+        "native_rgb": [
+          0,
+          0,
+          0
+        ],
+        "web_rgb": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "xy": [
+          300,
+          275
+        ],
+        "native_rgb": [
+          33,
+          56,
+          54
+        ],
+        "web_rgb": [
+          34,
+          47,
+          48
+        ]
+      },
+      {
+        "xy": [
+          385,
+          240
+        ],
+        "native_rgb": [
+          33,
+          65,
+          198
+        ],
+        "web_rgb": [
+          32,
+          64,
+          192
+        ]
+      },
+      {
+        "xy": [
+          285,
+          46
+        ],
+        "native_rgb": [
+          231,
+          40,
+          66
+        ],
+        "web_rgb": [
+          228,
+          43,
+          69
+        ]
+      }
+    ]
+  },
+  {
+    "name": "image-recording",
+    "web_crop": [
+      151,
+      174,
+      849,
+      698
+    ],
+    "native_colour_pixels": 10240,
+    "web_colour_pixels": 10214,
+    "intersection": 10175,
+    "union": 10279,
+    "probes": [
+      {
+        "xy": [
+          104,
+          91
+        ],
+        "native_rgb": [
+          135,
+          208,
+          193
+        ],
+        "web_rgb": [
+          135,
+          207,
+          191
+        ]
+      },
+      {
+        "xy": [
+          191,
+          98
+        ],
+        "native_rgb": [
+          144,
+          160,
+          226
+        ],
+        "web_rgb": [
+          143,
+          159,
+          223
+        ]
+      },
+      {
+        "xy": [
+          102,
+          149
+        ],
+        "native_rgb": [
+          251,
+          204,
+          144
+        ],
+        "web_rgb": [
+          247,
+          203,
+          143
+        ]
+      }
+    ]
+  },
+  {
+    "name": "image-v2",
+    "web_crop": [
+      119,
+      126,
+      881,
+      698
+    ],
+    "native_colour_pixels": 10240,
+    "web_colour_pixels": 10110,
+    "intersection": 10110,
+    "union": 10240,
+    "probes": [
+      {
+        "xy": [
+          104,
+          91
+        ],
+        "native_rgb": [
+          135,
+          208,
+          193
+        ],
+        "web_rgb": [
+          135,
+          207,
+          191
+        ]
+      },
+      {
+        "xy": [
+          191,
+          98
+        ],
+        "native_rgb": [
+          144,
+          160,
+          226
+        ],
+        "web_rgb": [
+          143,
+          159,
+          223
+        ]
+      },
+      {
+        "xy": [
+          102,
+          149
+        ],
+        "native_rgb": [
+          251,
+          204,
+          144
+        ],
+        "web_rgb": [
+          247,
+          203,
+          143
+        ]
+      }
+    ]
+  },
+  {
+    "name": "image-v3",
+    "web_crop": [
+      119,
+      126,
+      881,
+      698
+    ],
+    "native_colour_pixels": 10240,
+    "web_colour_pixels": 10110,
+    "intersection": 10110,
+    "union": 10240,
+    "probes": [
+      {
+        "xy": [
+          104,
+          91
+        ],
+        "native_rgb": [
+          135,
+          208,
+          193
+        ],
+        "web_rgb": [
+          135,
+          207,
+          191
+        ]
+      },
+      {
+        "xy": [
+          191,
+          98
+        ],
+        "native_rgb": [
+          144,
+          160,
+          226
+        ],
+        "web_rgb": [
+          143,
+          159,
+          223
+        ]
+      },
+      {
+        "xy": [
+          102,
+          149
+        ],
+        "native_rgb": [
+          251,
+          204,
+          144
+        ],
+        "web_rgb": [
+          247,
+          203,
+          143
+        ]
+      }
+    ]
+  },
+  {
+    "name": "image-v4",
+    "web_crop": [
+      119,
+      126,
+      881,
+      698
+    ],
+    "native_colour_pixels": 23040,
+    "web_colour_pixels": 23229,
+    "intersection": 23040,
+    "union": 23229,
+    "probes": [
+      {
+        "xy": [
+          234,
+          190
+        ],
+        "native_rgb": [
+          16,
+          162,
+          132
+        ],
+        "web_rgb": [
+          16,
+          160,
+          128
+        ]
+      },
+      {
+        "xy": [
+          365,
+          194
+        ],
+        "native_rgb": [
+          33,
+          65,
+          198
+        ],
+        "web_rgb": [
+          32,
+          64,
+          192
+        ]
+      },
+      {
+        "xy": [
+          250,
+          277
+        ],
+        "native_rgb": [
+          247,
+          154,
+          33
+        ],
+        "web_rgb": [
+          240,
+          152,
+          32
+        ]
+      }
+    ]
+  },
+  {
+    "name": "image-v5",
+    "web_crop": [
+      119,
+      126,
+      881,
+      698
+    ],
+    "native_colour_pixels": 23040,
+    "web_colour_pixels": 23229,
+    "intersection": 23040,
+    "union": 23229,
+    "probes": [
+      {
+        "xy": [
+          234,
+          190
+        ],
+        "native_rgb": [
+          16,
+          162,
+          132
+        ],
+        "web_rgb": [
+          16,
+          160,
+          128
+        ]
+      },
+      {
+        "xy": [
+          365,
+          194
+        ],
+        "native_rgb": [
+          33,
+          65,
+          198
+        ],
+        "web_rgb": [
+          32,
+          64,
+          192
+        ]
+      },
+      {
+        "xy": [
+          250,
+          277
+        ],
+        "native_rgb": [
+          247,
+          154,
+          33
+        ],
+        "web_rgb": [
+          240,
+          152,
+          32
+        ]
+      }
+    ]
+  }
+]

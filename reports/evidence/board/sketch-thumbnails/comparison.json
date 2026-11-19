@@ -1,0 +1,260 @@
+{
+  "original_zip_sha256": "aaf1ff1cc00cb76b95a10700450dabd9b30e9c22eb660a1f8e8bc7d96543c4e9",
+  "web_zip_sha256": "72ce770290387bd75b660f8c724b71b67152c13e03af9f09255fcde7096f6f23",
+  "changed_members": [
+    "note/actions.bin",
+    "note/thumbnail.jpg"
+  ],
+  "jpeg_size": [
+    640,
+    480
+  ],
+  "jpeg_components": [
+    [
+      1,
+      2,
+      2,
+      0
+    ],
+    [
+      2,
+      1,
+      1,
+      1
+    ],
+    [
+      3,
+      1,
+      1,
+      1
+    ]
+  ],
+  "quantization_tables_equal": true,
+  "source_graph_reopened": {
+    "width": 640,
+    "height": 480,
+    "strokes": 1,
+    "images": 1,
+    "reader": "错题本",
+    "reader_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+    "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+  },
+  "unchanged_reopened_graph_pixels_above_new_stroke": 201600,
+  "web_decoded_jpeg_vs_recorder": {
+    "original_red_ink": {
+      "shared": 1629,
+      "union": 1678,
+      "iou": 0.9707985697258641,
+      "bounds": [
+        50,
+        101,
+        231,
+        127
+      ]
+    },
+    "new_dark_ink": {
+      "shared": 595,
+      "union": 614,
+      "iou": 0.9690553745928339,
+      "bounds": [
+        234,
+        346,
+        425,
+        395
+      ]
+    },
+    "coloured_picture": {
+      "shared": 5623,
+      "union": 5629,
+      "iou": 0.9989340913128442,
+      "bounds": [
+        275,
+        208,
+        363,
+        271
+      ]
+    }
+  },
+  "browser_canvas_vs_recorder": {
+    "original_red_ink": {
+      "shared": 1646,
+      "union": 1673,
+      "iou": 0.9838613269575612,
+      "bounds": [
+        50,
+        101,
+        231,
+        128
+      ]
+    },
+    "new_dark_ink": {
+      "shared": 592,
+      "union": 621,
+      "iou": 0.9533011272141707,
+      "bounds": [
+        234,
+        346,
+        425,
+        395
+      ]
+    },
+    "coloured_picture": {
+      "shared": 5626,
+      "union": 5795,
+      "iou": 0.9708369283865401,
+      "bounds": [
+        276,
+        207,
+        363,
+        272
+      ]
+    }
+  },
+  "browser_canvas_crop": [
+    124,
+    134,
+    876,
+    698
+  ],
+  "readers": [
+    {
+      "width": 640,
+      "height": 480,
+      "strokes": 2,
+      "images": 1,
+      "reader": "错题本",
+      "reader_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+      "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "cloud_sidebar_pixels_matching_web_jpeg": 307200,
+      "recorder_jpeg_sha256": "19d694405e11e39aca55c7316f7003ef511f280c1e897ed7cfa998c81439cd1c",
+      "alpha_0_64_128_255_rgb": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          48,
+          20,
+          8
+        ],
+        [
+          96,
+          40,
+          17
+        ],
+        [
+          192,
+          80,
+          34
+        ]
+      ]
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "strokes": 2,
+      "images": 1,
+      "reader": "优课畅学",
+      "reader_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+      "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "cloud_sidebar_pixels_matching_web_jpeg": 307200,
+      "recorder_jpeg_sha256": "19d694405e11e39aca55c7316f7003ef511f280c1e897ed7cfa998c81439cd1c",
+      "alpha_0_64_128_255_rgb": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          48,
+          20,
+          8
+        ],
+        [
+          96,
+          40,
+          17
+        ],
+        [
+          192,
+          80,
+          34
+        ]
+      ]
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "strokes": 2,
+      "images": 1,
+      "reader": "新测评",
+      "reader_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+      "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "cloud_sidebar_pixels_matching_web_jpeg": 307200,
+      "recorder_jpeg_sha256": "19d694405e11e39aca55c7316f7003ef511f280c1e897ed7cfa998c81439cd1c",
+      "alpha_0_64_128_255_rgb": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          48,
+          20,
+          8
+        ],
+        [
+          96,
+          40,
+          17
+        ],
+        [
+          192,
+          80,
+          34
+        ]
+      ]
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "strokes": 2,
+      "images": 1,
+      "reader": "随身答",
+      "reader_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+      "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "cloud_sidebar_pixels_matching_web_jpeg": 307200,
+      "recorder_jpeg_sha256": "19d694405e11e39aca55c7316f7003ef511f280c1e897ed7cfa998c81439cd1c",
+      "alpha_0_64_128_255_rgb": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          48,
+          20,
+          8
+        ],
+        [
+          96,
+          40,
+          17
+        ],
+        [
+          192,
+          80,
+          34
+        ]
+      ]
+    },
+    {
+      "load_error": "java.lang.NoSuchMethodError: No virtual method makeExtensionsImmutable()V in class Lcom/zykj/sketch/EzyDrawBoard$DrawBoard; or its super classes (declaration of 'com.zykj.sketch.EzyDrawBoard$DrawBoard' appears in /data/user/0/local.zy.sketchthumb/code_cache/reader.apk!classes6.dex)",
+      "reader": "中育云笔记",
+      "reader_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "cloud_sidebar_pixels_matching_web_jpeg": 307200
+    }
+  ]
+}

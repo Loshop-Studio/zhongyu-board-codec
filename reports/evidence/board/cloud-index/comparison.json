@@ -1,0 +1,297 @@
+{
+  "cloud_original_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+  "mistake_original_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+  "input_zip_sha256": "e292863e5657684e88625739725e889ad6c921fc3504c409165ae0f32b839868",
+  "browser_zip_sha256": "1cea8b3296eb2b86aebfc3dc7df43ce76d7b94920f73ef72938e8f96bce2b206",
+  "changed_members": [
+    "课堂本/第2页/actions.bin"
+  ],
+  "index": {
+    "folder": "课堂本",
+    "android_base": "/data/user/0/local.zy.cloudindex/files/课堂本/",
+    "pages": [
+      {
+        "android_path": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页",
+        "directory": "第2页",
+        "present": true,
+        "sketch": "第2页/actions.bin"
+      },
+      {
+        "android_path": "/data/user/0/local.zy.cloudindex/files/课堂本/missing",
+        "directory": "missing",
+        "present": false,
+        "sketch": null
+      },
+      {
+        "android_path": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页",
+        "directory": "第一页",
+        "present": true,
+        "sketch": "第一页/actions.bin"
+      },
+      {
+        "android_path": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页",
+        "directory": "第2页",
+        "present": true,
+        "sketch": "第2页/actions.bin"
+      }
+    ],
+    "resources": [
+      {
+        "local": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/actions.bin",
+        "service": "https://fixture.invalid/lesson/第2页/actions.bin",
+        "member": "第2页/actions.bin",
+        "present": true
+      },
+      {
+        "local": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/actions.bin",
+        "service": "https://fixture.invalid/lesson/第一页/actions.bin",
+        "member": "第一页/actions.bin",
+        "present": true
+      },
+      {
+        "local": "/data/user/0/local.zy.cloudindex/files/课堂本/unlisted/actions.bin",
+        "service": "https://fixture.invalid/lesson/unlisted/actions.bin",
+        "member": "unlisted/actions.bin",
+        "present": true
+      }
+    ],
+    "unlisted_sketch_pages": [
+      "unlisted"
+    ]
+  },
+  "native_before": {
+    "index": [
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/missing",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第一页",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页"
+    ],
+    "resources": [
+      {
+        "local": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/actions.bin",
+        "service": "https://fixture.invalid/lesson/第2页/actions.bin"
+      },
+      {
+        "local": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/actions.bin",
+        "service": "https://fixture.invalid/lesson/第一页/actions.bin"
+      },
+      {
+        "local": "/data/user/0/local.zy.cloudindex/files/课堂本/unlisted/actions.bin",
+        "service": "https://fixture.invalid/lesson/unlisted/actions.bin"
+      }
+    ],
+    "editor_pages": [
+      "第2页",
+      "第一页",
+      "第2页"
+    ],
+    "cloud_sketch": {
+      "第2页": "java.lang.NoSuchMethodError: No virtual method makeExtensionsImmutable()V in class Lcom/zykj/sketch/EzyDrawBoard$BoardHead; or its super classes (declaration of 'com.zykj.sketch.EzyDrawBoard$BoardHead' appears in /data/user/0/local.zy.cloudindex/code_cache/original.apk!classes6.dex)",
+      "第一页": "java.lang.NoSuchMethodError: No virtual method makeExtensionsImmutable()V in class Lcom/zykj/sketch/EzyDrawBoard$BoardHead; or its super classes (declaration of 'com.zykj.sketch.EzyDrawBoard$BoardHead' appears in /data/user/0/local.zy.cloudindex/code_cache/original.apk!classes6.dex)"
+    },
+    "mistake_sketch": {
+      "第2页": "durationMs=0 strokes=2",
+      "第一页": "durationMs=0 strokes=1"
+    },
+    "marker_created": true,
+    "marker_recreated": false,
+    "resource_ranks": [
+      2,
+      3,
+      0,
+      2,
+      3,
+      1,
+      2,
+      2
+    ],
+    "representatives": [
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/page_mdb/lock.mdb",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/page_mdb/data.mdb"
+    ],
+    "previews": [
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/screenshot.png",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/screenshot.png"
+    ],
+    "room_live_count": 7,
+    "room_representatives": [
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/page_mdb/lock.mdb",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/page_mdb/data.mdb"
+    ],
+    "editor_with_room": [
+      "marker-check",
+      "第2页",
+      "第一页"
+    ],
+    "representatives_after_restore": 3,
+    "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+    "members_sha256": {
+      "课堂本/第一页/actions.bin": "1f4d1d9e7e8e9a5ceb3f641867b66b37e90f7ce26292b100a9e83b9b81237f0f",
+      "课堂本/第2页/actions.bin": "bd5d4d0fde70dbab06f11d3aa46eec89456b740c8e14ece5b3414827f34dd57f",
+      "课堂本/unlisted/actions.bin": "1f4d1d9e7e8e9a5ceb3f641867b66b37e90f7ce26292b100a9e83b9b81237f0f",
+      "课堂本/index.json": "ce1a1f16f54ead62bb03b51d5a60d40311f757a1ea887aeeae0a38e0d670c46d",
+      "课堂本/res.json": "287a807eafb98ac6d110382e9ab998a83de9b27642483f6ceb7bbf63ee9307f8"
+    }
+  },
+  "native_after": {
+    "index": [
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/missing",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第一页",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页"
+    ],
+    "resources": [
+      {
+        "local": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/actions.bin",
+        "service": "https://fixture.invalid/lesson/第2页/actions.bin"
+      },
+      {
+        "local": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/actions.bin",
+        "service": "https://fixture.invalid/lesson/第一页/actions.bin"
+      },
+      {
+        "local": "/data/user/0/local.zy.cloudindex/files/课堂本/unlisted/actions.bin",
+        "service": "https://fixture.invalid/lesson/unlisted/actions.bin"
+      }
+    ],
+    "editor_pages": [
+      "第2页",
+      "第一页",
+      "第2页"
+    ],
+    "cloud_sketch": {
+      "第2页": "java.lang.NoSuchMethodError: No virtual method makeExtensionsImmutable()V in class Lcom/zykj/sketch/EzyDrawBoard$BoardHead; or its super classes (declaration of 'com.zykj.sketch.EzyDrawBoard$BoardHead' appears in /data/user/0/local.zy.cloudindex/code_cache/original.apk!classes6.dex)",
+      "第一页": "java.lang.NoSuchMethodError: No virtual method makeExtensionsImmutable()V in class Lcom/zykj/sketch/EzyDrawBoard$BoardHead; or its super classes (declaration of 'com.zykj.sketch.EzyDrawBoard$BoardHead' appears in /data/user/0/local.zy.cloudindex/code_cache/original.apk!classes6.dex)"
+    },
+    "mistake_sketch": {
+      "第2页": "durationMs=0 strokes=3",
+      "第一页": "durationMs=0 strokes=1"
+    },
+    "marker_created": true,
+    "marker_recreated": false,
+    "resource_ranks": [
+      2,
+      3,
+      0,
+      2,
+      3,
+      1,
+      2,
+      2
+    ],
+    "representatives": [
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/page_mdb/lock.mdb",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/page_mdb/data.mdb"
+    ],
+    "previews": [
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/screenshot.png",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/screenshot.png"
+    ],
+    "room_live_count": 7,
+    "room_representatives": [
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/page_mdb/lock.mdb",
+      "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/page_mdb/data.mdb"
+    ],
+    "editor_with_room": [
+      "marker-check",
+      "第2页",
+      "第一页"
+    ],
+    "representatives_after_restore": 3,
+    "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+    "members_sha256": {
+      "课堂本/index.json": "ce1a1f16f54ead62bb03b51d5a60d40311f757a1ea887aeeae0a38e0d670c46d",
+      "课堂本/res.json": "287a807eafb98ac6d110382e9ab998a83de9b27642483f6ceb7bbf63ee9307f8",
+      "课堂本/unlisted/actions.bin": "1f4d1d9e7e8e9a5ceb3f641867b66b37e90f7ce26292b100a9e83b9b81237f0f",
+      "课堂本/第2页/actions.bin": "bb3a99615486fc0b71ae50f25046236a7f51641a5bc2aecda2528f84a6016831",
+      "课堂本/第一页/actions.bin": "1f4d1d9e7e8e9a5ceb3f641867b66b37e90f7ce26292b100a9e83b9b81237f0f"
+    }
+  },
+  "database": {
+    "sha256": "436640b1459a06aea4f2114ff3dee5f889ad7e5c6362720102df44c9519460b0",
+    "user_version": 12,
+    "integrity_check": "ok",
+    "without_marker": {
+      "user_id": -1,
+      "file_id": "offline",
+      "row_count": 8,
+      "deleted_rows": 1,
+      "legacy_source": "ResourceEntity",
+      "legacy_editor_pages": [
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/marker-check",
+          "index": 0,
+          "first_resource": "/data/user/0/local.zy.cloudindex/files/marker-check/screenshot.png"
+        },
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页",
+          "index": 2,
+          "first_resource": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/screenshot.png"
+        },
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页",
+          "index": 4,
+          "first_resource": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/screenshot.png"
+        }
+      ],
+      "pages": [
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/marker-check",
+          "index": 0,
+          "representative": "/data/user/0/local.zy.cloudindex/files/marker-check/screenshot.png",
+          "preview": "/data/user/0/local.zy.cloudindex/files/marker-check/screenshot.png"
+        },
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页",
+          "index": 2,
+          "representative": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/page_mdb/lock.mdb",
+          "preview": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/screenshot.png"
+        },
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页",
+          "index": 2,
+          "representative": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/page_mdb/data.mdb",
+          "preview": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/screenshot.png"
+        }
+      ]
+    },
+    "with_marker": {
+      "user_id": -1,
+      "file_id": "offline",
+      "row_count": 8,
+      "deleted_rows": 1,
+      "legacy_source": "ResourceEntity",
+      "legacy_editor_pages": [
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/marker-check",
+          "index": 0,
+          "first_resource": "/data/user/0/local.zy.cloudindex/files/marker-check/screenshot.png"
+        },
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页",
+          "index": 2,
+          "first_resource": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/screenshot.png"
+        },
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页",
+          "index": 4,
+          "first_resource": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/screenshot.png"
+        }
+      ],
+      "pages": [
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页",
+          "index": 2,
+          "representative": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/page_mdb/lock.mdb",
+          "preview": "/data/user/0/local.zy.cloudindex/files/课堂本/第2页/screenshot.png"
+        },
+        {
+          "page": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页",
+          "index": 2,
+          "representative": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/page_mdb/data.mdb",
+          "preview": "/data/user/0/local.zy.cloudindex/files/课堂本/第一页/screenshot.png"
+        }
+      ]
+    }
+  }
+}

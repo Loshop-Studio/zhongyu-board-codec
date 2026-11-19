@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.blackboard.core.canvas.control.DrawControl",
+    "method": {
+      "name": "screenshot",
+      "reported_signature": "screenshot(com.zykj.blackboard.core.graph.IGraph): android.graphics.Bitmap",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/zykj/blackboard/core/graph/IGraph;)Landroid/graphics/Bitmap;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Nullable\n    public final Bitmap screenshot(@NotNull IGraph graph) {\n        Matrix adapterMatrix;\n        FixLayer fixLayer;\n        k.g(graph, \"graph\");\n        RenderLayer renderLayer = this.renderLayer;\n        RectF rectF = new RectF((renderLayer == null || (fixLayer = renderLayer.getFixLayer()) == null) ? null : fixLayer.rect());\n        RectF rectF2 = new RectF();\n        if (this.boardConfig.getMoveActionConfig().isMoveActionEnable()) {\n            rectF2.set(0.0f, 0.0f, rectF.width() * this.boardConfig.getMoveActionConfig().getMaxWidthTimes(), rectF.height() * this.boardConfig.getMoveActionConfig().getMaxHeightTimes());\n            Matrix matrix = new Matrix();\n            MatrixAdapter matrixAdapter = this.matrixAdapter;\n            if (matrixAdapter != null) {\n                matrix.postConcat(MatrixExtKt.invert(matrixAdapter.getScreenMatrix()));\n                matrix.postConcat(matrixAdapter.getAdapterMatrix());\n            }\n            matrix.mapRect(rectF2);\n        } else {\n            rectF2.setEmpty();\n        }\n        if (!rectF2.isEmpty()) {\n            rectF.intersect(rectF2);\n        }\n        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(((int) rectF.width()) + 1, ((int) rectF.height()) + 1, Bitmap.Config.ARGB_8888);\n        this.snapshotBitmap = bitmapCreateBitmap;\n        if (bitmapCreateBitmap != null) {\n            Canvas canvas = new Canvas(bitmapCreateBitmap);\n            MatrixAdapter matrixAdapter2 = this.matrixAdapter;\n            if (matrixAdapter2 != null && (adapterMatrix = matrixAdapter2.getAdapterMatrix()) != null) {\n                drawBackground(canvas, adapterMatrix);\n                IDraw.DefaultImpls.onDraw$default(graph, canvas, adapterMatrix, null, false, false, 4, null);\n            }\n        }\n        return this.snapshotBitmap;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_ea39b700156768a03e37ce3213178f01f7120baf7d4f1c3556115123f68bdaa1"
+}

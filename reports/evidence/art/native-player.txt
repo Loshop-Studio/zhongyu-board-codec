@@ -1,0 +1,7 @@
+INSTRUMENTATION_RESULT: editedRecording=durationMs=2000 strokes=2
+INSTRUMENTATION_RESULT: editedTransforms=native transform frames=43
+INSTRUMENTATION_RESULT: nativePlayer=700ms=1 900ms=0 950ms=1 1200ms=0 1200ms=0 1200ms=0 1950ms=1 2000ms=1
+INSTRUMENTATION_RESULT: nativeView=SimpleBoardView rendered the web export and saved 3 paths after touch input
+INSTRUMENTATION_RESULT: page=Verified native router, command, touch source, graph and source index
+INSTRUMENTATION_RESULT: sketchTransforms=native transform frames=30
+INSTRUMENTATION_CODE: -1

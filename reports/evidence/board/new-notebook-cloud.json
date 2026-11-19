@@ -1,0 +1,35 @@
+{
+  "zip_sha256": "d7ef694ab4de96d8865f75b336b529f23a980ea522b53c133e6d9ba1c6c58403",
+  "mdb_sha256": "7104ca55183c0cdd25069d83b7786c765f4f84c93d9055d15ac7ce53e62e8239",
+  "pages": [
+    {
+      "page": "p1",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "command_enums": [
+        1,
+        1
+      ],
+      "touch_points": 11,
+      "texts": []
+    },
+    {
+      "page": "p2",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "command_enums": [
+        1,
+        1,
+        3
+      ],
+      "touch_points": 0,
+      "texts": [
+        "Page two"
+      ]
+    }
+  ]
+}

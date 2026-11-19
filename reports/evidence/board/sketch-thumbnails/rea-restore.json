@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.sketch.core.record.RecordControl",
+    "method": {
+      "name": "executeActionContent",
+      "reported_signature": "executeActionContent(int, java.util.List<com.zykj.sketch.EzyDrawBoard$ActionContent>, r6.c): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(ILjava/util/List;Lr6/c;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    private final void executeActionContent(int version, List<EzyDrawBoard.ActionContent> parseEventList, final r6.c viewBack) {\n        int size = parseEventList.size();\n        do {\n            size--;\n            if (-1 >= size) {\n                size = -1;\n                break;\n            }\n        } while (!parseEventList.get(size).hasGraphSnapshot());\n        if (size <= -1) {\n            executeTask(EventTaskParseFactory.INSTANCE.create(version).parse(parseEventList, this.actionExecute, new r6.c() { // from class: com.zykj.sketch.core.record.RecordControl.executeActionContent.3\n                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */\n                {\n                    super(1);\n                }\n\n                @Override // r6.c\n                public /* bridge */ /* synthetic */ Object invoke(Object obj) {\n                    invoke((ViewControl) obj);\n                    return s.f5385a;\n                }\n\n                public final void invoke(@NotNull ViewControl viewControl) {\n                    k.g(viewControl, \"viewControl\");\n                    RecordControl.this.actionExecute.addViewControl(viewControl);\n                    viewBack.invoke(viewControl);\n                }\n            }).getGraphTask());\n            return;\n        }\n        int i = size + 1;\n        this.actionRecord.addHistoryRecord(parseEventList.subList(0, i));\n        EventListener.DefaultImpls.graphSnapShot$default(this.actionExecute, parseEventList.get(size), false, 2, null);\n        this.actionRecord.addHistoryRenderGraphSnapshot(parseEventList.get(size));\n        if (size != parseEventList.size() - 1) {\n            executeTask(ITaskParse.DefaultImpls.parse$default(EventTaskParseFactory.INSTANCE.create(version), parseEventList.subList(i, parseEventList.size()), this.actionExecute, null, 4, null).getGraphTask());\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_36ab69d7e5fa308b404f33fcf7e5f2f101c4315ffa5261b491d9274bdbfba537"
+}

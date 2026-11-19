@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.blackboard.core.edit.BoardControl",
+    "method": {
+      "name": "save",
+      "reported_signature": "save(boolean, boolean, r6.c, r6.c): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(ZZLr6/c;Lr6/c;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.zykj.blackboard.core.edit.IBoardControl\n    public void save(final boolean needClear, final boolean isContentThumbnail, @NotNull final c callback, @NotNull final c error) {\n        k.g(callback, \"callback\");\n        k.g(error, \"error\");\n        final ArrayList arrayList = new ArrayList(this.pageList);\n        final String boardDirPath = getBoardDirPath();\n        getSingleExecutor().submit(new Runnable() { // from class: com.zykj.blackboard.core.edit.a\n            @Override // java.lang.Runnable\n            public final void run() {\n                BoardControl.m7265save$lambda9(arrayList, boardDirPath, this, error, needClear, callback, isContentThumbnail);\n            }\n        });\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_5cfdc2959d14e13e362717c4dab3039e45c814bd93d44f500499533b598207a3"
+}

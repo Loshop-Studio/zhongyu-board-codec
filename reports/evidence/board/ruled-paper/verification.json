@@ -1,0 +1,275 @@
+{
+  "original_sha256": "7aeaffe87654b3e72e5ca8b73f566e7338a130fb6ea87a2f22118919ecd225f1",
+  "edited_sha256": "9a1ff9846f5a7cabc010ad803ca2b4b6ae9cf35e4935df6530e100744bb5d817",
+  "duration_ms": 1263,
+  "recorded_config_ms": [
+    177,
+    742
+  ],
+  "recorded_camera_ms": 773,
+  "original_bytes_after_undo": true,
+  "all_edited_members_equal_after_redo_and_cloud_export": true,
+  "native_list_png_identical_rgba": true,
+  "cleared_ruling_android_and_list": true,
+  "preserved_initial_playback_pixels": [
+    200,
+    1010
+  ],
+  "edited_members": [
+    "6a3eec8e-3c90-47eb-a517-f807d816602d/header.bin",
+    "6a3eec8e-3c90-47eb-a517-f807d816602d/router.bin",
+    "6a3eec8e-3c90-47eb-a517-f807d816602d/screenshot.png"
+  ],
+  "new_member": "6a3eec8e-3c90-47eb-a517-f807d816602d/1795035815295_command.bin",
+  "browser_seek": [
+    {
+      "target": 100,
+      "displayed_ms": 90
+    },
+    {
+      "target": 200,
+      "displayed_ms": 190
+    },
+    {
+      "target": 650,
+      "displayed_ms": 650
+    },
+    {
+      "target": 758,
+      "displayed_ms": 750
+    },
+    {
+      "target": 1010,
+      "displayed_ms": 1010
+    },
+    {
+      "target": 1263,
+      "displayed_ms": 1260
+    },
+    {
+      "target": 400,
+      "displayed_ms": 390
+    }
+  ],
+  "replay_ruling_pixels": {
+    "200": {
+      "browser_paper_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "vertical": {
+        "count": 0,
+        "max_center_error_px": 0,
+        "max_width_error_px": 0
+      },
+      "horizontal": {
+        "count": 12,
+        "max_center_error_px": 0.0474,
+        "max_width_error_px": 0.1134
+      }
+    },
+    "650": {
+      "browser_paper_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "vertical": {
+        "count": 0,
+        "max_center_error_px": 0,
+        "max_width_error_px": 0
+      },
+      "horizontal": {
+        "count": 12,
+        "max_center_error_px": 0.0474,
+        "max_width_error_px": 0.1134
+      }
+    },
+    "758": {
+      "browser_paper_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "vertical": {
+        "count": 13,
+        "max_center_error_px": 0.0385,
+        "max_width_error_px": 0.0696
+      },
+      "horizontal": {
+        "count": 9,
+        "max_center_error_px": 0.0749,
+        "max_width_error_px": 0.2557
+      }
+    },
+    "1010": {
+      "browser_paper_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "vertical": {
+        "count": 13,
+        "max_center_error_px": 0.0385,
+        "max_width_error_px": 0.0696
+      },
+      "horizontal": {
+        "count": 9,
+        "max_center_error_px": 0.0749,
+        "max_width_error_px": 0.2557
+      }
+    },
+    "1263": {
+      "browser_paper_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "vertical": {
+        "count": 13,
+        "max_center_error_px": 0.0385,
+        "max_width_error_px": 0.0696
+      },
+      "horizontal": {
+        "count": 9,
+        "max_center_error_px": 0.0749,
+        "max_width_error_px": 0.2557
+      }
+    },
+    "400": {
+      "browser_paper_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "vertical": {
+        "count": 0,
+        "max_center_error_px": 0,
+        "max_width_error_px": 0
+      },
+      "horizontal": {
+        "count": 12,
+        "max_center_error_px": 0.0474,
+        "max_width_error_px": 0.1134
+      }
+    }
+  },
+  "reopened_native_paper": {
+    "browser_paper_crop": [
+      156,
+      182,
+      844,
+      698
+    ],
+    "vertical": {
+      "count": 13,
+      "max_center_error_px": 0.0384,
+      "max_width_error_px": 0.0726
+    },
+    "horizontal": {
+      "count": 9,
+      "max_center_error_px": 0.1213,
+      "max_width_error_px": 0.0726
+    }
+  },
+  "edited_paper": {
+    "browser_paper_crop": [
+      177,
+      214,
+      823,
+      698
+    ],
+    "vertical": {
+      "count": 0,
+      "max_center_error_px": 0,
+      "max_width_error_px": 0
+    },
+    "horizontal": {
+      "count": 16,
+      "max_center_error_px": 0.1517,
+      "max_width_error_px": 0.0813
+    }
+  },
+  "reopened_web_edit": {
+    "browser_paper_crop": [
+      156,
+      182,
+      844,
+      698
+    ],
+    "vertical": {
+      "count": 0,
+      "max_center_error_px": 0,
+      "max_width_error_px": 0
+    },
+    "horizontal": {
+      "count": 16,
+      "max_center_error_px": 0.1212,
+      "max_width_error_px": 0.0715
+    }
+  },
+  "last_replay_frame": {
+    "browser_paper_crop": [
+      177,
+      214,
+      823,
+      698
+    ],
+    "vertical": {
+      "count": 0,
+      "max_center_error_px": 0,
+      "max_width_error_px": 0
+    },
+    "horizontal": {
+      "count": 16,
+      "max_center_error_px": 0.1517,
+      "max_width_error_px": 0.0813
+    }
+  },
+  "saved_png": {
+    "browser_paper_crop": null,
+    "vertical": {
+      "count": 0,
+      "max_center_error_px": 0,
+      "max_width_error_px": 0
+    },
+    "horizontal": {
+      "count": 15,
+      "max_center_error_px": 0.0,
+      "max_width_error_px": 0.0146
+    }
+  },
+  "cloud_source": {
+    "duration": 1263,
+    "color": -330532,
+    "lines": {
+      "id": 2,
+      "lineColor": -13532299,
+      "lineSpace": 40.0,
+      "lineType": 1,
+      "lineWidth": 3.0
+    },
+    "commands": 9,
+    "strokes": 2
+  },
+  "cloud_edited": {
+    "duration": 1263,
+    "color": -920580,
+    "lines": {
+      "id": 2,
+      "lineColor": -8829024,
+      "lineSpace": 24.0,
+      "lineType": 0,
+      "lineWidth": 3.0
+    },
+    "commands": 10,
+    "strokes": 2
+  }
+}

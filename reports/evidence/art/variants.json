@@ -1,0 +1,44 @@
+[
+  {
+    "app": "错题本",
+    "format": "simple",
+    "status": 0,
+    "result": "SimpleBoard paths=2"
+  },
+  {
+    "app": "错题本",
+    "format": "sketch",
+    "status": 0,
+    "result": "Sketch actions=6 touch records=2"
+  },
+  {
+    "app": "优课畅学",
+    "format": "sketch",
+    "status": 0,
+    "result": "Sketch actions=6 touch records=2"
+  },
+  {
+    "app": "新测评",
+    "format": "simple",
+    "status": 0,
+    "result": "SimpleBoard paths=2"
+  },
+  {
+    "app": "新测评",
+    "format": "sketch",
+    "status": 0,
+    "result": "Sketch actions=6 touch records=2"
+  },
+  {
+    "app": "随身答",
+    "format": "sketch",
+    "status": 0,
+    "result": "Sketch actions=6 touch records=2"
+  },
+  {
+    "app": "中育云笔记",
+    "format": "sketch",
+    "status": 1,
+    "result": "java.lang.NoSuchMethodError: No virtual method makeExtensionsImmutable()V in class Lcom/zykj/sketch/EzyDrawBoard$DrawBoard; or its super classes (declaration of 'com.zykj.sketch.EzyDrawBoard$DrawBoard' appears in /data/local/tmp/zyboard/app4.apk!classes6.dex)"
+  }
+]

@@ -1,0 +1,1 @@
+Native ZIP preserved byte for byte. Directory chooser, edit, undo, redo and ZIP reopen passed. 18 original files preserved; 2 updated; 3 added.

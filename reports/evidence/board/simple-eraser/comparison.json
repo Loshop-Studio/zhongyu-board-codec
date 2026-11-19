@@ -1,0 +1,88 @@
+{
+  "original_cases_per_app": 17,
+  "native_apps_match_all_cases": true,
+  "input_sha256": "f9eedf3b85fa7bba071ccddb8185073ab245eda1f6d1b5dba17c286b9bdaf0d9",
+  "web_sha256": "051e89101cd56aaf75798d1dfe43d7d91068b28b08b11d05aab84c65c474a302",
+  "browser": {
+    "viewport": {
+      "width": 1000,
+      "height": 750
+    },
+    "paper": [
+      146,
+      166,
+      854,
+      698
+    ],
+    "nativePage": [
+      320,
+      240
+    ],
+    "contacts": [
+      [
+        160,
+        48
+      ],
+      [
+        160,
+        60
+      ],
+      [
+        40,
+        175
+      ]
+    ],
+    "counts": [
+      7,
+      6,
+      4,
+      7,
+      4,
+      4
+    ],
+    "undoRestoredInput": true,
+    "missPreservedInput": true,
+    "redoRestoredOutput": true,
+    "touchCancelKeptHit": true,
+    "touchUndoRestoredInput": true
+  },
+  "readback": [
+    {
+      "app": "错题本",
+      "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+      "surviving_paths": 4,
+      "saved_bytes": 164,
+      "readback_bitmap_matches_native_drag": true
+    },
+    {
+      "app": "新测评",
+      "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+      "surviving_paths": 4,
+      "saved_bytes": 164,
+      "readback_bitmap_matches_native_drag": true
+    }
+  ],
+  "cursor": {
+    "held_red_pixels": 24438,
+    "released_red_pixels": 0,
+    "held_bounds_relative_to_paper": [
+      266,
+      18,
+      442,
+      195
+    ]
+  },
+  "raster": {
+    "size": [
+      320,
+      240
+    ],
+    "threshold": "luma < 180",
+    "browser_filter": "BOX",
+    "native_ink": 1433,
+    "browser_ink": 1413,
+    "intersection": 1408,
+    "union": 1438,
+    "iou": 0.979138
+  }
+}

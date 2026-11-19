@@ -1,0 +1,2 @@
+Browser output /home/jdz/Documents/ChatGPT/zy-reverse/reports/evidence/board
+PNG and nested JPEG opened; drew third stroke, inserted another image at 128px bottom left, retained both same-name resources, undo, redo, ZIP export and reopen; standalone BIN to ZIP undo/redo; original 1.2 s recording played to its translucent snapshot.

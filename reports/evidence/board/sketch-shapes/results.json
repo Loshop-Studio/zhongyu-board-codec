@@ -1,0 +1,913 @@
+{
+  "input_sha256": {
+    "raw-v2": "36317bfe051d7bfebb497359d011912f318095df6298f81e4f29f36b5d6cd606",
+    "rect-v2": "70453d023d108f15f6a67e2f2084b148228ddb086a792d36e4780c77a3504bb2",
+    "web-v2": "a3dcb0f96063b4ad1b611225f2b7caa9cdfdd46050c2f37e766ae696b9f0ad31",
+    "raw-v3": "12c2c45f48afdd5122521f7d3cb754d4e20bcebe2256dbfa4527fd6a761db819",
+    "rect-v3": "41d7d5ca61c59dc0a71a3bb9422b390ebf127a63142af626017b64a600244c64",
+    "web-v3": "24ea460493c92dc2c54326a547eb42c1f135794268b14840eb3332e21aff4654",
+    "raw-v4": "76924184094159c49d31a66eef68c0c2e0925d325f90e06ed754181f8ee61812",
+    "rect-v4": "6ee6cd3b9f8059d306c84ffb551e41467a5167ac1db80c80a2c07888bb84a262",
+    "web-v4": "83aa3b9e4aa02859f41f57b48daae15ad366f0af77380ac8bf1e778053f5f8c7",
+    "raw-v5": "df3a92c0bade444b32468d3fbfbd3cf1dac09be28282892766db2bcc41d158ad",
+    "rect-v5": "6dca4dd7e91ae8fcd7c314de0dcafec70f7a0de0cb701b8ad93b86bc8596cf92",
+    "web-v5": "821d72dae18b2304f09fe0ec949af5584e960fa7a20de179294cc48f537daed6",
+    "jpeg-v1": "85fd5e66473a4ebdd334155357a1ac2af4ed7845f54fb667229a777d15f8f20b"
+  },
+  "apps": [
+    {
+      "app": "错题本",
+      "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+      "status": "opened",
+      "cases": {
+        "raw-v2": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v2": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v2": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v3": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v3": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v3": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v4": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v4": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v4": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v5": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v5": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v5": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        }
+      },
+      "jpeg_v1": {
+        "recorder_images": 1,
+        "editable_strokes": 0,
+        "rgb_sha256": "7e2b1772540aa8e92f1665cd1a33fdaa230ae66ff341ae2757932d46ec1ccc32"
+      }
+    },
+    {
+      "app": "优课畅学",
+      "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+      "status": "opened",
+      "cases": {
+        "raw-v2": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v2": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v2": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v3": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v3": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v3": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v4": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v4": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v4": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v5": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v5": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v5": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        }
+      },
+      "jpeg_v1": {
+        "recorder_images": 1,
+        "editable_strokes": 0,
+        "rgb_sha256": "7e2b1772540aa8e92f1665cd1a33fdaa230ae66ff341ae2757932d46ec1ccc32"
+      }
+    },
+    {
+      "app": "新测评",
+      "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+      "status": "opened",
+      "cases": {
+        "raw-v2": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v2": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v2": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v3": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v3": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v3": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v4": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v4": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v4": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v5": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v5": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v5": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        }
+      },
+      "jpeg_v1": {
+        "recorder_images": 1,
+        "editable_strokes": 0,
+        "rgb_sha256": "7e2b1772540aa8e92f1665cd1a33fdaa230ae66ff341ae2757932d46ec1ccc32"
+      }
+    },
+    {
+      "app": "随身答",
+      "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+      "status": "opened",
+      "cases": {
+        "raw-v2": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v2": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v2": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v3": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v3": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v3": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v4": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v4": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v4": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        },
+        "raw-v5": {
+          "recorder": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          },
+          "player": {
+            "path_lengths": [
+              2
+            ],
+            "rgb_sha256": "64198e090408fafb40da8f48aaacd33a86dac6ccdb2f4fe22c95607053e88ccd"
+          }
+        },
+        "rect-v5": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10
+            ],
+            "rgb_sha256": "a6bc7003de73d81717cb1a80fdc98186d05bb2386005580858fe072ece6b28c0"
+          }
+        },
+        "web-v5": {
+          "recorder": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          },
+          "player": {
+            "path_lengths": [
+              2,
+              10,
+              69
+            ],
+            "rgb_sha256": "325e204dd0fe8a9a793c3224b19c5f81adc18050f74edd0219bf88819adfa315"
+          }
+        }
+      },
+      "jpeg_v1": {
+        "recorder_images": 1,
+        "editable_strokes": 0,
+        "rgb_sha256": "7e2b1772540aa8e92f1665cd1a33fdaa230ae66ff341ae2757932d46ec1ccc32"
+      }
+    },
+    {
+      "app": "中育云笔记",
+      "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "status": "load_failed",
+      "cause": "java.lang.NoSuchMethodError: No virtual method makeExtensionsImmutable()V in class Lcom/zykj/sketch/EzyDrawBoard$DrawBoard; or its super classes (declaration of 'com.zykj.sketch.EzyDrawBoard$DrawBoard' appears in /data/user/0/local.zy.boardprobe/files/reader.apk!classes6.dex)"
+    }
+  ],
+  "pixels": {
+    "v2": {
+      "browser_crop": [
+        124,
+        134,
+        876,
+        698
+      ],
+      "native_dark": 4527,
+      "web_dark": 4153,
+      "same_pixel": 4115,
+      "native_within_one_pixel": 4527,
+      "web_within_one_pixel": 4153
+    },
+    "v3": {
+      "browser_crop": [
+        124,
+        134,
+        876,
+        698
+      ],
+      "native_dark": 4527,
+      "web_dark": 4153,
+      "same_pixel": 4115,
+      "native_within_one_pixel": 4527,
+      "web_within_one_pixel": 4153
+    },
+    "v4": {
+      "browser_crop": [
+        124,
+        134,
+        876,
+        698
+      ],
+      "native_dark": 4527,
+      "web_dark": 4153,
+      "same_pixel": 4115,
+      "native_within_one_pixel": 4527,
+      "web_within_one_pixel": 4153
+    },
+    "v5": {
+      "browser_crop": [
+        124,
+        134,
+        876,
+        698
+      ],
+      "native_dark": 4527,
+      "web_dark": 4153,
+      "same_pixel": 4115,
+      "native_within_one_pixel": 4527,
+      "web_within_one_pixel": 4153
+    },
+    "v1": {
+      "browser_crop": [
+        124,
+        134,
+        876,
+        698
+      ],
+      "native_dark": 4066,
+      "web_dark": 4532,
+      "same_pixel": 4052,
+      "native_within_one_pixel": 4066,
+      "web_within_one_pixel": 4532
+    }
+  },
+  "browser": {
+    "untouched_bytes_match": true,
+    "undo_equals_rectangle": true,
+    "redo_equals_export": true
+  }
+}

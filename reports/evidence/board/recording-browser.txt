@@ -1,0 +1,2 @@
+Browser output /home/jdz/Documents/ChatGPT/zy-reverse/reports/evidence/board
+{"durationMs":2000,"pausedFirstAt":0.400804,"decodedClips":[{"duration":1.2,"readyState":4,"ended":false},{"duration":0.8,"readyState":4,"ended":false}],"untouchedArchiveByteEqual":true,"editedStrokes":2}

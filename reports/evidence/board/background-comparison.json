@@ -1,0 +1,13 @@
+{
+  "image_size": [
+    640,
+    480
+  ],
+  "native_view_size": [
+    320,
+    240
+  ],
+  "background_sha256": "4105e6057725c988eb26e17a0ce3e13add9692306c3f0769c1a85d00f98ffe2d",
+  "original_member_names_preserved": true,
+  "webp_bytes_preserved": true
+}

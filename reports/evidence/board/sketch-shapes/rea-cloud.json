@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "中育云笔记.apk",
+    "digest": {
+      "sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/中育云笔记.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.sketch.core.ActionStrategyFactory",
+    "method": {
+      "name": "create",
+      "reported_signature": "create(com.zykj.sketch.EzyDrawBoard$ActionModeConfig$Mode): com.zykj.sketch.core.listener.IAction",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/zykj/sketch/EzyDrawBoard$ActionModeConfig$Mode;)Lcom/zykj/sketch/core/listener/IAction;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final IAction create(EzyDrawBoard.ActionModeConfig.Mode mode) {\n        u.g(mode, \"mode\");\n        switch (WhenMappings.$EnumSwitchMapping$0[mode.ordinal()]) {\n            case 1:\n                this.action = new SelectAction(this.control);\n                this.tempGraph = null;\n                break;\n            case 2:\n                if (!(this.action instanceof WritingAction)) {\n                    if (this.tempGraph == null) {\n                        this.tempGraph = new WritingGroupGraph(this.control);\n                    }\n                    WritingGroupGraph writingGroupGraph = this.tempGraph;\n                    if (writingGroupGraph != null) {\n                        this.action = new WritingAction(this.control, writingGroupGraph);\n                    }\n                }\n                break;\n            case 3:\n                if (!(this.action instanceof WritingAndMoveAction)) {\n                    if (this.tempGraph == null) {\n                        this.tempGraph = new WritingGroupGraph(this.control);\n                    }\n                    WritingGroupGraph writingGroupGraph2 = this.tempGraph;\n                    if (writingGroupGraph2 != null) {\n                        this.action = new WritingAndMoveAction(this.control, writingGroupGraph2);\n                    }\n                }\n                break;\n            case 4:\n                if (!(this.action instanceof WritingAndMoveVerticalAction)) {\n                    if (this.tempGraph == null) {\n                        this.tempGraph = new WritingGroupGraph(this.control);\n                    }\n                    WritingGroupGraph writingGroupGraph3 = this.tempGraph;\n                    if (writingGroupGraph3 != null) {\n                        this.action = new WritingAndMoveVerticalAction(this.control, writingGroupGraph3);\n                    }\n                }\n                break;\n            case 5:\n                this.action = new EraseViewAction(this.control);\n                this.tempGraph = null;\n                break;\n            case 6:\n                this.action = new EraseWritingAction(this.control);\n                break;\n            case 7:\n                this.action = null;\n                this.tempGraph = null;\n                break;\n            default:\n                this.action = null;\n                this.tempGraph = null;\n                break;\n        }\n        return this.action;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_8e76dfd050d48286821737b0ff92fb59b95d7b6f3490c0ed2335c99010eb1b22"
+}

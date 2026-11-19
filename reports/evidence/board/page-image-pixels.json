@@ -1,0 +1,56 @@
+{
+  "web_paper_crop": [
+    124,
+    134,
+    876,
+    698
+  ],
+  "native_canvas": [
+    800,
+    600
+  ],
+  "regions": {
+    "dragged_image": {
+      "native_bounds": [
+        494,
+        152,
+        651,
+        309
+      ],
+      "web_bounds": [
+        494,
+        152,
+        651,
+        310
+      ],
+      "native_pixels": 24649,
+      "web_pixels": 24806,
+      "iou": 0.993671
+    }
+  },
+  "web_to_canvas_resampling": "nearest",
+  "exact_rgb_pixels": 53303,
+  "compared_rgb_pixels": 53460,
+  "original_tile_colours": [
+    {
+      "rgb": [
+        48,
+        118,
+        173
+      ],
+      "native_samples": 12325,
+      "web_within_8_per_channel": 12325,
+      "agreement": 1.0
+    },
+    {
+      "rgb": [
+        181,
+        220,
+        239
+      ],
+      "native_samples": 12324,
+      "web_within_8_per_channel": 12324,
+      "agreement": 1.0
+    }
+  ]
+}

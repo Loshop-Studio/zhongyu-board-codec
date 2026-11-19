@@ -1,0 +1,205 @@
+{
+  "input_sha256": "aa4cc5c27e746ee4ed40d6141a8a4ea14bd2ef9a8828edc4da5e2eea7c2ec645",
+  "apps": [
+    {
+      "app": "错题本",
+      "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+      "symbols": {
+        "control": "com.zykj.blackboard.core.canvas.control.GraphControl",
+        "controlInit": "init(Lcom/zykj/blackboard/core/graph/IGraph;)V",
+        "draw": "isDraw(Z)V",
+        "snapshot": "snapshot()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "graphUtils": "com.zykj.blackboard.utils.GraphUtils",
+        "buildGraph": "buildGraph(Lcom/zykj/blackboard/core/loader/SourceLoader;Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;)Lcom/zykj/blackboard/core/graph/Graph;",
+        "factory": "com.zykj.blackboard.core.execute.version6.CommandExecuteFactory6",
+        "execute": "executeCommand(ZLcom/zykj/board/EzyCommand$CommandSource$CommandInfo;J)Lcom/zykj/blackboard/core/execute/PlayThread;",
+        "loader": "com.zykj.blackboard.core.loader.CacheSourceLoader",
+        "loadPath": "initPath(Ljava/lang/String;)V",
+        "appUtils": "com.blankj.utilcode.util.c",
+        "appInit": "i(Landroid/app/Application;)V",
+        "pageGraph": "getGraphSnapshot()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "commands": "getCommandInfoList()Ljava/util/List;"
+      },
+      "decoded_snapshot_sha256": [
+        "b185d6707e06a6a347250cc23f5804018b91ad250f4533d958901d073652de0f",
+        "bd244075bf768a137720722705e0c58aa3ae7d192ba4dc1632ae98440a01edda",
+        "a396146ccb937803101ba41745dc2a9128e1cc2ccf3e4fc2c8d6f8ad8d0e6da2",
+        "b1599d910e63196953a83c3033e7c527d019dc6cdd983c5abe0967cf99cfc1ed",
+        "82d1841fd4634614157e2c97d4d6365eefa97f81eb791d6a729ac06ba66e8bc5",
+        "186da1dec91f01d050f9a415c29cb0b9b0c8b1526a422688801fec37843f6dd5",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728"
+      ],
+      "same_as_mistake": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "优课畅学",
+      "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+      "symbols": {
+        "control": "com.zykj.blackboard.core.canvas.control.GraphControl",
+        "controlInit": "init(Lcom/zykj/blackboard/core/graph/IGraph;)V",
+        "draw": "isDraw(Z)V",
+        "snapshot": "snapshot()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "graphUtils": "com.zykj.blackboard.utils.GraphUtils",
+        "buildGraph": "buildGraph(Lcom/zykj/blackboard/core/loader/SourceLoader;Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;)Lcom/zykj/blackboard/core/graph/Graph;",
+        "factory": "com.zykj.blackboard.core.execute.version6.CommandExecuteFactory6",
+        "execute": "executeCommand(ZLcom/zykj/board/EzyCommand$CommandSource$CommandInfo;J)Lcom/zykj/blackboard/core/execute/PlayThread;",
+        "loader": "com.zykj.blackboard.core.loader.CacheSourceLoader",
+        "loadPath": "initPath(Ljava/lang/String;)V",
+        "appUtils": "com.blankj.utilcode.util.h0",
+        "appInit": "b(Landroid/app/Application;)V",
+        "pageGraph": "i()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "commands": "e()Ljava/util/List;"
+      },
+      "decoded_snapshot_sha256": [
+        "b185d6707e06a6a347250cc23f5804018b91ad250f4533d958901d073652de0f",
+        "bd244075bf768a137720722705e0c58aa3ae7d192ba4dc1632ae98440a01edda",
+        "a396146ccb937803101ba41745dc2a9128e1cc2ccf3e4fc2c8d6f8ad8d0e6da2",
+        "b1599d910e63196953a83c3033e7c527d019dc6cdd983c5abe0967cf99cfc1ed",
+        "82d1841fd4634614157e2c97d4d6365eefa97f81eb791d6a729ac06ba66e8bc5",
+        "186da1dec91f01d050f9a415c29cb0b9b0c8b1526a422688801fec37843f6dd5",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728"
+      ],
+      "same_as_mistake": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "新测评",
+      "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+      "symbols": {
+        "control": "k4.b",
+        "controlInit": "p(Lq4/c;)V",
+        "draw": "i(Z)V",
+        "snapshot": "U()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "graphUtils": "e5.k",
+        "buildGraph": "a(Lv4/d;Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;)Lq4/a;",
+        "factory": "p4.c",
+        "execute": "c(ZLcom/zykj/board/EzyCommand$CommandSource$CommandInfo;J)Lo4/e;",
+        "loader": "v4.a",
+        "loadPath": "g(Ljava/lang/String;)V",
+        "appUtils": "com.blankj.utilcode.util.Utils",
+        "appInit": "init(Landroid/app/Application;)V",
+        "pageGraph": "r()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "commands": "m()Ljava/util/List;"
+      },
+      "decoded_snapshot_sha256": [
+        "b185d6707e06a6a347250cc23f5804018b91ad250f4533d958901d073652de0f",
+        "bd244075bf768a137720722705e0c58aa3ae7d192ba4dc1632ae98440a01edda",
+        "a396146ccb937803101ba41745dc2a9128e1cc2ccf3e4fc2c8d6f8ad8d0e6da2",
+        "b1599d910e63196953a83c3033e7c527d019dc6cdd983c5abe0967cf99cfc1ed",
+        "82d1841fd4634614157e2c97d4d6365eefa97f81eb791d6a729ac06ba66e8bc5",
+        "186da1dec91f01d050f9a415c29cb0b9b0c8b1526a422688801fec37843f6dd5",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728"
+      ],
+      "same_as_mistake": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "随身答",
+      "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+      "symbols": {
+        "control": "a5.b",
+        "controlInit": "x(Lg5/c;)V",
+        "draw": "j(Z)V",
+        "snapshot": "W()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "graphUtils": "u5.l",
+        "buildGraph": "a(Ll5/e;Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;)Lg5/a;",
+        "factory": "f5.c",
+        "execute": "c(ZLcom/zykj/board/EzyCommand$CommandSource$CommandInfo;J)Le5/e;",
+        "loader": "l5.a",
+        "loadPath": "g(Ljava/lang/String;)V",
+        "appUtils": "com.blankj.utilcode.util.Utils",
+        "appInit": "init(Landroid/app/Application;)V",
+        "pageGraph": "u()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "commands": "n()Ljava/util/List;"
+      },
+      "decoded_snapshot_sha256": [
+        "b185d6707e06a6a347250cc23f5804018b91ad250f4533d958901d073652de0f",
+        "bd244075bf768a137720722705e0c58aa3ae7d192ba4dc1632ae98440a01edda",
+        "a396146ccb937803101ba41745dc2a9128e1cc2ccf3e4fc2c8d6f8ad8d0e6da2",
+        "b1599d910e63196953a83c3033e7c527d019dc6cdd983c5abe0967cf99cfc1ed",
+        "82d1841fd4634614157e2c97d4d6365eefa97f81eb791d6a729ac06ba66e8bc5",
+        "186da1dec91f01d050f9a415c29cb0b9b0c8b1526a422688801fec37843f6dd5",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728"
+      ],
+      "same_as_mistake": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "app": "中育云笔记",
+      "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "symbols": {
+        "control": "v9.b",
+        "controlInit": "E(Lba/c;)V",
+        "draw": "l(Z)V",
+        "snapshot": "Y()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "graphUtils": "na.l",
+        "buildGraph": "a(Lga/d;Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;)Lba/a;",
+        "factory": "aa.c",
+        "execute": "c(ZLcom/zykj/board/EzyCommand$CommandSource$CommandInfo;J)Lz9/e;",
+        "loader": "ga.a",
+        "loadPath": "g(Ljava/lang/String;)V",
+        "appUtils": "com.blankj.utilcode.util.Utils",
+        "appInit": "init(Landroid/app/Application;)V",
+        "pageGraph": "m()Lcom/zykj/board/EzyPageSnapshot$PageSnapshot$GraphSnapshot;",
+        "commands": "f()Ljava/util/List;"
+      },
+      "decoded_snapshot_sha256": [
+        "b185d6707e06a6a347250cc23f5804018b91ad250f4533d958901d073652de0f",
+        "bd244075bf768a137720722705e0c58aa3ae7d192ba4dc1632ae98440a01edda",
+        "a396146ccb937803101ba41745dc2a9128e1cc2ccf3e4fc2c8d6f8ad8d0e6da2",
+        "b1599d910e63196953a83c3033e7c527d019dc6cdd983c5abe0967cf99cfc1ed",
+        "82d1841fd4634614157e2c97d4d6365eefa97f81eb791d6a729ac06ba66e8bc5",
+        "186da1dec91f01d050f9a415c29cb0b9b0c8b1526a422688801fec37843f6dd5",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728",
+        "37176ecfd285521bb98b8075488de4027249bb3c43ad7409feb7e0d9f582f728"
+      ],
+      "same_as_mistake": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}

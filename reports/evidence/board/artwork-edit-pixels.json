@@ -1,0 +1,65 @@
+{
+  "web_paper_crop": [
+    124,
+    134,
+    876,
+    698
+  ],
+  "native_canvas": [
+    800,
+    600
+  ],
+  "regions": {
+    "title": {
+      "native_bounds": [
+        75,
+        58,
+        215,
+        85
+      ],
+      "web_bounds": [
+        75,
+        58,
+        215,
+        85
+      ],
+      "native_pixels": 1278,
+      "web_pixels": 1269,
+      "iou": 0.886667
+    },
+    "oval": {
+      "native_bounds": [
+        46,
+        146,
+        222,
+        236
+      ],
+      "web_bounds": [
+        46,
+        146,
+        222,
+        236
+      ],
+      "native_pixels": 3017,
+      "web_pixels": 3000,
+      "iou": 0.963132
+    },
+    "triangle": {
+      "native_bounds": [
+        246,
+        147,
+        360,
+        226
+      ],
+      "web_bounds": [
+        246,
+        147,
+        360,
+        226
+      ],
+      "native_pixels": 1190,
+      "web_pixels": 1215,
+      "iou": 0.969697
+    }
+  }
+}

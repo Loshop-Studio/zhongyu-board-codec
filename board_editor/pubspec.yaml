@@ -1,0 +1,33 @@
+name: zy_board_editor
+description: Local editor for Android board protobuf files.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  archive: ^4.5.2
+  crypto: ^3.0.7
+  protobuf: ^6.1.0
+  fixnum: ^1.1.1
+  web: ^1.1.1
+  image: ^4.12.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Board Sans
+      fonts:
+        - asset: assets/fonts/BoardSans.otf
+    - family: Board Android
+      fonts:
+        - asset: assets/fonts/BoardRoboto.ttf
+    - family: Board Document
+      fonts:
+        - asset: assets/fonts/BoardDocument.otf
+  assets:
+    - assets/fonts/OFL.txt
+    - assets/fonts/Roboto-LICENSE.txt

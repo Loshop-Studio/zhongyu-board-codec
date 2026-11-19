@@ -1,0 +1,302 @@
+[
+  {
+    "app": "错题本",
+    "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+    "original_parser_results": {
+      "header": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 8
+      },
+      "pages": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 6
+      },
+      "router": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 431
+      },
+      "snapshot": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 355
+      },
+      "touch": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 561
+      },
+      "commands": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 86
+      },
+      "text": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 47
+      },
+      "geometry": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 70
+      },
+      "file": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 17
+      }
+    }
+  },
+  {
+    "app": "优课畅学",
+    "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+    "original_parser_results": {
+      "header": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 8
+      },
+      "pages": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 6
+      },
+      "router": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 431
+      },
+      "snapshot": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 355
+      },
+      "touch": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 561
+      },
+      "commands": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 86
+      },
+      "text": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 47
+      },
+      "geometry": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 70
+      },
+      "file": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 17
+      }
+    }
+  },
+  {
+    "app": "新测评",
+    "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+    "original_parser_results": {
+      "header": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 8
+      },
+      "pages": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 6
+      },
+      "router": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 431
+      },
+      "snapshot": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 355
+      },
+      "touch": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 561
+      },
+      "commands": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 86
+      },
+      "text": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 47
+      },
+      "geometry": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 70
+      },
+      "file": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 17
+      }
+    }
+  },
+  {
+    "app": "随身答",
+    "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+    "original_parser_results": {
+      "header": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 8
+      },
+      "pages": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 6
+      },
+      "router": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 431
+      },
+      "snapshot": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 355
+      },
+      "touch": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 561
+      },
+      "commands": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 86
+      },
+      "text": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 47
+      },
+      "geometry": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 70
+      },
+      "file": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 17
+      }
+    }
+  },
+  {
+    "app": "中育云笔记",
+    "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+    "original_parser_results": {
+      "header": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 8
+      },
+      "pages": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 6
+      },
+      "router": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 431
+      },
+      "snapshot": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 355
+      },
+      "touch": {
+        "class_read": true,
+        "equal_payload": false,
+        "equal_decoded_fields": true,
+        "bytes": 561
+      },
+      "commands": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 86
+      },
+      "text": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 47
+      },
+      "geometry": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 70
+      },
+      "file": {
+        "class_read": true,
+        "equal_payload": true,
+        "equal_decoded_fields": true,
+        "bytes": 17
+      }
+    }
+  }
+]

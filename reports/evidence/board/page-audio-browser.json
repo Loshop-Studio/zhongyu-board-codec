@@ -1,0 +1,29 @@
+{
+  "pageDurationMs": 4100,
+  "appendedMs": 1200,
+  "gapMs": 100,
+  "reopened": true,
+  "splitSecondShardSeek": true,
+  "untouchedAndUndoByteEqual": true,
+  "secondPageHasNoTrack": true,
+  "decoded": [
+    {
+      "seconds": 1.2,
+      "offset": 0.201593,
+      "paused": true
+    },
+    {
+      "seconds": 0.8,
+      "offset": 0.43127,
+      "paused": true
+    },
+    {
+      "seconds": 1.2,
+      "offset": 0.215972,
+      "paused": true
+    }
+  ],
+  "original_zip_sha256": "b3916d000a1a86e85f56ce24b1a47b9b6ebb8a035968b7a804513c684eecc32a",
+  "normal_zip_sha256": "5dd0b0917da5ed8a7e4512d2bdbac588416e19e7c7dd67b1cf15ebfe7a9394d3",
+  "portable_zip_sha256": "818fec7a208c9c887dbb1acd2b4161585af8984c7b7533703b5a805254139187"
+}

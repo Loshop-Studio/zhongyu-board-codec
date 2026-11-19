@@ -1,0 +1,9 @@
+INSTRUMENTATION_RESULT: illustration=native transform frames=12
+INSTRUMENTATION_RESULT: image-edit=native transform frames=32
+INSTRUMENTATION_RESULT: image-recording=native transform frames=15
+INSTRUMENTATION_RESULT: image-v1=com.zykj.sketch.exception.LowVersionException: version=1 supportLastVersion=2
+INSTRUMENTATION_RESULT: image-v2=native transform frames=1
+INSTRUMENTATION_RESULT: image-v3=native transform frames=1
+INSTRUMENTATION_RESULT: image-v4=native transform frames=1
+INSTRUMENTATION_RESULT: image-v5=native transform frames=1
+INSTRUMENTATION_CODE: -1

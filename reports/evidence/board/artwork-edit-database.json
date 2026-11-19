@@ -1,0 +1,50 @@
+{
+  "input": "f8fca95d547d5145d79e3c149688296d780561ccf01b0596f3864bf1f8dc28ee",
+  "database": "c6dae50ad054eaabf1a63714e2cf720099bbfabb9be3e2a57eaa530501fe95eb",
+  "original_resources": {
+    "lesson/p1/1_text.bin": "08b54b24b9df805cbe3186d1572cf25a4d0c8d51706899ad60621f48ca667397",
+    "lesson/p1/2_geometry.bin": "1c05d6450d99fc5f69c806cf3400925d64f36aa0d6047f03d1f803d9b916ea25",
+    "lesson/p1/3_file.bin": "5553354e8b243932437cb48c763f613dba013eba389ae33f3ab2f10724d4c9a8",
+    "lesson/res/image/tiles.png": "68ab53fef976f3e55f4166ae6a297a292f62fb570fea1c7487784c81f1342f0a"
+  },
+  "entity_rows": {
+    "FileRecordEntity": 1,
+    "TextRecordEntity": 1,
+    "TouchEventEntity": 1,
+    "CommandInfoEntity": 6,
+    "HeaderEntity": 1,
+    "FileInfoEntity": 1,
+    "RecordEntity": 1,
+    "MatrixInfoEntity": 2,
+    "TouchRecordEntity": 1,
+    "TextInfoEntity": 1,
+    "BlackBoardEntity": 1,
+    "TouchInfoEntity": 12,
+    "PageEntity": 1,
+    "MatrixEventEntity": 2,
+    "CommandRecordEntity": 4,
+    "MatrixRecordEntity": 2,
+    "AuthorEntity": 1,
+    "MoveConfigEntity": 1,
+    "GeometryInfoEntity": 2,
+    "GeometryRecordEntity": 1,
+    "GeometryPointFEntity": 3,
+    "BackgroundLineConfigEntity": 2
+  },
+  "command_enums": [
+    4,
+    3,
+    4,
+    12,
+    3,
+    1
+  ],
+  "matched_payload_sha256": [
+    "6f0c0b15f191c716177c86102ff42a208ccd4a3c50feaf78213249592fb3f788",
+    "34b41a36f82c49e6b659bac6b4042c394187e4ac47ca37bae0252c382c7851c1",
+    "c30d434d16f997891cec668b1c171f2f3e574f50955c76453ee878dc29134069",
+    "8598ef5d81a082dd71169505632a58bc84d5132e8420cda6eae6d5fa44c1863a",
+    "c0eab9d506062e7a42f49d9d1cc252e80debea692f6e8376b1370bf5ed50520e",
+    "70a83984e37e9b276f1f46538c804abf9373e158dbe8fd2922dfbac6546cb497"
+  ]
+}

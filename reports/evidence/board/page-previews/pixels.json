@@ -1,0 +1,196 @@
+{
+  "normal": {
+    "source_zip_sha256": "147fab94056910bbb473bc560c5cb02a3d5daf662fd915cf7076767d727ab7c6",
+    "edited_zip_sha256": "133e7854fb5dd79dac0175f72c52204de08bbb7914508bbf318fdde5caa9806a",
+    "original_png_sha256": "d8c5761da442246dbb38f1e0e96561914ec1553f66b356488f744c61d4d09659",
+    "edited_png_sha256": "75520014d2654f442879ac9d1f0d106c4891417c87fa793e58f4e43f62c079fd",
+    "page_member": "292d1a05-e9bf-4740-8cac-bf3b5371dc2b/screenshot.png",
+    "png_mode": "RGBA",
+    "source_dimensions": [
+      641,
+      481
+    ],
+    "dimensions": [
+      641,
+      481
+    ],
+    "original_corner_rgba": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "reopened_corner_rgba": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "original_list_decoded_identical_rgba": true,
+    "original_renderer_png_sha256": "074bbc4a55a2a02650cc375a152580d73042274d8816c1b0eeca7b79b9f2f1ae",
+    "strokes": {
+      "green": {
+        "iou": 0.978587,
+        "union": 1868,
+        "intersection": 1828,
+        "max_bounds_difference_px": 0
+      },
+      "red": {
+        "iou": 0.968775,
+        "union": 1249,
+        "intersection": 1210,
+        "max_bounds_difference_px": 1
+      },
+      "added": {
+        "iou": 0.935085,
+        "union": 647,
+        "intersection": 605,
+        "max_bounds_difference_px": 0
+      }
+    },
+    "undo_original_zip_identical": true,
+    "redo_and_cloud_all_members_identical": true,
+    "second_page_blank": true,
+    "first_preview_preserved_on_add": true
+  },
+  "content": {
+    "source_zip_sha256": "5ad665cbfa00d4c7f754c919e4e0e1b58a685bf13e0702f7e33bf1317643ec19",
+    "edited_zip_sha256": "5668223b84fc07a2970c38019b950012c4235a27fb24284c7e7b166c3b079e82",
+    "original_png_sha256": "a17565fe8ca135140e46492271c01302ddc3f74c46dc6eb52f86123239acc5e3",
+    "edited_png_sha256": "403b9c87528c59793bddc4b8656c64051d6ab4f57aad967113783263abd99f80",
+    "page_member": "31fb967d-42bd-4693-b2dd-cc2f3d9c2142/screenshot.png",
+    "png_mode": "RGB",
+    "source_dimensions": [
+      640,
+      480
+    ],
+    "dimensions": [
+      640,
+      480
+    ],
+    "original_corner_rgba": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "reopened_corner_rgba": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "original_list_decoded_identical_rgba": true,
+    "original_renderer_png_sha256": "5efc254a11c5134b89cd7627a7677c952f14c04a151e3dfe1e2765ed69a07e3b",
+    "strokes": {
+      "green": {
+        "iou": 0.97591,
+        "union": 1868,
+        "intersection": 1823,
+        "max_bounds_difference_px": 1
+      },
+      "red": {
+        "iou": 0.971108,
+        "union": 1246,
+        "intersection": 1210,
+        "max_bounds_difference_px": 1
+      },
+      "added": {
+        "iou": 0.931994,
+        "union": 647,
+        "intersection": 603,
+        "max_bounds_difference_px": 0
+      }
+    },
+    "undo_original_zip_identical": true,
+    "redo_and_cloud_all_members_identical": true,
+    "second_page_blank": true,
+    "first_preview_preserved_on_add": true
+  },
+  "scroll": {
+    "source_zip_sha256": "a31b2bba8470ba13487c8ffad31bde97b0ddfa607b958ff0abf9150756ab5d5b",
+    "edited_zip_sha256": "f239b7677fbf0cab813c26d80b08653d90eac4dd5d576165a887125c159c9ab1",
+    "original_png_sha256": "36eb5671ce85a0396f2db575c5f7d1a1b4f96ef5aa8e9d5304405bd7957e00df",
+    "edited_png_sha256": "b75f532c960762e89028fc642082042a72860081eb68f39cd872653f120bd11d",
+    "page_member": "242e86bf-44d6-4666-b29f-df889b4429c6/screenshot.png",
+    "png_mode": "RGB",
+    "source_dimensions": [
+      1280,
+      837
+    ],
+    "dimensions": [
+      1280,
+      907
+    ],
+    "original_corner_rgba": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "reopened_corner_rgba": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "original_list_decoded_identical_rgba": true,
+    "original_renderer_png_sha256": "ed2d4ba84d9e42d5917e45530320386560b3f1cf1209b94811c4c90b92bf3d93",
+    "strokes": {
+      "green": {
+        "iou": 0.97591,
+        "union": 1868,
+        "intersection": 1823,
+        "max_bounds_difference_px": 1
+      },
+      "red": {
+        "iou": 0.971108,
+        "union": 1246,
+        "intersection": 1210,
+        "max_bounds_difference_px": 1
+      },
+      "added": {
+        "iou": 0.931994,
+        "union": 647,
+        "intersection": 603,
+        "max_bounds_difference_px": 0
+      }
+    },
+    "undo_original_zip_identical": true,
+    "redo_and_cloud_all_members_identical": true,
+    "second_page_blank": true,
+    "first_preview_preserved_on_add": true
+  },
+  "artwork": {
+    "title": {
+      "iou": 0.855742,
+      "union": 1428,
+      "intersection": 1222,
+      "max_bounds_difference_px": 1
+    },
+    "oval": {
+      "iou": 0.965234,
+      "union": 3164,
+      "intersection": 3054,
+      "max_bounds_difference_px": 0
+    },
+    "polygon": {
+      "iou": 0.976763,
+      "union": 1248,
+      "intersection": 1219,
+      "max_bounds_difference_px": 0
+    },
+    "rotated_image": {
+      "exact_rgb": 52671,
+      "compared": 53460,
+      "3076ad": [
+        12246,
+        12325
+      ],
+      "b5dcef": [
+        12246,
+        12324
+      ]
+    }
+  }
+}

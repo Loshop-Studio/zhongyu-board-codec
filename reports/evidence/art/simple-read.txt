@@ -1,0 +1,1 @@
+simple strokes=2 first points=3

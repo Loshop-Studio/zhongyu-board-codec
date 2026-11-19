@@ -1,0 +1,63 @@
+{
+  "input": "60b774b4e249724398d24f6185e985580579c2369277f720688114fa1f6356ab",
+  "database": "0163ab4111d94b652003085ef0ffa3903106d74bfc354da865ca95dd8fc218cc",
+  "original_resources": {
+    "lesson/p1/1_text.bin": "08b54b24b9df805cbe3186d1572cf25a4d0c8d51706899ad60621f48ca667397",
+    "lesson/p1/2_geometry.bin": "1c05d6450d99fc5f69c806cf3400925d64f36aa0d6047f03d1f803d9b916ea25",
+    "lesson/p1/3_file.bin": "5553354e8b243932437cb48c763f613dba013eba389ae33f3ab2f10724d4c9a8",
+    "lesson/res/image/tiles.png": "68ab53fef976f3e55f4166ae6a297a292f62fb570fea1c7487784c81f1342f0a"
+  },
+  "entity_rows": {
+    "FileRecordEntity": 1,
+    "TextRecordEntity": 1,
+    "CommandInfoEntity": 2,
+    "HeaderEntity": 1,
+    "FileInfoEntity": 1,
+    "RecordEntity": 1,
+    "MatrixInfoEntity": 2,
+    "TextInfoEntity": 1,
+    "BlackBoardEntity": 1,
+    "PageEntity": 1,
+    "MatrixEventEntity": 2,
+    "CommandRecordEntity": 2,
+    "MatrixRecordEntity": 2,
+    "AuthorEntity": 1,
+    "MoveConfigEntity": 1,
+    "GeometryInfoEntity": 2,
+    "GeometryRecordEntity": 1,
+    "GeometryPointFEntity": 3,
+    "BackgroundLineConfigEntity": 2
+  },
+  "command_enums": [
+    3,
+    3
+  ],
+  "matched_payload_sha256": [
+    "deb6eaee3a05f12cae50291ccd3a1d447c3629fb3ea7df99fb4f7b276c1ac90a",
+    "aed9b31289844f14fa367ce16edfd0e0e17d3b45c88778e56935e4d7d5885873"
+  ],
+  "native_matrix_values": [
+    {
+      "scaleX": 9.184850732644269e-17,
+      "skewX": -1.5,
+      "transX": 816.25,
+      "skewY": 1.5,
+      "scaleY": 9.184850732644269e-17,
+      "transY": -548.25,
+      "perSp0": 0.0,
+      "perSp1": 0.0,
+      "perSp2": 1.0
+    },
+    {
+      "scaleX": 1.0,
+      "skewX": 0.0,
+      "transX": 59.88719177246094,
+      "skewY": 0.0,
+      "scaleY": 1.0,
+      "transY": 40.00000762939453,
+      "perSp0": 0.0,
+      "perSp1": 0.0,
+      "perSp2": 1.0
+    }
+  ]
+}

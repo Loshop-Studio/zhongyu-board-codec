@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.sketch.core.record.RecordControl",
+    "method": {
+      "name": "loadData",
+      "reported_signature": "loadData(java.lang.String, r6.c, r6.c): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;Lr6/c;Lr6/c;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void loadData(@NotNull String path, @NotNull r6.c viewBack, @NotNull r6.c finish) throws HighVersionException, EmptyDataException, LowVersionException, IOException {\n        k.g(path, \"path\");\n        k.g(viewBack, \"viewBack\");\n        k.g(finish, \"finish\");\n        EzyDrawBoard.DrawBoard from = EzyDrawBoard.DrawBoard.parseFrom(new FileInputStream(new File(path, \"actions.bin\")));\n        if (!from.hasBoardHead()) {\n            finish.invoke(this.graphControl.getRootGraph());\n            throw new EmptyDataException(path);\n        }\n        EzyDrawBoard.BoardHead boardHead = from.getBoardHead();\n        if (boardHead != null) {\n            if (boardHead.getCreateDate() < 1546272000 || boardHead.getVersion() < 2) {\n                File file = new File(f.p(f.v(path), File.separator, thumbnailFileName));\n                if (!file.exists()) {\n                    finish.invoke(this.graphControl.getRootGraph());\n                    throw new EmptyDataException(path);\n                }\n                Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());\n                k.f(bitmap, \"bitmap\");\n                addAdapterImage$default(this, bitmap, this.viewGroup.getWidth(), this.viewGroup.getHeight(), 0, 23, (r6.c) null, (String) null, (r6.c) null, 224, (Object) null);\n                this.graphControl.forceRender();\n                finish.invoke(this.graphControl.getRootGraph());\n                return;\n            }\n            if (boardHead.getVersion() > 5) {\n                finish.invoke(this.graphControl.getRootGraph());\n                throw new HighVersionException(\"version=\" + boardHead.getVersion() + \" Maximum resolution version=5\");\n            }\n            this.sketchConfig.setSourcePath(path);\n            this.actionRecord.setHeader(boardHead);\n            this.graphControl.setCameraMatrix(this.viewGroup.getWidth(), this.viewGroup.getHeight(), boardHead.getWidth(), boardHead.getHeight());\n            this.graphControl.getCameraMatrix().invert(this.cameraInvertMatrix);\n            new Thread(new androidx.camera.core.processing.concurrent.c(boardHead, path, from, this, viewBack, finish, 1)).start();\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_c6c74836ca24f222f8eeef26f56caded650f27f305f740ec89675304d79af91f"
+}

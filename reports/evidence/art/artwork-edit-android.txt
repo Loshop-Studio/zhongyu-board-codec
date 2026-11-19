@@ -1,0 +1,6 @@
+INSTRUMENTATION_RESULT: persisted=PageEntity(id=1, dirName=p-local, isChange=true, commandFileName=1_command.bin, commandIndex=7) textId=1 content=本地画板样本
+INSTRUMENTATION_RESULT: reopenedEntityTypes=24
+INSTRUMENTATION_RESULT: webPageImport=PageEntity=1 CommandInfoEntity=6 TouchInfoEntity=12 TouchEventEntity=1 TextInfoEntity=1 GeometryInfoEntity=2 FileInfoEntity=1
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_RESULT: artwork=commands=[4, 3, 4, 12, 3, 1] text=Board 42 size=36 ARGB=FF164E91 at=(72,47); oval=168x82 STROKE 7 ARGB=FF794523; polygon=4 at=(248,144); native replay vs snapshot identical, paintedPixels=6182
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.blackboard.core.action.SeeAction",
+    "method": {
+      "name": "handleTranslation",
+      "reported_signature": "handleTranslation(com.zykj.board.EzyTouchEvent$TouchEvent): android.graphics.Matrix",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/zykj/board/EzyTouchEvent$TouchEvent;)Landroid/graphics/Matrix;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    private final Matrix handleTranslation(EzyTouchEvent$TouchEvent event) {\n        PointF renderPointF;\n        PointF pointF;\n        float fWidth;\n        Matrix matrix;\n        Matrix matrix2;\n        MoveActionConfig moveActionConfig;\n        MoveActionConfig moveActionConfig2;\n        MoveActionConfig moveActionConfig3;\n        int i = this.fingerMode;\n        if (i == 1) {\n            this.tempMatrix.reset();\n            renderPointF = getRenderPointF(event.getX(), event.getY());\n            pointF = this.firstPointF;\n        } else {\n            if (i != 2) {\n                return null;\n            }\n            this.tempMatrix.reset();\n            PointF renderPointF2 = getRenderPointF(event.getPointerCoords(0).getX(), event.getPointerCoords(0).getY());\n            PointF renderPointF3 = getRenderPointF(event.getPointerCoords(1).getX(), event.getPointerCoords(1).getY());\n            BoardConfig boardConfig = getBoardConfig();\n            if (boardConfig != null && (moveActionConfig3 = boardConfig.getMoveActionConfig()) != null && moveActionConfig3.getScale()) {\n                float fMax = Float.max(calculateDistance(renderPointF2, renderPointF3) / this.firstDistance, this.minScale);\n                Matrix matrix3 = this.tempMatrix;\n                PointF pointF2 = this.firstMiddlePointF;\n                matrix3.postScale(fMax, fMax, pointF2.x, pointF2.y);\n                initCalculateField(this.tempMatrix);\n            }\n            renderPointF = calculateMiddlePointF(renderPointF2, renderPointF3);\n            pointF = this.firstMiddlePointF;\n        }\n        BoardConfig boardConfig2 = getBoardConfig();\n        float f = 0.0f;\n        if (boardConfig2 == null || (moveActionConfig2 = boardConfig2.getMoveActionConfig()) == null || !moveActionConfig2.getHorizontalTranslate()) {\n            fWidth = 0.0f;\n        } else {\n            RectF rectF = this.limitRenderRectF;\n            fWidth = rectF.left;\n            float f7 = rectF.right;\n            if (fWidth > f7) {\n                IGraphControl graphControl = getGraphControl();\n                k.d(graphControl);\n                fWidth = ((graphControl.getPageRectF().width() - this.configLimitRectF.width()) / 2) - this.configLimitRectF.left;\n            } else {\n                float f8 = renderPointF.x - pointF.x;\n                if (f8 >= fWidth) {\n                    fWidth = f8 > f7 ? f7 : f8;\n                }\n            }\n            this.tempMatrix.postTranslate(fWidth, 0.0f);\n        }\n        BoardConfig boardConfig3 = getBoardConfig();\n        if (boardConfig3 != null && (moveActionConfig = boardConfig3.getMoveActionConfig()) != null && moveActionConfig.getVerticalTranslate()) {\n            RectF rectF2 = this.limitRenderRectF;\n            float fHeight = rectF2.top;\n            float f9 = rectF2.bottom;\n            if (fHeight > f9) {\n                IGraphControl graphControl2 = getGraphControl();\n                k.d(graphControl2);\n                fHeight = ((graphControl2.getPageRectF().height() - this.configLimitRectF.height()) / 2) - this.configLimitRectF.top;\n            } else {\n                float f10 = renderPointF.y - pointF.y;\n                if (f10 >= fHeight) {\n                    fHeight = f10 > f9 ? f9 : f10;\n                }\n            }\n            this.tempMatrix.postTranslate(0.0f, fHeight);\n            f = fHeight;\n        }\n        onAreaMove(fWidth, f);\n        Matrix matrix4 = new Matrix();\n        MatrixAdapter matrixAdapter = getMatrixAdapter();\n        if (matrixAdapter == null || (matrix = matrixAdapter.getScreenMatrix()) == null) {\n            matrix = new Matrix();\n        }\n        matrix4.postConcat(matrix);\n        matrix4.postConcat(this.tempMatrix);\n        MatrixAdapter matrixAdapter2 = getMatrixAdapter();\n        if (matrixAdapter2 == null || (matrix2 = matrixAdapter2.getScreenMatrix()) == null) {\n            matrix2 = new Matrix();\n        }\n        matrix4.postConcat(MatrixExtKt.invert(matrix2));\n        return matrix4;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_dcbc895e1b010399b1458336a72f1fab44c537fc69ce594d53bca8d9d91522a7"
+}

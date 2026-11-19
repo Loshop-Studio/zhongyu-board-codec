@@ -1,0 +1,1350 @@
+{
+  "input_sha256": "08946133b6734c65b1c826be78a78ca3ec0dae9dc0cb3a800d5a3dd94f6d2fd5",
+  "apps": [
+    {
+      "app": "错题本",
+      "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+      "scheduler": "com.zykj.blackboard.core.play.CommandThread",
+      "seek": "seekTo(J)V",
+      "states": [
+        {
+          "ms": 0,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 199,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 201,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 399,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 400,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 699,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 999,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1000,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1299,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1799,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1800,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1899,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1900,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2200,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2400,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2599,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 3100,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "app": "优课畅学",
+      "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+      "scheduler": "com.zykj.blackboard.core.play.CommandThread",
+      "seek": "seekTo(J)V",
+      "states": [
+        {
+          "ms": 0,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 199,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 201,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 399,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 400,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 699,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 999,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1000,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1299,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1799,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1800,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1899,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1900,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2200,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2400,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2599,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 3100,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "app": "新测评",
+      "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+      "scheduler": "w4.h",
+      "seek": "C(J)V",
+      "states": [
+        {
+          "ms": 0,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 199,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 201,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 399,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 400,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 699,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 999,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1000,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1299,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1799,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1800,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1899,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1900,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2200,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2400,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2599,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 3100,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "app": "随身答",
+      "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+      "scheduler": "m5.h",
+      "seek": "C(J)V",
+      "states": [
+        {
+          "ms": 0,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 199,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 201,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 399,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 400,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 699,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 999,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1000,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1299,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1799,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1800,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1899,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1900,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2200,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2400,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2599,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 3100,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "app": "中育云笔记",
+      "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "scheduler": "ha.h",
+      "seek": "C(J)V",
+      "states": [
+        {
+          "ms": 0,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 199,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 201,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 399,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 400,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 699,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            150,
+            100
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 999,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1000,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1299,
+          "graph_ids": [
+            "ink"
+          ],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1799,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1800,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1899,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "Before",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 1900,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2200,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2400,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2599,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 40,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 3100,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 700,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            220,
+            155
+          ]
+        },
+        {
+          "ms": 1300,
+          "graph_ids": [],
+          "text": "",
+          "ink_dx": 0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "ms": 2600,
+          "graph_ids": [
+            "ink",
+            "title"
+          ],
+          "text": "After",
+          "ink_dx": 80.0,
+          "active_path_end": [
+            -1,
+            -1
+          ]
+        }
+      ]
+    }
+  ]
+}

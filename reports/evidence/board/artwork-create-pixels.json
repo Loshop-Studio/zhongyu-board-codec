@@ -1,0 +1,99 @@
+{
+  "web_paper_crop": [
+    124,
+    134,
+    876,
+    698
+  ],
+  "native_canvas": [
+    800,
+    600
+  ],
+  "regions": {
+    "title": {
+      "native_bounds": [
+        42,
+        298,
+        150,
+        320
+      ],
+      "web_bounds": [
+        42,
+        299,
+        151,
+        319
+      ],
+      "native_pixels": 727,
+      "web_pixels": 699,
+      "iou": 0.689573
+    },
+    "oval": {
+      "native_bounds": [
+        63,
+        383,
+        157,
+        459
+      ],
+      "web_bounds": [
+        63,
+        383,
+        157,
+        459
+      ],
+      "native_pixels": 878,
+      "web_pixels": 893,
+      "iou": 0.948295
+    },
+    "rectangle": {
+      "native_bounds": [
+        233,
+        378,
+        342,
+        462
+      ],
+      "web_bounds": [
+        233,
+        378,
+        342,
+        462
+      ],
+      "native_pixels": 1474,
+      "web_pixels": 1473,
+      "iou": 0.999322
+    },
+    "triangle": {
+      "native_bounds": [
+        403,
+        373,
+        512,
+        465
+      ],
+      "web_bounds": [
+        403,
+        373,
+        512,
+        465
+      ],
+      "native_pixels": 1095,
+      "web_pixels": 1128,
+      "iou": 0.955145
+    },
+    "image": {
+      "native_bounds": [
+        590,
+        355,
+        690,
+        455
+      ],
+      "web_bounds": [
+        590,
+        355,
+        691,
+        456
+      ],
+      "native_pixels": 10000,
+      "web_pixels": 9957,
+      "iou": 0.986166
+    }
+  }
+}

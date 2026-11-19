@@ -1,0 +1,18 @@
+00:00 +0: loading /home/jdz/Documents/ChatGPT/zy-reverse/board_editor/test/board_file_test.dart
+00:00 +0: native simple sample, unknown fields and an empty draft
+00:00 +1: resolves ordered Blackboard text, geometry and images from page resources
+00:00 +2: Cloud Note copy uses page BINs and does not mutate the complete backup
+00:00 +3: Sketch picture bounds and stacking match every native recording callback
+00:00 +4: Sketch edit keeps both picture files and preserves their original action records
+00:00 +5: native WebP page has independent bitmap and view widths
+00:00 +6: Sketch playback uses the native two-segment clock and partial strokes
+00:00 +7: V5 transform replay and reverse seeking agree with all native graph coordinates
+00:00 +8: Chromium touch, zoom, draw and redo produce the same geometry in the original APK
+00:00 +9: Sketch V1 retains version and action wrapping after editing
+00:00 +10: Sketch V2 retains version and action wrapping after editing
+00:00 +11: Sketch V3 retains version and action wrapping after editing
+00:00 +12: Sketch V4 retains version and action wrapping after editing
+00:00 +13: Sketch V5 retains version and action wrapping after editing
+00:00 +14: V5 undo and redo restore the recorded snapshot, including an empty root
+00:00 +15: Blackboard preserves untouched archive bytes and reloads stroke data
+00:00 +16: All tests passed!

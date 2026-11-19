@@ -1,0 +1,125 @@
+[
+  {
+    "subject": {
+      "name": "错题本.apk",
+      "digest": {
+        "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+      },
+      "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "operation": "inspect_android_method",
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 2560
+      },
+      "class_name": "com.zykj.blackboard.core.data.SourceLoad",
+      "method": {
+        "name": "buildBackgroundLineConfigEntity",
+        "reported_signature": "buildBackgroundLineConfigEntity(com.zykj.board.EzyHeader$BackgroundLineConfig): com.zykj.blackboard.core.data.dao.BackgroundLineConfigEntity",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/zykj/board/EzyHeader$BackgroundLineConfig;)Lcom/zykj/blackboard/core/data/dao/BackgroundLineConfigEntity;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    private final BackgroundLineConfigEntity buildBackgroundLineConfigEntity(EzyHeader$BackgroundLineConfig backgroundLineConfig) {\n        int lineColor = backgroundLineConfig.getLineColor();\n        float lineSpace = backgroundLineConfig.getLineSpace();\n        EzyBackgroundLineTypeEnum$BackgroundLineTypeEnum lineType = backgroundLineConfig.getLineType();\n        k.f(lineType, \"backgroundLineConfig.lineType\");\n        return new BackgroundLineConfigEntity(0L, lineColor, lineSpace, lineType, 0.0f, 16, null);\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "evidence_id": "ev_9a742a88daa434ad9cb126c9364eed6b5c770a9850c1dc97cee3a530e647cb78"
+  },
+  {
+    "subject": {
+      "name": "错题本.apk",
+      "digest": {
+        "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+      },
+      "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "operation": "inspect_android_method",
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 2560
+      },
+      "class_name": "com.zykj.blackboard.core.data.SourceSave",
+      "method": {
+        "name": "buildBackgroundLineConfig",
+        "reported_signature": "buildBackgroundLineConfig(com.zykj.blackboard.core.data.dao.BackgroundLineConfigEntity): com.zykj.board.EzyHeader$BackgroundLineConfig",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/zykj/blackboard/core/data/dao/BackgroundLineConfigEntity;)Lcom/zykj/board/EzyHeader$BackgroundLineConfig;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    private final EzyHeader$BackgroundLineConfig buildBackgroundLineConfig(BackgroundLineConfigEntity backgroundLineConfig) {\n        r rVarNewBuilder = EzyHeader$BackgroundLineConfig.newBuilder();\n        rVarNewBuilder.f1154b = backgroundLineConfig.getLineColor();\n        rVarNewBuilder.f1153a |= 1;\n        rVarNewBuilder.onChanged();\n        rVarNewBuilder.c = backgroundLineConfig.getLineSpace();\n        rVarNewBuilder.f1153a |= 2;\n        rVarNewBuilder.onChanged();\n        EzyBackgroundLineTypeEnum$BackgroundLineTypeEnum lineType = backgroundLineConfig.getLineType();\n        lineType.getClass();\n        rVarNewBuilder.f1153a |= 4;\n        rVarNewBuilder.f1155d = lineType.getNumber();\n        rVarNewBuilder.onChanged();\n        return rVarNewBuilder.build();\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "evidence_id": "ev_e265e9a37757ef518295329d9ee58824b7f1c2335ab64687cebbeef9f903aef8"
+  },
+  {
+    "subject": {
+      "name": "错题本.apk",
+      "digest": {
+        "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+      },
+      "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "operation": "inspect_android_method",
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 2560
+      },
+      "class_name": "com.zykj.blackboard.core.edit.PageControl",
+      "method": {
+        "name": "setBackgroundColorWithLineConfig",
+        "reported_signature": "setBackgroundColorWithLineConfig(int, com.zykj.blackboard.bean.BackgroundLineConfig): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(ILcom/zykj/blackboard/bean/BackgroundLineConfig;)V"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    @Override // com.zykj.blackboard.core.edit.IPageControl\n    public void setBackgroundColorWithLineConfig(int backgroundColor, @NotNull BackgroundLineConfig backgroundLineConfig) throws ExecutionException, InterruptedException {\n        k.g(backgroundLineConfig, \"backgroundLineConfig\");\n        int backgroundColor2 = getGraphControl().getBackgroundColor();\n        BackgroundLineConfig backgroundLineConfig2 = getGraphControl().getBackgroundLineConfig();\n        if (backgroundColor2 != backgroundColor || !k.b(backgroundLineConfig2, backgroundLineConfig)) {\n            EventBus eventBus = EventBus.INSTANCE;\n            eventBus.post(EventKey.WRITE_NEW_GROUP);\n            eventBus.post(EventKey.WRITE_BEELINE_NEW_GROUP);\n        }\n        getGraphControl().updateBackgroundColor(backgroundColor);\n        getGraphControl().updateBackgroundLineConfig(backgroundLineConfig);\n        getGraphControl().reDrawFixView();\n        getRouterRecord().getCommandRecord().addConfigCommand(backgroundColor, backgroundColor, backgroundLineConfig2, backgroundLineConfig, System.currentTimeMillis());\n        HeaderEntity target = getPageEntity().getHeaderEntity().getTarget();\n        if (target != null) {\n            target.setLastBackgroundColor(backgroundColor);\n            ToOne<BackgroundLineConfigEntity> lastBackgroundLineConfig = target.getLastBackgroundLineConfig();\n            BackgroundLineConfigEntity entity = ConvertExtKt.toEntity(backgroundLineConfig);\n            entity.put();\n            lastBackgroundLineConfig.setTarget(entity);\n            target.put();\n        }\n        saveSnapshot();\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "evidence_id": "ev_0a2cfdea721302eb7c45d95a74a8902d13b30d44ae89ada4a97251e1d8de7eba"
+  }
+]

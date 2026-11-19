@@ -1,0 +1,280 @@
+{
+  "android_resave_sha256": "04b75d161e6f19d2f196196facd765eea4e95cbab6803034a4d8496ca125e295",
+  "web_reopened_four_strokes": true,
+  "two_page_archive_sha256": "3c71d8d1197a986cf58e00e972ab8c197447083792f1f67d786f8b34d7561a7b",
+  "cloud_import_mdb_sha256": "ecab1634cdb5d204c503a2834febbb31ed00574560dc120b2c7ae98e5096b103",
+  "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+  "members": [
+    {
+      "name": "292d1a05-e9bf-4740-8cac-bf3b5371dc2b/3f66b87c-dd5c-4f70-8b8c-0c3af989b41a_command.bin",
+      "sha256": "3de63e31c4d18195af9c860ad414ae0fd091c1b7cdb891b7f4cb975f15127a23"
+    },
+    {
+      "name": "292d1a05-e9bf-4740-8cac-bf3b5371dc2b/795b3dee-4336-471d-91d1-8d71e3d0222d_touch.bin",
+      "sha256": "6b546f16964a4f32870070d737d40002fdf97a62259adf460e0083dd38c2ca10"
+    },
+    {
+      "name": "292d1a05-e9bf-4740-8cac-bf3b5371dc2b/header.bin",
+      "sha256": "4f2d921d91b6ed915f2335c773e213c96a51351ab9b72797de1de26fc38e666d"
+    },
+    {
+      "name": "292d1a05-e9bf-4740-8cac-bf3b5371dc2b/router.bin",
+      "sha256": "9bed776134086332aaa148fd77c47f991e14b6ed646e19d42c71a4b102467831"
+    },
+    {
+      "name": "292d1a05-e9bf-4740-8cac-bf3b5371dc2b/screenshot.png",
+      "sha256": "d8c5761da442246dbb38f1e0e96561914ec1553f66b356488f744c61d4d09659"
+    },
+    {
+      "name": "292d1a05-e9bf-4740-8cac-bf3b5371dc2b/snapshot.bin",
+      "sha256": "ccd42873d7bdb4e9e8bcdd3711f0640dd7de00e4ce8f2b0eb260951efe821ba3"
+    },
+    {
+      "name": "page_router.bin",
+      "sha256": "e51a4bf8a7137b06e37ffa10bee8550256de7c28487ce147b6012b4deb5c33fd"
+    }
+  ],
+  "original_archive_sha256": "147fab94056910bbb473bc560c5cb02a3d5daf662fd915cf7076767d727ab7c6",
+  "edited_archive_sha256": "3f8f6c193d8a7f69777d8da7a1b60bf726df9fc62eca52ed9bcd02eb516a3c0f",
+  "returned_original_shards_preserved": true,
+  "original_and_undone_archives_identical": true,
+  "original_page": {
+    "name": "292d1a05-e9bf-4740-8cac-bf3b5371dc2b",
+    "version": 6,
+    "size": [
+      640,
+      480
+    ],
+    "duration_ms": 1149,
+    "strokes": [
+      {
+        "points": [
+          [
+            80.0,
+            74.0
+          ],
+          [
+            120.0,
+            88.0
+          ],
+          [
+            166.0,
+            143.0
+          ],
+          [
+            202.0,
+            92.0
+          ],
+          [
+            232.0,
+            107.0
+          ]
+        ],
+        "argb": 4279660388,
+        "width": 9.0,
+        "style": 1
+      },
+      {
+        "points": [
+          [
+            330.0,
+            220.0
+          ],
+          [
+            365.0,
+            200.0
+          ],
+          [
+            399.0,
+            252.0
+          ],
+          [
+            432.0,
+            232.0
+          ]
+        ],
+        "argb": 4289877048,
+        "width": 9.0,
+        "style": 1
+      }
+    ],
+    "timeline": [
+      {
+        "command": 1,
+        "is_play": false,
+        "start": 0,
+        "end": 0,
+        "delay": 0,
+        "duration": 0
+      },
+      {
+        "command": 1,
+        "is_play": true,
+        "start": 180,
+        "end": 180,
+        "delay": 180,
+        "duration": 0
+      },
+      {
+        "command": 1,
+        "is_play": true,
+        "start": 185,
+        "end": 545,
+        "delay": 5,
+        "duration": 360,
+        "touch_offset_ms": [
+          0,
+          103,
+          189,
+          274,
+          360
+        ]
+      },
+      {
+        "command": 1,
+        "is_play": true,
+        "start": 698,
+        "end": 698,
+        "delay": 153,
+        "duration": 0
+      },
+      {
+        "command": 1,
+        "is_play": true,
+        "start": 700,
+        "end": 967,
+        "delay": 2,
+        "duration": 267,
+        "touch_offset_ms": [
+          0,
+          94,
+          181,
+          267
+        ]
+      },
+      {
+        "command": 10,
+        "is_play": true,
+        "start": 1149,
+        "end": 1149,
+        "delay": 182,
+        "duration": 0
+      }
+    ]
+  },
+  "web_stroke": {
+    "command": 1,
+    "is_play": false,
+    "start": 1149,
+    "end": 1149,
+    "delay": 0,
+    "duration": 648,
+    "touch_offset_ms": [
+      0,
+      77,
+      132,
+      179,
+      231,
+      273,
+      462,
+      487,
+      515,
+      553,
+      577,
+      609,
+      648
+    ]
+  },
+  "native_added_stroke": {
+    "command": 1,
+    "is_play": false,
+    "start": 1149,
+    "end": 1149,
+    "delay": 0,
+    "duration": 274,
+    "touch_offset_ms": [
+      0,
+      101,
+      187,
+      274
+    ]
+  },
+  "page_durations_ms": [
+    1149,
+    1149,
+    1149
+  ],
+  "stroke_counts": [
+    2,
+    3,
+    4
+  ],
+  "point_counts_after_android_resave": [
+    5,
+    4,
+    13,
+    4
+  ],
+  "original_pixels": [
+    {
+      "stroke": "green",
+      "native_pixels": 1804,
+      "browser_pixels": 1826,
+      "shared": 1791,
+      "union": 1839,
+      "intersection_over_union": 0.9738988580750407
+    },
+    {
+      "stroke": "red",
+      "native_pixels": 1241,
+      "browser_pixels": 1259,
+      "shared": 1229,
+      "union": 1271,
+      "intersection_over_union": 0.9669551534225019
+    }
+  ],
+  "reopened_web_edit_pixels": [
+    {
+      "stroke": "green",
+      "native_pixels": 1804,
+      "browser_pixels": 1826,
+      "shared": 1791,
+      "union": 1839,
+      "intersection_over_union": 0.9738988580750407
+    },
+    {
+      "stroke": "red",
+      "native_pixels": 1241,
+      "browser_pixels": 1259,
+      "shared": 1229,
+      "union": 1271,
+      "intersection_over_union": 0.9669551534225019
+    },
+    {
+      "stroke": "web stroke",
+      "native_pixels": 476,
+      "browser_pixels": 468,
+      "shared": 459,
+      "union": 485,
+      "intersection_over_union": 0.9463917525773196
+    }
+  ],
+  "cloud_database_counts": {
+    "PageEntity": 2,
+    "CommandInfoEntity": 8,
+    "TouchEventEntity": 3,
+    "TouchInfoEntity": 22,
+    "AudioInfoEntity": 0
+  },
+  "cloud_coordinates_match": true,
+  "page_dimensions": [
+    [
+      640,
+      480
+    ],
+    [
+      640,
+      480
+    ]
+  ]
+}

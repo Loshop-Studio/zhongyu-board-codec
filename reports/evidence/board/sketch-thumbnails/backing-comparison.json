@@ -1,0 +1,438 @@
+[
+  {
+    "variant": 1,
+    "input_jpeg_size": [
+      320,
+      240
+    ],
+    "export_jpeg_size": [
+      640,
+      480
+    ],
+    "input_zip_sha256": "85980f8a0b689f2a3737e00dcc062b2ec6b484449a3a310f669589f6287e7bb3",
+    "first_edit_zip_sha256": "8940388be8ca23bde39fb41e9230f721d965c3bb720f866e3cc53b08a4709134",
+    "second_edit_zip_sha256": "73dbd3c4aca63f1124f708622d0c875943ece4a603c0082c66f1bd22c6b4dac1",
+    "changed_members_at_each_export": [
+      "note/actions.bin",
+      "note/thumbnail.jpg"
+    ],
+    "preserved_action_counts_at_each_stage": [
+      0,
+      3,
+      6
+    ],
+    "cloud_sidebar_rgb_matching_export": 307200,
+    "plots": {
+      "browser_open_vs_native_load": {
+        "original_ink": {
+          "shared": 411,
+          "union": 421,
+          "iou": 0.9762470308788599,
+          "bounds": [
+            185,
+            170,
+            274,
+            183
+          ]
+        },
+        "original_image": {
+          "shared": 1371,
+          "union": 1414,
+          "iou": 0.9695898161244696,
+          "bounds": [
+            297,
+            223,
+            342,
+            256
+          ]
+        }
+      },
+      "browser_reopen_vs_web_jpeg": {
+        "original_ink": {
+          "shared": 415,
+          "union": 424,
+          "iou": 0.9787735849056604,
+          "bounds": [
+            185,
+            170,
+            275,
+            183
+          ]
+        },
+        "original_image": {
+          "shared": 1334,
+          "union": 1374,
+          "iou": 0.9708879184861717,
+          "bounds": [
+            298,
+            224,
+            341,
+            255
+          ]
+        },
+        "first_edit": {
+          "shared": 423,
+          "union": 430,
+          "iou": 0.9837209302325581,
+          "bounds": [
+            234,
+            370,
+            369,
+            395
+          ]
+        }
+      },
+      "native_first_open_vs_first_jpeg": {
+        "original_ink": {
+          "shared": 412,
+          "union": 421,
+          "iou": 0.9786223277909739,
+          "bounds": [
+            185,
+            170,
+            275,
+            183
+          ]
+        },
+        "original_image": {
+          "shared": 1346,
+          "union": 1364,
+          "iou": 0.9868035190615836,
+          "bounds": [
+            298,
+            223,
+            341,
+            255
+          ]
+        },
+        "first_edit": {
+          "shared": 420,
+          "union": 424,
+          "iou": 0.9905660377358491,
+          "bounds": [
+            234,
+            369,
+            369,
+            395
+          ]
+        }
+      },
+      "native_second_open_vs_second_jpeg": {
+        "original_ink": {
+          "shared": 405,
+          "union": 416,
+          "iou": 0.9735576923076923,
+          "bounds": [
+            185,
+            170,
+            275,
+            183
+          ]
+        },
+        "original_image": {
+          "shared": 1346,
+          "union": 1365,
+          "iou": 0.9860805860805861,
+          "bounds": [
+            298,
+            223,
+            341,
+            255
+          ]
+        },
+        "first_edit": {
+          "shared": 421,
+          "union": 424,
+          "iou": 0.9929245283018868,
+          "bounds": [
+            234,
+            369,
+            369,
+            395
+          ]
+        },
+        "second_edit": {
+          "shared": 395,
+          "union": 397,
+          "iou": 0.9949622166246851,
+          "bounds": [
+            150,
+            41,
+            277,
+            65
+          ]
+        }
+      }
+    },
+    "readers": [
+      {
+        "stage": "first_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "错题本",
+        "reader_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      },
+      {
+        "stage": "first_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "优课畅学",
+        "reader_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      },
+      {
+        "stage": "first_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "新测评",
+        "reader_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      },
+      {
+        "stage": "first_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "随身答",
+        "reader_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      },
+      {
+        "stage": "second_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "错题本",
+        "reader_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      }
+    ]
+  },
+  {
+    "variant": 5,
+    "input_jpeg_size": [
+      640,
+      480
+    ],
+    "export_jpeg_size": [
+      640,
+      480
+    ],
+    "input_zip_sha256": "b443d9e177c8436713a5f05adfd6cb08d2afdb36c327c4c264e2ffa34de2fac7",
+    "first_edit_zip_sha256": "fcf42851fabbdfbfb9921ecb8d824f3007d09654fba85f802dd282c89c8c1937",
+    "second_edit_zip_sha256": "10b2509e6748aca230d40b82f4adc0e28d4c8cd4687a4217ff3e917da6ea9561",
+    "changed_members_at_each_export": [
+      "note/actions.bin",
+      "note/thumbnail.jpg"
+    ],
+    "preserved_action_counts_at_each_stage": [
+      2,
+      5,
+      8
+    ],
+    "cloud_sidebar_rgb_matching_export": 307200,
+    "plots": {
+      "browser_open_vs_native_load": {
+        "original_ink": {
+          "shared": 1656,
+          "union": 1670,
+          "iou": 0.9916167664670659,
+          "bounds": [
+            50,
+            101,
+            231,
+            127
+          ]
+        },
+        "original_image": {
+          "shared": 5616,
+          "union": 5629,
+          "iou": 0.9976905311778291,
+          "bounds": [
+            276,
+            208,
+            363,
+            271
+          ]
+        }
+      },
+      "browser_reopen_vs_web_jpeg": {
+        "original_ink": {
+          "shared": 1660,
+          "union": 1668,
+          "iou": 0.9952038369304557,
+          "bounds": [
+            50,
+            101,
+            231,
+            127
+          ]
+        },
+        "original_image": {
+          "shared": 5618,
+          "union": 5630,
+          "iou": 0.9978685612788633,
+          "bounds": [
+            276,
+            208,
+            363,
+            271
+          ]
+        },
+        "first_edit": {
+          "shared": 423,
+          "union": 430,
+          "iou": 0.9837209302325581,
+          "bounds": [
+            234,
+            370,
+            369,
+            395
+          ]
+        }
+      },
+      "native_first_open_vs_first_jpeg": {
+        "original_ink": {
+          "shared": 1665,
+          "union": 1667,
+          "iou": 0.9988002399520096,
+          "bounds": [
+            50,
+            101,
+            231,
+            127
+          ]
+        },
+        "original_image": {
+          "shared": 5617,
+          "union": 5622,
+          "iou": 0.9991106367840626,
+          "bounds": [
+            276,
+            208,
+            363,
+            271
+          ]
+        },
+        "first_edit": {
+          "shared": 420,
+          "union": 424,
+          "iou": 0.9905660377358491,
+          "bounds": [
+            234,
+            369,
+            369,
+            395
+          ]
+        }
+      },
+      "native_second_open_vs_second_jpeg": {
+        "original_ink": {
+          "shared": 1666,
+          "union": 1667,
+          "iou": 0.9994001199760048,
+          "bounds": [
+            50,
+            101,
+            231,
+            127
+          ]
+        },
+        "original_image": {
+          "shared": 5617,
+          "union": 5622,
+          "iou": 0.9991106367840626,
+          "bounds": [
+            276,
+            208,
+            363,
+            271
+          ]
+        },
+        "first_edit": {
+          "shared": 421,
+          "union": 424,
+          "iou": 0.9929245283018868,
+          "bounds": [
+            234,
+            369,
+            369,
+            395
+          ]
+        },
+        "second_edit": {
+          "shared": 395,
+          "union": 397,
+          "iou": 0.9949622166246851,
+          "bounds": [
+            150,
+            41,
+            277,
+            65
+          ]
+        }
+      }
+    },
+    "readers": [
+      {
+        "stage": "first_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "错题本",
+        "reader_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      },
+      {
+        "stage": "first_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "优课畅学",
+        "reader_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      },
+      {
+        "stage": "first_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "新测评",
+        "reader_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      },
+      {
+        "stage": "first_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "随身答",
+        "reader_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      },
+      {
+        "stage": "second_edit",
+        "width": 640,
+        "height": 480,
+        "strokes": 0,
+        "images": 1,
+        "reader": "错题本",
+        "reader_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+        "sidebar_apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+      }
+    ]
+  }
+]

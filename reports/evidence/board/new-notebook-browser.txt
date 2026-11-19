@@ -1,0 +1,2 @@
+Browser output /home/jdz/Documents/ChatGPT/zy-reverse/reports/evidence/board
+Created a v6 notebook, drew page 1, added/undid/redid page 2, inserted text, downloaded normal and cloud copies. Reopened page 1 with one stroke and page 2 with the new text.

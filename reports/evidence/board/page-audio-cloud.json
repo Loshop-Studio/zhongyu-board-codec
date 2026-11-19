@@ -1,0 +1,55 @@
+{
+  "zip_sha256": "818fec7a208c9c887dbb1acd2b4161585af8984c7b7533703b5a805254139187",
+  "objectbox_sha256": "bc0767ea79f36220345cc93dd52434ae7d9188942fd79fe2eeba55d10c147bce",
+  "page_durations_ms": [
+    4100,
+    0
+  ],
+  "audio_record_id": 1,
+  "page_ids": [
+    1,
+    2
+  ],
+  "audio_info_rows": [
+    {
+      "id": 1,
+      "delayTime": 200,
+      "duration": 1200,
+      "isPlay": true,
+      "commandEnum": 6,
+      "data": {
+        "hex": "0a0966697273742e77617610b009"
+      },
+      "recordId": 0
+    },
+    {
+      "id": 2,
+      "delayTime": 400,
+      "duration": 800,
+      "isPlay": false,
+      "commandEnum": 6,
+      "data": {
+        "hex": "0a0a7365636f6e642e77617610a006"
+      },
+      "recordId": 0
+    },
+    {
+      "id": 3,
+      "delayTime": 300,
+      "duration": 1200,
+      "isPlay": true,
+      "commandEnum": 6,
+      "data": {
+        "hex": "0a0b66697273742d322e77617610b009"
+      },
+      "recordId": 0
+    }
+  ],
+  "media_sha256": {
+    "first.wav": "8700ce2ebb8964fa4a37378b864bb047a9f8b84f3218f3923bee210632224c28",
+    "second.wav": "f517d24c72645b0293220557e2695f34349a180b885976df2a343a590d514064",
+    "first-2.wav": "8700ce2ebb8964fa4a37378b864bb047a9f8b84f3218f3923bee210632224c28"
+  },
+  "native_rewrite_equals_web_shard": true,
+  "shard_sha256": "5f4da25896814db6f3a39d560ef69388ca9fac868abb74de5c68e3654638abbb"
+}

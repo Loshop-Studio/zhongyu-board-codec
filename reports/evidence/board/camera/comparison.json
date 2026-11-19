@@ -1,0 +1,363 @@
+{
+  "native_sha256": "e268410a7a85ad2e09a55a838f324c1e07048b5362a898f167cbe3bff8766994",
+  "web_sha256": "7c5b2ca1f0cbe8fec3edbf26d737e8a79330c38d5cdbe72c8f814c72781a4816",
+  "native_duration_ms": 2557,
+  "web_duration_ms": 3617,
+  "web_stop_delay_ms": 192,
+  "native_writing_pan_samples": 5,
+  "native_viewing_pinch_samples": 4,
+  "web_camera_sample_counts": [
+    3,
+    3
+  ],
+  "original_files_changed": [
+    "header.bin",
+    "router.bin",
+    "screenshot.png",
+    "snapshot.bin"
+  ],
+  "new_members": [
+    "1795039958093_matrix.bin",
+    "1795039958094_command.bin",
+    "1795039959700_matrix.bin",
+    "1795039959701_command.bin"
+  ],
+  "graph_snapshot_unchanged": true,
+  "undo_cancel_and_reopen_byte_exact": true,
+  "writing_fast_second_contact_strokes": 1,
+  "writing_late_second_contact_strokes": 2,
+  "objectbox": {
+    "matrix_records": 3,
+    "matrix_events": 4,
+    "samples": 15,
+    "commands": 14,
+    "values_match": true
+  },
+  "web_crop": [
+    156,
+    182,
+    844,
+    698
+  ],
+  "pixel_comparisons": [
+    {
+      "document": "original",
+      "target": 650,
+      "displayed": 650,
+      "android_clock": 656,
+      "forward": {
+        "overlap": 0.9289,
+        "center_delta_px": 0.166,
+        "web_pixels": 1590,
+        "android_pixels": 1531
+      },
+      "direct": {
+        "overlap": 0.9289,
+        "center_delta_px": 0.166,
+        "web_pixels": 1590,
+        "android_pixels": 1531
+      }
+    },
+    {
+      "document": "original",
+      "target": 800,
+      "displayed": 800,
+      "android_clock": 800,
+      "forward": {
+        "overlap": 0.8945,
+        "center_delta_px": 0.769,
+        "web_pixels": 2009,
+        "android_pixels": 1871
+      },
+      "direct": {
+        "overlap": 0.8945,
+        "center_delta_px": 0.769,
+        "web_pixels": 2009,
+        "android_pixels": 1871
+      }
+    },
+    {
+      "document": "original",
+      "target": 1100,
+      "displayed": 1100,
+      "android_clock": 1104,
+      "forward": {
+        "overlap": 0.8945,
+        "center_delta_px": 0.769,
+        "web_pixels": 2009,
+        "android_pixels": 1871
+      },
+      "direct": {
+        "overlap": 0.8945,
+        "center_delta_px": 0.769,
+        "web_pixels": 2009,
+        "android_pixels": 1871
+      }
+    },
+    {
+      "document": "original",
+      "target": 1210,
+      "displayed": 1210,
+      "android_clock": 1216,
+      "forward": {
+        "overlap": 0.8908,
+        "center_delta_px": 0.636,
+        "web_pixels": 2008,
+        "android_pixels": 1870
+      },
+      "direct": {
+        "overlap": 0.8882,
+        "center_delta_px": 0.618,
+        "web_pixels": 2008,
+        "android_pixels": 1876
+      }
+    },
+    {
+      "document": "original",
+      "target": 1340,
+      "displayed": 1340,
+      "android_clock": 1344,
+      "forward": {
+        "overlap": 0.8853,
+        "center_delta_px": 0.837,
+        "web_pixels": 1991,
+        "android_pixels": 1870
+      },
+      "direct": {
+        "overlap": 0.5527,
+        "center_delta_px": 25.282,
+        "web_pixels": 1991,
+        "android_pixels": 3091
+      }
+    },
+    {
+      "document": "original",
+      "target": 1460,
+      "displayed": 1460,
+      "android_clock": 1472,
+      "forward": {
+        "overlap": 0.8869,
+        "center_delta_px": 0.748,
+        "web_pixels": 2017,
+        "android_pixels": 1870
+      },
+      "direct": {
+        "overlap": 0.8836,
+        "center_delta_px": 0.866,
+        "web_pixels": 2017,
+        "android_pixels": 1867
+      }
+    },
+    {
+      "document": "original",
+      "target": 1660,
+      "displayed": 1660,
+      "android_clock": 1664,
+      "forward": {
+        "overlap": 0.8869,
+        "center_delta_px": 0.748,
+        "web_pixels": 2017,
+        "android_pixels": 1870
+      },
+      "direct": {
+        "overlap": 0.8869,
+        "center_delta_px": 0.748,
+        "web_pixels": 2017,
+        "android_pixels": 1870
+      }
+    },
+    {
+      "document": "original",
+      "target": 2060,
+      "displayed": 2060,
+      "android_clock": 2064,
+      "forward": {
+        "overlap": 0.8869,
+        "center_delta_px": 0.748,
+        "web_pixels": 2017,
+        "android_pixels": 1870
+      },
+      "direct": {
+        "overlap": 0.5039,
+        "center_delta_px": 45.418,
+        "web_pixels": 2017,
+        "android_pixels": 3433
+      }
+    },
+    {
+      "document": "original",
+      "target": 2170,
+      "displayed": 2170,
+      "android_clock": 2176,
+      "forward": {
+        "overlap": 0.8494,
+        "center_delta_px": 2.14,
+        "web_pixels": 1503,
+        "android_pixels": 1347
+      },
+      "direct": {
+        "overlap": 0.3004,
+        "center_delta_px": 73.615,
+        "web_pixels": 1503,
+        "android_pixels": 4172
+      }
+    },
+    {
+      "document": "original",
+      "target": 2300,
+      "displayed": 2310,
+      "android_clock": 2304,
+      "forward": {
+        "overlap": 0.8563,
+        "center_delta_px": 1.229,
+        "web_pixels": 882,
+        "android_pixels": 785
+      },
+      "direct": {
+        "overlap": 0.2337,
+        "center_delta_px": 76.147,
+        "web_pixels": 882,
+        "android_pixels": 3162
+      }
+    },
+    {
+      "document": "original",
+      "target": 2460,
+      "displayed": 2470,
+      "android_clock": 2464,
+      "forward": {
+        "overlap": 0.8628,
+        "center_delta_px": 0.668,
+        "web_pixels": 672,
+        "android_pixels": 591
+      },
+      "direct": {
+        "overlap": 0.8599,
+        "center_delta_px": 0.679,
+        "web_pixels": 672,
+        "android_pixels": 589
+      }
+    },
+    {
+      "document": "original",
+      "target": 1340,
+      "displayed": 1340,
+      "android_clock": 1344,
+      "forward": {
+        "overlap": 0.8853,
+        "center_delta_px": 0.837,
+        "web_pixels": 1991,
+        "android_pixels": 1870
+      },
+      "direct": {
+        "overlap": 0.5527,
+        "center_delta_px": 25.282,
+        "web_pixels": 1991,
+        "android_pixels": 3091
+      }
+    },
+    {
+      "document": "edited",
+      "target": 2300,
+      "displayed": 2300,
+      "android_clock": 2304,
+      "forward": {
+        "overlap": 0.8563,
+        "center_delta_px": 1.229,
+        "web_pixels": 882,
+        "android_pixels": 785
+      },
+      "direct": {
+        "overlap": 0.2341,
+        "center_delta_px": 76.064,
+        "web_pixels": 882,
+        "android_pixels": 3161
+      }
+    },
+    {
+      "document": "edited",
+      "target": 2795,
+      "displayed": 2790,
+      "android_clock": 2800,
+      "forward": {
+        "overlap": 0.8851,
+        "center_delta_px": 0.452,
+        "web_pixels": 685,
+        "android_pixels": 627
+      },
+      "direct": {
+        "overlap": 0.1522,
+        "center_delta_px": 114.247,
+        "web_pixels": 685,
+        "android_pixels": 3970
+      }
+    },
+    {
+      "document": "edited",
+      "target": 3325,
+      "displayed": 3330,
+      "android_clock": 3328,
+      "forward": {
+        "overlap": 0.9023,
+        "center_delta_px": 0.246,
+        "web_pixels": 5045,
+        "android_pixels": 4651
+      },
+      "direct": {
+        "overlap": 0.4781,
+        "center_delta_px": 37.271,
+        "web_pixels": 5045,
+        "android_pixels": 9165
+      }
+    },
+    {
+      "document": "edited",
+      "target": 3610,
+      "displayed": 3610,
+      "android_clock": 3616,
+      "forward": {
+        "overlap": 0.9176,
+        "center_delta_px": 1.979,
+        "web_pixels": 3582,
+        "android_pixels": 3496
+      },
+      "direct": {
+        "overlap": 0.9187,
+        "center_delta_px": 1.784,
+        "web_pixels": 3582,
+        "android_pixels": 3498
+      }
+    },
+    {
+      "document": "edited",
+      "target": 1340,
+      "displayed": 1340,
+      "android_clock": 1344,
+      "forward": {
+        "overlap": 0.8853,
+        "center_delta_px": 0.837,
+        "web_pixels": 1991,
+        "android_pixels": 1870
+      },
+      "direct": {
+        "overlap": 0.3475,
+        "center_delta_px": 13.185,
+        "web_pixels": 1991,
+        "android_pixels": 5039
+      }
+    }
+  ],
+  "natural_end": {
+    "overlap": 0.9176,
+    "center_delta_px": 1.979,
+    "web_pixels": 3582,
+    "android_pixels": 3496
+  },
+  "direct_end": {
+    "overlap": 0.9187,
+    "center_delta_px": 1.784,
+    "web_pixels": 3582,
+    "android_pixels": 3498
+  },
+  "settled_ms": 250
+}

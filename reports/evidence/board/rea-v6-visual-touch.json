@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.blackboard.core.play.TouchEventThread",
+    "method": {
+      "name": "handle",
+      "reported_signature": "handle(com.zykj.board.EzyTouchEvent$TouchEvent): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.zykj.blackboard.core.execute.EventPlayThread\n    public void handle(@NotNull EzyTouchEvent$TouchEvent info) {\n        k.g(info, \"info\");\n        Path path = this.path;\n        if (path == null) {\n            return;\n        }\n        if (path.isEmpty()) {\n            this.mX = info.getX();\n            float y2 = info.getY();\n            this.mY = y2;\n            path.moveTo(this.mX, y2);\n            path.lineTo(this.mX, this.mY);\n            return;\n        }\n        float f = 2;\n        path.quadTo(this.mX, this.mY, (info.getX() + this.mX) / f, (info.getY() + this.mY) / f);\n        this.mX = info.getX();\n        this.mY = info.getY();\n        IGraphControl graphControl = getGraphControl();\n        if (graphControl != null) {\n            Paint paint = this.paint;\n            MatrixAdapter matrixAdapter = getMatrixAdapter();\n            graphControl.drawPath(path, paint, matrixAdapter != null ? matrixAdapter.getAdapterMatrix() : null);\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_bbf19336f160f8ee385ca94a95e2ed4e8e97d6ee4730c614c180fc116ca70d32"
+}

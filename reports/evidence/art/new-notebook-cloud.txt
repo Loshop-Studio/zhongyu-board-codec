@@ -1,0 +1,4 @@
+INSTRUMENTATION_RESULT: persisted=PageEntity(id=1, dirName=p-local, isChange=true, commandFileName=1_command.bin, commandIndex=7) textId=1 content=本地画板样本
+INSTRUMENTATION_RESULT: reopenedEntityTypes=24
+INSTRUMENTATION_RESULT: webPageImport=PageEntity=2 CommandInfoEntity=5 TouchInfoEntity=11 TouchEventEntity=1 TextInfoEntity=1 GeometryInfoEntity=0 FileInfoEntity=0 MatrixInfoEntity=1 MatrixEventEntity=1
+INSTRUMENTATION_CODE: -1

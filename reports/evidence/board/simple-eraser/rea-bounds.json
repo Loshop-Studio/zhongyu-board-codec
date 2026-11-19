@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.view.simpleBoard.DrawControl",
+    "method": {
+      "name": "buildWritePathData",
+      "reported_signature": "buildWritePathData(java.util.List<? extends android.graphics.PointF>, android.graphics.Paint, android.graphics.Path): com.zykj.view.simpleBoard.action.WritePath",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/util/List;Landroid/graphics/Paint;Landroid/graphics/Path;)Lcom/zykj/view/simpleBoard/action/WritePath;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    private final WritePath buildWritePathData(List<? extends PointF> pointList, Paint paint, Path path) {\n        Path path2 = new Path();\n        if (path != null) {\n            path2.set(path);\n        } else {\n            PointF pointF = new PointF();\n            int i = 0;\n            for (Object obj : pointList) {\n                int i8 = i + 1;\n                if (i < 0) {\n                    u.L();\n                    throw null;\n                }\n                PointF pointF2 = (PointF) obj;\n                if (i == 0) {\n                    path2.moveTo(pointF2.x, pointF2.y);\n                    path2.lineTo(pointF2.x, pointF2.y);\n                    pointF.set(pointF2);\n                } else if (i == pointList.size() - 1) {\n                    float f = pointF.x;\n                    float f7 = pointF.y;\n                    float f8 = 2;\n                    path2.quadTo(f, f7, (pointF2.x + f) / f8, (pointF2.y + f7) / f8);\n                    path2.lineTo(pointF2.x, pointF2.y);\n                } else {\n                    float f9 = pointF.x;\n                    float f10 = pointF.y;\n                    float f11 = 2;\n                    path2.quadTo(f9, f10, (pointF2.x + f9) / f11, (pointF2.y + f10) / f11);\n                    pointF.set(pointF2);\n                }\n                i = i8;\n            }\n        }\n        Paint paint2 = new Paint(paint);\n        RectF rectF = new RectF();\n        path2.computeBounds(rectF, true);\n        float fMapRadius = MatrixExtKt.invert(this.mCameraMatrix).mapRadius(this.mBoardConfig.getEraserSize());\n        float f12 = 2 * fMapRadius;\n        if (rectF.width() < f12) {\n            rectF.left -= fMapRadius;\n            rectF.right += fMapRadius;\n        }\n        if (rectF.height() < f12) {\n            rectF.top -= fMapRadius;\n            rectF.bottom += fMapRadius;\n        }\n        ArrayList arrayList = new ArrayList();\n        arrayList.addAll(pointList);\n        return new WritePath(path2, paint2, rectF, arrayList);\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_1909768dfbc8b6acb717445bbffe6e622d373a0aa014fe91f25f298a52f74097"
+}

@@ -1,0 +1,4 @@
+Imported web page: 38 native rows, 16 recorded coordinates, 800 x 600, 875 ms, text, geometry and image reference verified.
+Native file 81920 bytes, 24 entity types, 140 property descriptors, 24 rows
+Catalog names, IDs, UIDs and property types match the APK model.
+Page relation, integer, boolean, text, floats and both byte vectors match the native fixture.

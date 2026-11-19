@@ -1,0 +1,18 @@
+{
+  "board_size": [
+    320,
+    240
+  ],
+  "browser_png_crop": [
+    140,
+    158,
+    860,
+    698
+  ],
+  "luminance_threshold": 160,
+  "native_ink_pixels": 1135,
+  "web_ink_pixels": 1137,
+  "overlap_pixels": 1125,
+  "native_pixels_with_web_ink_within_one_pixel": 1135,
+  "web_pixels_with_native_ink_within_one_pixel": 1137
+}

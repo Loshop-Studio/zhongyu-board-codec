@@ -1,0 +1,19 @@
+{
+  "apk": "错题本",
+  "apkSha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+  "input": "lesson.html",
+  "viewport": [
+    640,
+    480
+  ],
+  "result": "native-sketch-presentation.zip",
+  "members": {
+    "actions.bin": "597826ea47002249eabc6a13e59b79c92bcdc027c4aa55e5c491fe5d2b521f2b",
+    "header.bin": "23a0ffd44c08e2ba446f2e6213788d7970bf77107bbe663086ebad34e3ff399f",
+    "res/css/slide.css": "6149a404fc9e811bfe20f6797e2c9781f94b9ca8d3f3271a0c237091c9f7f68d",
+    "res/js/deck.js": "472fa3ccfb5e7dea7dec3992cbb7a416b1a463da64f06a78d04617e76e398462",
+    "res/lesson.html": "af2abfd862017a82291b0acf49cb4e689d57e45c428b4fa2c7398116ab404786",
+    "res/media/tile.png": "5f0ccbce34f2e418264a09edf7f76034ddabf806446ee793d271c590ea309c49",
+    "thumbnail.jpg": "3630774214f7a343deb7844bbde589edb031a246dce865a5683c43d1b5bd8af3"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "input_sha256": "864e33bcb67ac3f4b4ff738f4f94ad488ec91886376fbfb2042ac46347e83dda",
+  "export_sha256": "bef27185c20d521d45339985a3b751a62acd0c95657aaca803da1efe559a3397",
+  "client": "Chromium CDP Input.dispatchTouchEvent",
+  "cancel_restores_all_bytes": true,
+  "undo_restores_all_bytes": true,
+  "command": "ACTION_GRAPH_MATRIX",
+  "translation_px": [
+    29.9435959,
+    20.0000038
+  ],
+  "changed": [
+    "lesson/p1/router.bin",
+    "lesson/p1/snapshot.bin"
+  ],
+  "added": [
+    "lesson/p1/1795030527521_matrix.bin",
+    "lesson/p1/1795030527522_command.bin"
+  ],
+  "unchanged": [
+    "lesson/header.bin",
+    "lesson/p1/1_text.bin",
+    "lesson/p1/2_geometry.bin",
+    "lesson/p1/3_file.bin",
+    "lesson/p1/header.bin",
+    "lesson/page_router.bin",
+    "lesson/res/image/tiles.png"
+  ]
+}

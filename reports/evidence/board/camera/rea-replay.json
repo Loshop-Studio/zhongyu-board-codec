@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.blackboard.core.play.CameraMatrixThread",
+    "method": {
+      "name": "handle",
+      "reported_signature": "handle(com.zykj.board.EzyMatrix$Matrix): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.zykj.blackboard.core.execute.EventPlayThread\n    public void handle(@NotNull EzyMatrix$Matrix info) {\n        k.g(info, \"info\");\n        List<EzyMatrix$Matrix> list = this.matrixList;\n        if (list != null) {\n            if (info.equals(t.o0(list))) {\n                IGraphControl graphControl = getGraphControl();\n                if (graphControl != null) {\n                    graphControl.cameraChangeEnd(MatrixExtKt.toMatrix(info));\n                    return;\n                }\n                return;\n            }\n            if (info.equals(t.h0(list))) {\n                IGraphControl graphControl2 = getGraphControl();\n                if (graphControl2 != null) {\n                    graphControl2.cameraChangeStart();\n                    return;\n                }\n                return;\n            }\n            IGraphControl graphControl3 = getGraphControl();\n            if (graphControl3 != null) {\n                graphControl3.cameraChanging(MatrixExtKt.toMatrix(info));\n            }\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_07d20afd172bb333e7847429d96e5bf41697d69839be3d79f4beace5c3cd9197"
+}

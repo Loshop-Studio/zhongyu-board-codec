@@ -1,0 +1,449 @@
+{
+  "web_forward_pause_matching_pixels": true,
+  "web_forward_terminal_clear": true,
+  "stop_delay_ms": 64,
+  "native_sha256": "7b25a0c14ac64aac9f0cd846251bdaaa5de8ca14efded07a6d89d4037cac084e",
+  "web_sha256": "88c006a5cb75cb0a117e4dbedf8adfa8bc5dbc9de582639cd1bb1e39e3f72021",
+  "duration_before_ms": 2011,
+  "duration_after_ms": 3445,
+  "gestures": [
+    {
+      "start": 823,
+      "end": 1156,
+      "points": [
+        {
+          "ms": 823,
+          "x": 160.00000381469727,
+          "y": 119.99999809265137
+        },
+        {
+          "ms": 933,
+          "x": 225.00000381469727,
+          "y": 145.00000762939453
+        },
+        {
+          "ms": 1040,
+          "x": 265.00000381469727,
+          "y": 180.00000762939453
+        },
+        {
+          "ms": 1156,
+          "x": 299.99998474121094,
+          "y": 170.00000762939453
+        }
+      ],
+      "color": -3133065,
+      "width": 26.0
+    },
+    {
+      "start": 1415,
+      "end": 1764,
+      "points": [
+        {
+          "ms": 1415,
+          "x": 339.99998474121094,
+          "y": 170.00000762939453
+        },
+        {
+          "ms": 1531,
+          "x": 379.99998474121094,
+          "y": 194.00000381469727
+        },
+        {
+          "ms": 1646,
+          "x": 404.0,
+          "y": 228.00001907348633
+        },
+        {
+          "ms": 1764,
+          "x": 429.99998474121094,
+          "y": 210.00000762939453
+        }
+      ],
+      "color": -13345824,
+      "width": 14.0
+    },
+    {
+      "start": 2011,
+      "end": 2665,
+      "points": [
+        {
+          "ms": 2011,
+          "x": 176.1983528137207,
+          "y": 240.9917335510254
+        },
+        {
+          "ms": 2167,
+          "x": 245.61983489990234,
+          "y": 202.3140411376953
+        },
+        {
+          "ms": 2518,
+          "x": 315.0413360595703,
+          "y": 259.834716796875
+        },
+        {
+          "ms": 2665,
+          "x": 315.0413360595703,
+          "y": 259.834716796875
+        }
+      ],
+      "color": -65536,
+      "width": 20.0
+    },
+    {
+      "start": 2729,
+      "end": 3381,
+      "points": [
+        {
+          "ms": 2729,
+          "x": 230.74379348754883,
+          "y": 213.8016586303711
+        },
+        {
+          "ms": 2883,
+          "x": 270.4132308959961,
+          "y": 228.67768096923828
+        },
+        {
+          "ms": 3257,
+          "x": 308.09915924072266,
+          "y": 248.51239013671875
+        },
+        {
+          "ms": 3381,
+          "x": 308.09915924072266,
+          "y": 248.51239013671875
+        }
+      ],
+      "color": -65536,
+      "width": 20.0
+    }
+  ],
+  "native_forward_pause_matching_pixels": true,
+  "pause_checked_ms": 250,
+  "flutter_pause_position_ms": 1220,
+  "stable_preview_and_snapshot": true,
+  "undo_exact_zip": true,
+  "multitouch_cancel_exact_zip": true,
+  "changed_existing_members": [
+    "header.bin",
+    "router.bin"
+  ],
+  "new_members": [
+    "1795037935338_touch.bin",
+    "1795037935340_command.bin",
+    "1795037937082_command.bin",
+    "1795037937082_touch.bin"
+  ],
+  "live_web": [
+    {
+      "input": "mouse",
+      "screen_input": [
+        425,
+        418
+      ],
+      "page_contact": [
+        245.466,
+        202.314
+      ],
+      "live_center": [
+        245.5,
+        202.417
+      ],
+      "offset_y_px": 0
+    },
+    {
+      "input": "finger",
+      "screen_input": [
+        450,
+        495
+      ],
+      "page_contact": [
+        270.311,
+        278.678
+      ],
+      "live_center": [
+        270.345,
+        228.631
+      ],
+      "offset_y_px": 50
+    }
+  ],
+  "checks": [
+    {
+      "edited": false,
+      "target": 700,
+      "displayed": 700,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ]
+    },
+    {
+      "edited": false,
+      "target": 850,
+      "displayed": 850,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        160.108,
+        119.875
+      ],
+      "center_web": [
+        159.975,
+        120.005
+      ],
+      "center_delta_px": 0.186,
+      "overlap": 0.9176
+    },
+    {
+      "edited": false,
+      "target": 970,
+      "displayed": 970,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        225.0,
+        145.0
+      ],
+      "center_web": [
+        225.0,
+        145.0
+      ],
+      "center_delta_px": 0.0,
+      "overlap": 0.8929
+    },
+    {
+      "edited": false,
+      "target": 1095,
+      "displayed": 1100,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        265.0,
+        180.0
+      ],
+      "center_web": [
+        265.0,
+        180.0
+      ],
+      "center_delta_px": 0.0,
+      "overlap": 0.8929
+    },
+    {
+      "edited": false,
+      "target": 1200,
+      "displayed": 1200,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ]
+    },
+    {
+      "edited": false,
+      "target": 1450,
+      "displayed": 1450,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        340.0,
+        170.0
+      ],
+      "center_web": [
+        340.0,
+        170.092
+      ],
+      "center_delta_px": 0.092,
+      "overlap": 0.8256
+    },
+    {
+      "edited": false,
+      "target": 1560,
+      "displayed": 1560,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        380.0,
+        194.0
+      ],
+      "center_web": [
+        380.045,
+        194.101
+      ],
+      "center_delta_px": 0.111,
+      "overlap": 0.8314
+    },
+    {
+      "edited": false,
+      "target": 1670,
+      "displayed": 1670,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        404.0,
+        228.0
+      ],
+      "center_web": [
+        403.92,
+        227.955
+      ],
+      "center_delta_px": 0.092,
+      "overlap": 0.8314
+    },
+    {
+      "edited": false,
+      "target": 1820,
+      "displayed": 1820,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ]
+    },
+    {
+      "edited": false,
+      "target": 2011,
+      "displayed": 2010,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ]
+    },
+    {
+      "edited": false,
+      "target": 970,
+      "displayed": 970,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        225.0,
+        145.0
+      ],
+      "center_web": [
+        225.0,
+        145.0
+      ],
+      "center_delta_px": 0.0,
+      "overlap": 0.8929
+    },
+    {
+      "edited": true,
+      "target": 2366,
+      "displayed": 2360,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        245.636,
+        202.281
+      ],
+      "center_web": [
+        245.641,
+        202.376
+      ],
+      "center_delta_px": 0.095,
+      "overlap": 0.8609
+    },
+    {
+      "edited": true,
+      "target": 3080,
+      "displayed": 3080,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        270.414,
+        228.701
+      ],
+      "center_web": [
+        270.483,
+        228.59
+      ],
+      "center_delta_px": 0.131,
+      "overlap": 0.858
+    },
+    {
+      "edited": true,
+      "target": 3440,
+      "displayed": 3440,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ]
+    },
+    {
+      "edited": true,
+      "target": 970,
+      "displayed": 970,
+      "web_crop": [
+        156,
+        182,
+        844,
+        698
+      ],
+      "center_android": [
+        225.0,
+        145.0
+      ],
+      "center_web": [
+        225.0,
+        145.0
+      ],
+      "center_delta_px": 0.0,
+      "overlap": 0.8929
+    }
+  ],
+  "terminal_cursor_absent": true,
+  "native_variants": 5,
+  "native_checkpoints_per_variant": 23,
+  "objectbox": {
+    "commands": 11,
+    "touch_groups": 5,
+    "points": 21,
+    "all_points_and_commands_match": true
+  }
+}

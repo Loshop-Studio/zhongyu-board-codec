@@ -1,0 +1,1 @@
+v6 browser imported snapshot, edited and moved text, undo/redo, resized and outlined oval, reshaped and moved nested polygon, added stroke, exported both ZIPs, reopened font and title.

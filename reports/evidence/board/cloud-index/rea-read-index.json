@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "中育云笔记.apk",
+    "digest": {
+      "sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/中育云笔记.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.friday.document.sync.SyncStateOne",
+    "method": {
+      "name": "q",
+      "reported_signature": "q(java.lang.String): java.util.ArrayList",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;)Ljava/util/ArrayList;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final ArrayList q(String str) {\n        Object objFromJson = new Gson().fromJson(g.e(new File(str + File.separator + \"index.json\"), null, 1, null), new a().getType());\n        u.f(objFromJson, \"fromJson(...)\");\n        return (ArrayList) objFromJson;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_72e24c4fad6f03a8676d539bdbc85476e3a14d09ff09a73987b6e94259284020"
+}

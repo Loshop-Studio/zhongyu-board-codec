@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.sketch.core.graph.GraphExtKt",
+    "method": {
+      "name": "pointConvertPath",
+      "reported_signature": "pointConvertPath(com.zykj.sketch.core.graph.Graph, java.util.List<android.graphics.PointF>, android.graphics.Matrix): android.graphics.Path",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/zykj/sketch/core/graph/Graph;Ljava/util/List;Landroid/graphics/Matrix;)Landroid/graphics/Path;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @NotNull\n    public static final Path pointConvertPath(@NotNull Graph graph, @NotNull List<PointF> pointList, @NotNull Matrix matrix) {\n        k.g(graph, \"<this>\");\n        k.g(pointList, \"pointList\");\n        k.g(matrix, \"matrix\");\n        Path path = new Path();\n        List<PointF> listPointsConvertPoints = pointsConvertPoints(graph, pointList, matrix);\n        float f = 0.0f;\n        float f7 = 0.0f;\n        for (PointF pointF : listPointsConvertPoints) {\n            if (k.b(pointF, t.h0(listPointsConvertPoints))) {\n                path.moveTo(pointF.x, pointF.y);\n                path.lineTo(pointF.x, pointF.y);\n            } else if (k.b(pointF, t.o0(listPointsConvertPoints))) {\n                float f8 = 2;\n                path.quadTo(f, f7, (pointF.x + f) / f8, (pointF.y + f7) / f8);\n                path.lineTo(pointF.x, pointF.y);\n            } else {\n                float f9 = 2;\n                path.quadTo(f, f7, (pointF.x + f) / f9, (pointF.y + f7) / f9);\n            }\n            f = pointF.x;\n            f7 = pointF.y;\n        }\n        listPointsConvertPoints.clear();\n        return path;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_417f68214e24901bce87f3f1c6c7b436af62ff6bf7ce941b2a8ffa1522bb6596"
+}

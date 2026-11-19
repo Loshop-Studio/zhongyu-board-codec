@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.blackboard.core.graphBuilder.ImageGraphBuilder",
+    "method": {
+      "name": "build",
+      "reported_signature": "build(com.zykj.board.EzyCommand$CommandSource$CommandInfo$GraphData, com.zykj.blackboard.core.loader.SourceLoader): com.zykj.blackboard.core.graph.Graph",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/zykj/board/EzyCommand$CommandSource$CommandInfo$GraphData;Lcom/zykj/blackboard/core/loader/SourceLoader;)Lcom/zykj/blackboard/core/graph/Graph;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "/* JADX INFO: loaded from: classes3.dex */\n@Metadata(d1 = {\"\\u0000\\u001e\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0002\\b\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0000\\u0018\\u00002\\u00020\\u0001B\\u0005¢\\u0006\\u0002\\u0010\\u0002J\\u0018\\u0010\\u0003\\u001a\\u00020\\u00042\\u0006\\u0010\\u0005\\u001a\\u00020\\u00062\\u0006\\u0010\\u0007\\u001a\\u00020\\bH\\u0016¨\\u0006\\t\"}, d2 = {\"Lcom/zykj/blackboard/core/graphBuilder/ImageGraphBuilder;\", \"Lcom/zykj/blackboard/core/graphBuilder/GraphBuild;\", \"()V\", \"build\", \"Lcom/zykj/blackboard/core/graph/Graph;\", \"graphData\", \"Lcom/zykj/board/EzyCommand$CommandSource$CommandInfo$GraphData;\", \"sourceLoad\", \"Lcom/zykj/blackboard/core/loader/SourceLoader;\", \"blackboard_release\"}, k = 1, mv = {1, 7, 1}, xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)\npublic final class ImageGraphBuilder implements GraphBuild {\n    @Override // com.zykj.blackboard.core.graphBuilder.GraphBuild\n    @NotNull\n    public Graph build(@NotNull EzyCommand$CommandSource.CommandInfo.GraphData graphData, @NotNull SourceLoader sourceLoad) {\n        k.g(graphData, \"graphData\");\n        k.g(sourceLoad, \"sourceLoad\");\n        String graphId = graphData.getGraphId();\n        k.f(graphId, \"graphData.graphId\");\n        EzyRectF$RectF outRect = graphData.getOutRect();\n        k.f(outRect, \"graphData.outRect\");\n        RectF rectFCovertRectF = GraphUtilsKt.covertRectF(outRect);\n        String sourceFileName = graphData.getSourceFileName();\n        k.f(sourceFileName, \"graphData.sourceFileName\");\n        return new ImageGraph(graphId, rectFCovertRectF, sourceLoad, sourceFileName, graphData.getSourceId());\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_c56325c8107e4aecc2cf1c3c5ffd16ac8c105582de8864bcfb9ae918ac76aa4a"
+}

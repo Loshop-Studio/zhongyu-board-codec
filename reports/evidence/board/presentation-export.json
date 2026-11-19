@@ -1,0 +1,18 @@
+{
+  "sourceSha256": "0fced5da61570cab0f379cad7e40a0ae224a6060cb2135bff406e6a51f51bc22",
+  "exportSha256": "7572f935efed49d47db12386a14b22910c4df4b785f0ee16d4186ea8317b274e",
+  "changedMembers": [
+    "slides/actions.bin"
+  ],
+  "unchangedMembers": 30,
+  "strokeRgb": [
+    33,
+    56,
+    54
+  ],
+  "adjacentSlideRgb": [
+    235,
+    186,
+    116
+  ]
+}

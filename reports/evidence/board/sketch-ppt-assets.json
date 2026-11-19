@@ -1,0 +1,47 @@
+[
+  {
+    "app": "错题本",
+    "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+    "viewer": "sources/错题本/java/com/zykj/sketch/widgets/PPTWebView.java",
+    "viewer_references_asset_demo": true,
+    "asset_demo_present": false,
+    "assets_ppt_files": 0,
+    "office_slides": []
+  },
+  {
+    "app": "新测评",
+    "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+    "viewer": "sources/新测评/java/com/zykj/sketch/widgets/PPTWebView.java",
+    "viewer_references_asset_demo": true,
+    "asset_demo_present": false,
+    "assets_ppt_files": 0,
+    "office_slides": []
+  },
+  {
+    "app": "优课畅学",
+    "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+    "viewer": "sources/优课畅学/java/com/zykj/sketch/widgets/PPTWebView.java",
+    "viewer_references_asset_demo": true,
+    "asset_demo_present": false,
+    "assets_ppt_files": 0,
+    "office_slides": []
+  },
+  {
+    "app": "中育云笔记",
+    "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+    "viewer": "sources/中育云笔记/java/com/zykj/sketch/widgets/PPTWebView.java",
+    "viewer_references_asset_demo": true,
+    "asset_demo_present": false,
+    "assets_ppt_files": 0,
+    "office_slides": []
+  },
+  {
+    "app": "随身答",
+    "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+    "viewer": "sources/随身答/java/com/zykj/sketch/widgets/PPTWebView.java",
+    "viewer_references_asset_demo": true,
+    "asset_demo_present": false,
+    "assets_ppt_files": 0,
+    "office_slides": []
+  }
+]

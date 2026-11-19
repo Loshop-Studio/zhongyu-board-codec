@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: artwork=native replay vs snapshot identical: ten commands, five new nodes, original text, geometry and image renderers; resource=tiles-2.png
+INSTRUMENTATION_CODE: -1

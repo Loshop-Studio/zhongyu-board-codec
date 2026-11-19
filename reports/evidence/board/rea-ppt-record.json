@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "错题本.apk",
+    "digest": {
+      "sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/错题本.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.sketch.core.record.RecordControl",
+    "method": {
+      "name": "addAdapterPPT",
+      "reported_signature": "addAdapterPPT(java.lang.String, int, int, int, int, r6.c): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;IIIILr6/c;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void addAdapterPPT(@NotNull String path, int width, int height, int viewWidth, int viewHeight, @NotNull r6.c callBack) throws IOException {\n        k.g(path, \"path\");\n        k.g(callBack, \"callBack\");\n        if (this.graphControl.getRootGraph().childTypeNumber(WebViewGraph.class.getName()) >= this.sketchConfig.getMaxPPTCount()) {\n            Context context = this.context;\n            ToastUtils.showShort(context, context.getString(R.string.tips_max_ppt, Integer.valueOf(this.sketchConfig.getMaxPPTCount())));\n            return;\n        }\n        File file = new File(path);\n        if (!file.exists()) {\n            Context context2 = this.context;\n            ToastUtils.showShort(context2, context2.getString(R.string.tips_file_not_found));\n            return;\n        }\n        FileUtils.Companion companion = FileUtils.INSTANCE;\n        String absolutePath = file.getParentFile().getAbsolutePath();\n        k.f(absolutePath, \"file.parentFile.absolutePath\");\n        String absolutePath2 = new File(this.graphControl.getBasePPTPath()).getParentFile().getAbsolutePath();\n        k.f(absolutePath2, \"File(graphControl.getBas…).parentFile.absolutePath\");\n        companion.copyFolder(absolutePath, absolutePath2);\n        ActionRecordExecute actionRecordExecute = this.actionExecute;\n        ActionRecord actionRecord = this.actionRecord;\n        long jCurrentTimeMillis = System.currentTimeMillis();\n        String name = file.getName();\n        k.f(name, \"file.name\");\n        actionRecordExecute.onAddPPTEvent(actionRecord.buildWebViewData(jCurrentTimeMillis, name, width, height, viewWidth, viewHeight), callBack);\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_b6305773f1d883e74c98aba860df770b1670af9d0aada8ad3c731462e02db39c"
+}
