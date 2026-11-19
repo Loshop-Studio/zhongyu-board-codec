@@ -2,6 +2,10 @@
 
 Open a local BIN, note ZIP or unpacked notebook directory and edit its supported content in the browser. The Dart codecs support SimpleBoard, Sketch V1–V5 and page-based Blackboard notes. Fixtures and original Android readback evidence accompany the [format and storage report](reports/画板与存储.md).
 
+## Download the built editor
+
+Download [flutter-web.zip](https://github.com/Loshop-Studio/zhongyu-board-codec/releases/download/board-web-v1/flutter-web.zip), extract it into a directory, and run `python3 -m http.server 8765 --bind 127.0.0.1` in that directory. Open [the editor](http://127.0.0.1:8765) in the browser.
+
 ## Run the editor
 
 From the repository root, use Flutter with the Dart SDK range in [pubspec.yaml](board_editor/pubspec.yaml).
