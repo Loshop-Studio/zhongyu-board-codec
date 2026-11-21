@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 import 'package:archive/archive.dart';
+import 'package:zy_board_editor/generated/board/Command.pb.dart' as cmd;
 import 'package:zy_board_editor/generated/board/GraphSnapshot.pb.dart' as snap;
 import 'package:zy_board_editor/generated/board/enums/GraphEnum.pbenum.dart'
     as graph;
@@ -80,6 +81,7 @@ void main() {
         matrix: mat.Matrix(scaleX: 1, scaleY: 1, perSp2: 1, transX: 30),
       );
       final snapshot = snap.PageSnapshot(
+        cameraMatrix: mat.Matrix(scaleX: 1, scaleY: 1, perSp2: 1),
         graphSnapshot: snap.PageSnapshot_GraphSnapshot(
           graphEnum: graph.GraphEnum.GROUP_GRAPH,
           childGraph: [node],
@@ -107,6 +109,66 @@ void main() {
       expect(d.board.strokes.single.points[1].dx, point.dx + 2);
       d.undo();
       expect(d.store.bytes, raw);
+    },
+  );
+
+  test(
+    'a dirty page resumes at the inclusive command index after its snapshot',
+    () {
+      final store = CloudMdbStore.read(fixture('new-notebook'));
+      final d = ByteData.sublistView(store.bytes),
+          page = store.rows['PageEntity']![1]!;
+      final chunks = store.rows['CommandRecordEntity']!.values
+          .where((e) => e.long('recordId') == 1)
+          .toList();
+      final root = cmd.CommandSource_CommandInfo_GraphData.fromBuffer(
+        store.children(chunks.first, 'CommandInfoEntity').first.blob('data'),
+      ).graphId;
+      final snapFile = snap.PageSnapshot(
+        cameraMatrix: mat.Matrix(scaleX: 1, scaleY: 1, perSp2: 1),
+        graphSnapshot: snap.PageSnapshot_GraphSnapshot(
+          id: root,
+          childGraph: [
+            snap.PageSnapshot_GraphSnapshot(
+              id: 'existing',
+              graphEnum: graph.GraphEnum.GROUP_GRAPH,
+            ),
+          ],
+        ),
+      );
+      final zip = Archive()
+        ..addFile(
+          ArchiveFile.bytes('p1/snapshot.bin', snapFile.writeToBuffer()),
+        );
+      // The fixture's page already stores the string "p1". Use it as a short
+      // checkpoint name without moving or reallocating any ObjectBox record.
+      int ref(MdbRow row, String field) {
+        final p = row.scalarOffset(field);
+        return p + d.getUint32(p, Endian.little);
+      }
+
+      final cursor = page.scalarOffset('commandFileName'),
+          name = ref(chunks.last, 'fileName');
+      d.setUint32(cursor, ref(page, 'dirName') - cursor, Endian.little);
+      d.setUint32(name, 2, Endian.little);
+      store.bytes.setRange(name + 4, name + 7, [112, 49, 0]);
+      d.setUint8(page.scalarOffset('isChange'), 1);
+      int count() => (CloudInkDocument(
+        store.bytes,
+        member: 'data.mdb',
+        archive: zip,
+      )..openPage(0)).board.strokes.length;
+      d.setInt32(page.scalarOffset('commandIndex'), 0, Endian.little);
+      expect(count(), 1);
+      d.setInt32(page.scalarOffset('commandIndex'), 1, Endian.little);
+      expect(count(), 0);
+      zip.addFile(
+        ArchiveFile.bytes(
+          'p1/snapshot.bin',
+          snap.PageSnapshot().writeToBuffer(),
+        ),
+      );
+      expect(count(), 1);
     },
   );
 

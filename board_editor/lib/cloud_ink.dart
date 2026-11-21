@@ -88,12 +88,26 @@ class CloudInkDocument {
       graphSnapshot: _Graph(id: '', graphEnum: ge.GraphEnum.GROUP_GRAPH),
     );
     board = BlackboardPage._(bundle, 'p/snapshot.bin', doc, size, Uint8List(0));
+    bool restored = false;
     if (snapshot != null && snapshot.size > 0) {
-      final saved = page.PageSnapshot.fromBuffer(snapshot.content);
-      if (!saved.hasGraphSnapshot())
-        throw const FormatException('MDB 页面快照没有图元树');
-      doc.mergeFromMessage(saved);
-    } else {
+      try {
+        final saved = page.PageSnapshot.fromBuffer(snapshot.content);
+        final m = _matrix(saved.cameraMatrix);
+        // BasePageControl.show replays an empty graph or an unusable camera.
+        if (saved.graphSnapshot.childGraph.isNotEmpty &&
+            m.every((x) => x.isFinite) &&
+            m[8].abs() >= 0.0001 &&
+            m[0] * m[0] + m[3] * m[3] >= 1e-8 &&
+            m[1] * m[1] + m[4] * m[4] >= 1e-8 &&
+            _tryInverse(m) != null) {
+          doc.mergeFromMessage(saved);
+          restored = true;
+        }
+      } on InvalidProtocolBufferException {
+        notice = '页面快照无法读取，已从 MDB 命令恢复';
+      }
+    }
+    if (!restored || pageRow.flag('isChange')) {
       for (final chunk in _records('MatrixRecordEntity', record)) {
         final filename = chunk.string('fileName');
         if (filename == null) continue;
@@ -124,9 +138,18 @@ class CloudInkDocument {
         bundle.changed['p/$filename'] = matrixSource.writeToBuffer();
       }
       final player = BlackboardReplay._(board);
-      bool graphHistory = false, hasCommands = false;
+      bool graphHistory = restored, hasCommands = false;
+      bool waitingForCursor = restored;
       for (final chunk in _records('CommandRecordEntity', record)) {
-        for (final entry in store.children(chunk, 'CommandInfoEntity')) {
+        var first = 0;
+        if (waitingForCursor) {
+          if (chunk.string('fileName') != pageRow.string('commandFileName'))
+            continue;
+          first = math.max(0, pageRow.int32('commandIndex'));
+          waitingForCursor = false;
+        }
+        for (final entry
+            in store.children(chunk, 'CommandInfoEntity').skip(first)) {
           hasCommands = true;
           final kind = ce.CommandEnum.valueOf(entry.int32('commandEnum'));
           if (kind == null) continue;
@@ -144,7 +167,7 @@ class CloudInkDocument {
           player._apply(board, visual);
         }
       }
-      if (!hasCommands && groups.isNotEmpty) {
+      if (!restored && !hasCommands && groups.isNotEmpty) {
         notice = '缺少页面图元记录，显示库内保存的采样笔迹';
         for (final group in groups.entries) {
           for (var i = 0; i < group.value.length; i++) {

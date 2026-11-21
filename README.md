@@ -26,7 +26,7 @@ Build the editor from this checkout for MDB support. Choose **打开笔记** and
 
 Click a stroke or select it from the stroke list. Choose a color or line width, use **调整采样点** to drag a point inside the original stroke bounds, or select **平滑笔迹** to smooth its interior points. Undo and redo apply across page switches. **导出 MDB** downloads the selected database. **导出 ZIP** retains the folder layout, companion files and edits to any opened stores.
 
-The handwriting view uses each page's graph snapshot when supplied, or replays its stored graph commands against the ObjectBox sources. Stroke edits update existing paint and coordinate fields in the exported copy. Object IDs, relation keys and timestamps are preserved. Companion BINs and preview images retain their original bytes. The editor preserves non-ink objects in the database and shows its text in **数据库详情**.
+The handwriting view restores a usable page snapshot and resumes pending commands from the page’s saved chunk and index. Without a usable snapshot, it replays the stored graph commands against the ObjectBox sources. Stroke edits update existing paint and coordinate fields in the exported copy. Object IDs, relation keys and timestamps are preserved. Companion BINs and preview images retain their original bytes. The editor preserves non-ink objects in the database and shows its text in **数据库详情**.
 
 The original Android 11 reader reopened the [edited MDB](reports/evidence/board/mdb-ink/edited.mdb) and returned the new paint and sample coordinates. The [comparison](reports/evidence/board/mdb-ink/comparison.json) records the four changed scalar fields and the unchanged entity and relation counts. [Before](reports/evidence/board/mdb-ink/before.png) · [After](reports/evidence/board/mdb-ink/after.png)
 
