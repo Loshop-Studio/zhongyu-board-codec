@@ -21,14 +21,14 @@ module.exports=async (page,evidence,out)=>{
     await page.getByRole('menuitem',{name:new RegExp('第 '+to+' 页')}).click();
     await page.getByText(new RegExp(n+' 笔')).first().waitFor();
   }
-  await open('打开 BIN / ZIP',source);
+  await open('打开笔记',source);
   await save('untouched.zip');assert.deepEqual(fs.readFileSync(path.join(out,'untouched.zip')),fs.readFileSync(source));
   await select(1,2,1);await select(2,3,2);
   await page.mouse.move(395,360);await page.mouse.down();
   await page.mouse.move(490,425,{steps:8});await page.mouse.up();
   await page.getByText(/3 笔/).first().waitFor();
   await select(3,1,3);await select(1,2,1);await save('web.zip');
-  const wait=page.waitForEvent('filechooser');await btn('打开 BIN / ZIP').click();
+  const wait=page.waitForEvent('filechooser');await btn('打开笔记').click();
   await(await wait).setFiles(path.join(out,'web.zip'));
   await page.getByText(/3 笔/).first().waitFor();
   await select(1,2,1);await select(2,3,3);

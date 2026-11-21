@@ -4,12 +4,15 @@ import 'dart:math' as math;
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 
+import 'package:archive/archive.dart';
 import 'package:flutter/material.dart' hide Ink;
 import 'package:flutter/services.dart' show HardwareKeyboard;
 import 'package:image/image.dart' as raster;
 import 'package:web/web.dart' as web;
 import 'board_file.dart';
 import 'generated/board/Header.pb.dart' as wire;
+
+part 'cloud_mdb_dialog.dart';
 
 part 'page_artwork.dart';
 part 'page_preview.dart';
@@ -23,6 +26,18 @@ part 'create_artwork_dialog.dart';
 part 'image_picker.dart';
 part 'audio_picker.dart';
 part 'recording_controls.dart';
+
+void _download(String name, Uint8List data) {
+  final url = web.URL.createObjectURL(web.Blob([data.toJS].toJS));
+  (web.HTMLAnchorElement()
+        ..href = url
+        ..download = name)
+      .click();
+  Future.delayed(
+    const Duration(seconds: 2),
+    () => web.URL.revokeObjectURL(url),
+  );
+}
 
 void main() => runApp(
   MaterialApp(
@@ -325,6 +340,77 @@ class _EditorState extends State<Editor> {
     }
   }
 
+  Future<bool> inspectMdb(
+    List<ArchiveFile> files, {
+    bool hasBin = false,
+    Archive? members,
+    Uint8List? original,
+    String? name,
+  }) async {
+    return await Navigator.of(context).push<bool>(
+          MaterialPageRoute(
+            builder: (_) => _CloudInkScreen(
+              files,
+              hasBin: hasBin,
+              archive: members,
+              original: original,
+              name: name,
+            ),
+          ),
+        ) ??
+        false;
+  }
+
+  Future<void> openMembers(
+    String name,
+    Archive members,
+    Uint8List? zip,
+    int version, {
+    String? notice,
+  }) async {
+    final names = BoardArchive.memberNames(members);
+    final dbPaths = <String>{};
+    for (final member in members) {
+      final parts = member.name.split('/');
+      final i = parts.indexOf('page_mdb');
+      if (i >= 0 && (i < parts.length - 1 || member.isDirectory)) {
+        dbPaths.add([...parts.take(i + 1), 'data.mdb'].join('/'));
+      }
+    }
+    if (dbPaths.isEmpty && names.contains('data.mdb')) dbPaths.add('data.mdb');
+    if (dbPaths.isNotEmpty) {
+      final stores = <ArchiveFile>[];
+      for (final path in dbPaths) {
+        final db = members.findFile(path);
+        if (db == null || !db.isFile) throw FormatException('云笔记数据库缺失 · $path');
+        stores.add(db);
+      }
+      // A current MDB note can also have snapshot.bin and screenshot.png.
+      const legacyEntries = {
+        'page_router.bin',
+        'actions.bin',
+        'remote_draft.bin',
+      };
+      final legacy = names.any(
+        (p) => legacyEntries.contains(p.split('/').last),
+      );
+      if (!await inspectMdb(
+            stores,
+            hasBin: legacy,
+            members: members,
+            original: zip,
+            name: name,
+          ) ||
+          !mounted ||
+          version != selectionVersion)
+        return;
+    } else if (names.contains('lock.mdb')) {
+      throw const FormatException('lock.mdb 是锁文件，请打开同目录的 data.mdb');
+    }
+    final bundle = BoardArchive.fromArchive(name, members, zip, 0);
+    showDocument(bundle, bundle.current, notice: notice);
+  }
+
   Future<void> openDirectory() async {
     final input = web.HTMLInputElement()
       ..type = 'file'
@@ -357,9 +443,14 @@ class _EditorState extends State<Editor> {
           contents[name] = (await item.arrayBuffer().toDart).toDart
               .asUint8List();
         }
-        final bundle = BoardArchive.fromDirectory(folder, contents);
         if (mounted && version == selectionVersion)
-          showDocument(bundle, bundle.current, notice: '已打开文件夹 · $folder');
+          await openMembers(
+            '$folder.zip',
+            BoardArchive.directoryMembers(contents),
+            null,
+            version,
+            notice: '已打开文件夹 · $folder',
+          );
       } catch (e) {
         if (mounted && version == selectionVersion)
           setState(() => status = '打开目录失败 · $e');
@@ -375,7 +466,7 @@ class _EditorState extends State<Editor> {
   Future<void> open() async {
     final input = web.HTMLInputElement()
       ..type = 'file'
-      ..accept = '.bin,.zip,application/zip,application/octet-stream';
+      ..accept = '.mdb,.bin,.zip,application/zip,application/octet-stream';
     Future<void> loadSelection() async {
       final picked = input.files?.item(0);
       if (picked == null) return;
@@ -384,9 +475,23 @@ class _EditorState extends State<Editor> {
         if (picked.size > 64 * 1024 * 1024)
           throw const FormatException('单文件超过 64 MiB');
         final data = (await picked.arrayBuffer().toDart).toDart.asUint8List();
-        final bundle = data.length >= 4 && data[0] == 80 && data[1] == 75
-            ? BoardArchive.open(picked.name, data)
-            : null;
+        if (!mounted || version != selectionVersion) return;
+        if (picked.name.toLowerCase() == 'lock.mdb') {
+          throw const FormatException('lock.mdb 是锁文件，请打开同目录的 data.mdb');
+        }
+        if (picked.name.toLowerCase().endsWith('.mdb')) {
+          await inspectMdb([ArchiveFile.bytes(picked.name, data)]);
+          return;
+        }
+        if (data.length >= 4 && data[0] == 80 && data[1] == 75) {
+          await openMembers(
+            picked.name,
+            ZipDecoder().decodeBytes(data),
+            data,
+            version,
+          );
+          return;
+        }
         var emptySimple = false;
         if (data.isEmpty && picked.name.toLowerCase() != 'remote_draft.bin') {
           if (!mounted || version != selectionVersion) return;
@@ -411,11 +516,13 @@ class _EditorState extends State<Editor> {
               false;
           if (!emptySimple) return;
         }
-        final next =
-            bundle?.current ??
-            BoardFile.open(picked.name, data, allowEmptySimple: emptySimple);
+        final next = BoardFile.open(
+          picked.name,
+          data,
+          allowEmptySimple: emptySimple,
+        );
         if (!mounted || version != selectionVersion) return;
-        showDocument(bundle, next);
+        showDocument(null, next);
       } catch (e) {
         if (mounted && version == selectionVersion)
           setState(() => status = '打开失败 · $e');
@@ -443,15 +550,7 @@ class _EditorState extends State<Editor> {
               renderSketchThumbnail: _sketchThumbnail,
             );
       final data = result.bytes;
-      final url = web.URL.createObjectURL(web.Blob([data.toJS].toJS));
-      (web.HTMLAnchorElement()
-            ..href = url
-            ..download = name)
-          .click();
-      Future.delayed(
-        const Duration(seconds: 2),
-        () => web.URL.revokeObjectURL(url),
-      );
+      _download(name, data);
       if (mounted && identical(archive, bundle)) {
         final warning = result.skipped.isEmpty
             ? ''
@@ -757,7 +856,7 @@ class _EditorState extends State<Editor> {
                   TextButton.icon(
                     onPressed: open,
                     icon: const Icon(Icons.folder_open),
-                    label: const Text('打开 BIN / ZIP'),
+                    label: const Text('打开笔记'),
                     style: TextButton.styleFrom(foregroundColor: Colors.white),
                   ),
                   IconButton(

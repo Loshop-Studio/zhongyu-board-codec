@@ -1,0 +1,78 @@
+{
+  "changed_fields": [
+    [
+      "TouchEventEntity",
+      1,
+      "width"
+    ],
+    [
+      "TouchEventEntity",
+      1,
+      "color"
+    ],
+    [
+      "TouchInfoEntity",
+      2,
+      "x"
+    ],
+    [
+      "TouchInfoEntity",
+      2,
+      "y"
+    ]
+  ],
+  "entity_types": 24,
+  "rows": 53,
+  "relation_pairs": 33,
+  "apk_readback": {
+    "width": 12.0,
+    "color": "0xffd32f2f",
+    "points": [
+      [
+        80,
+        74,
+        1795033370950
+      ],
+      [
+        131.99913,
+        99.99999,
+        1795033371053
+      ],
+      [
+        166,
+        143,
+        1795033371139
+      ],
+      [
+        202,
+        92,
+        1795033371224
+      ],
+      [
+        232,
+        107,
+        1795033371310
+      ]
+    ]
+  },
+  "source_sha256": "ecab1634cdb5d204c503a2834febbb31ed00574560dc120b2c7ae98e5096b103",
+  "edited_sha256": "03ca188c004ca3992ad16e33601e677e5f96a05e2e98625c55d2aa4f96487d8e",
+  "native_build": {
+    "app": "com.friday.cloudsnote",
+    "version": "1.13.5",
+    "android": 11,
+    "reader": "ga.c.a",
+    "source": "795b3dee-4336-471d-91d1-8d71e3d0222d_touch.bin",
+    "source_index": 0
+  },
+  "canvas_pixels": {
+    "before": {
+      "#166f64": 2412,
+      "#d32f2f": 0
+    },
+    "after": {
+      "#166f64": 0,
+      "#d32f2f": 3321
+    }
+  }
+}

@@ -7,7 +7,7 @@ module.exports = async (page, dir, out) => {
   const button = name=>page.getByRole('button',{name:new RegExp('^'+name+'(?: '+name+')?$')});
   async function open(file){
     const chooser=page.waitForEvent('filechooser');
-    await button('打开 BIN / ZIP').click();await (await chooser).setFiles(file);
+    await button('打开笔记').click();await (await chooser).setFiles(file);
     await button('播放本页回放').waitFor();
   }
   async function save(name){

@@ -23,6 +23,7 @@ const server=http.createServer((req,res)=>{
  if(process.argv.includes('--sketch-backing')) {await require('./check-sketch-backing.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--sketch-shapes')) {await require('./check-sketch-shapes.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--sketch-thumbnail')) {await require('./check-sketch-thumbnail.cjs')(p,dir,outputDir);return;}
+ if(process.argv.includes('--cloud-mdb')) {await require('./check-cloud-mdb.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--cloud-index')) {await require('./check-cloud-index.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--page-camera')) {await require('./check-page-camera.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--page-cursor')) {await require('./check-page-cursor.cjs')(p,dir,outputDir);return;}
@@ -46,8 +47,9 @@ const server=http.createServer((req,res)=>{
  const draw=async()=>{await p.mouse.move(360,300);await p.mouse.down();await p.mouse.move(540,370,{steps:14});await p.mouse.up();};
  if(process.argv.includes('--cloud-note-test')) {
    const chooser=p.waitForEvent('filechooser');
-   await p.getByRole('button',{name:'打开 BIN / ZIP'}).click();
+   await p.getByRole('button',{name:'打开笔记'}).click();
    await (await chooser).setFiles(path.join(dir,'cloud-mixed.zip'));
+   await p.getByRole('button',{name:'打开旧 BIN 页面'}).click();
    await p.getByText(/0 笔/).first().waitFor({state:'attached'});
    await draw();
    await p.getByText(/1 笔/).first().waitFor({state:'attached'});
@@ -61,7 +63,7 @@ const server=http.createServer((req,res)=>{
  }
  const cases=process.argv.includes('--native-background-only') ? [['native-simple-page.zip','SimpleBoard',3,4,'web-native-page.zip']] : process.argv.includes('--native-return-only') ? [['native-edited.bin','SimpleBoard',3,4,'web-return.bin']] : [['art-simple.bin','SimpleBoard',1,2,'web-simple.bin'],['art-actions.bin','Sketch',1,2,'web-sketch.bin'],['schema-page.zip','Blackboard 页面',0,1,'web-page.zip'],['schema-artwork.zip','Blackboard 页面',0,1,'web-artwork.zip']];
  for(const [input,kind,before,after,output] of cases){
-   const fc=p.waitForEvent('filechooser');await p.getByRole('button',{name:'打开 BIN / ZIP'}).click();await(await fc).setFiles(dir+'/'+input);
+   const fc=p.waitForEvent('filechooser');await p.getByRole('button',{name:'打开笔记'}).click();await(await fc).setFiles(dir+'/'+input);
    await p.getByText(new RegExp(kind+'$')).first().waitFor({state:'attached'});
    await p.getByText(new RegExp(before+' 笔')).first().waitFor({state:'attached'});
    if(input==='native-simple-page.zip') {

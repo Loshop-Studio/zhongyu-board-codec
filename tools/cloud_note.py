@@ -1,8 +1,66 @@
-"""Inspect Cloud Note's legacy page and resource manifests inside a local archive or folder."""
+"""Inspect Cloud Note database snapshots and legacy page and resource manifests."""
 from collections import defaultdict
 import json
 from pathlib import Path
-from zipfile import ZipFile
+import shutil
+from tempfile import TemporaryDirectory
+from zipfile import ZipFile, is_zipfile
+
+
+def read_stores(path, selected=None, force_database=False):
+    """Find the active page_mdb stores, including in wrapped notebook exports."""
+    from objectbox_store import decode
+
+    def result(stores):
+        if len(stores) == 1:
+            return stores[0]['database']
+        return {'format': 'cloud-note-databases', 'stores': stores} if stores else None
+
+    if path.is_dir():
+        if (path / 'page_mdb').is_dir():
+            folders = [path / 'page_mdb']
+        elif path.name == 'page_mdb' or (path / 'data.mdb').is_file() or (path / 'lock.mdb').is_file():
+            folders = [path]
+        else:
+            folders = sorted(p for p in path.rglob('page_mdb') if p.is_dir())
+        stores = []
+        for folder in folders:
+            data = folder / 'data.mdb'
+            if not data.is_file():
+                raise ValueError(f'云笔记数据库目录缺少 data.mdb：{folder}')
+            stores.append({'member': data.relative_to(path).as_posix(), 'database': decode(data, selected)})
+        return result(stores)
+    if path.name.lower() == 'lock.mdb':
+        raise ValueError('lock.mdb 是锁文件，请打开同目录的 data.mdb')
+    if path.suffix.lower() == '.mdb' or (force_database and not is_zipfile(path)):
+        return decode(path, selected)
+    if not is_zipfile(path):
+        return None
+    with ZipFile(path) as archive:
+        # A page_mdb directory takes precedence even in a mixed BIN/MDB export.
+        expected = set()
+        candidates = defaultdict(list)
+        for item in archive.infolist():
+            parts = item.filename.split('/')
+            if parts[-1] == 'data.mdb' and not item.is_dir():
+                candidates[item.filename].append(item)
+            if 'page_mdb' in parts[:-1]:
+                expected.add('/'.join(parts[:parts.index('page_mdb') + 1] + ['data.mdb']))
+        if not expected and 'data.mdb' in candidates:
+            expected.add('data.mdb')
+        if not expected:
+            return None
+        stores = []
+        with TemporaryDirectory() as directory:
+            local = Path(directory) / 'data.mdb'
+            for name in sorted(expected):
+                matches = candidates[name]
+                if len(matches) != 1:
+                    raise ValueError(f'ZIP 中的云笔记数据库缺失或重名：{name}')
+                with archive.open(matches[0]) as source, local.open('wb') as target:
+                    shutil.copyfileobj(source, target)
+                stores.append({'member': name, 'database': decode(local, selected)})
+        return result(stores)
 
 
 def strings(raw):

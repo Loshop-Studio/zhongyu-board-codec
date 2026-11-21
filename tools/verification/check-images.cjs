@@ -5,7 +5,7 @@ const {execFileSync} = require('node:child_process');
 module.exports = async (page, directory, output) => {
   const open = async (name) => {
     const chooser = page.waitForEvent('filechooser');
-    await page.getByRole('button', {name: '打开 BIN / ZIP'}).click();
+    await page.getByRole('button', {name: '打开笔记'}).click();
     await (await chooser).setFiles(path.join(directory, name));
   };
   const named = (filename) => page.getByRole('img', {name: filename, exact: true});
@@ -49,7 +49,7 @@ module.exports = async (page, directory, output) => {
   await (await download).saveAs(dest);
   await snapshot('image-edit-web.png');
   const reopen = page.waitForEvent('filechooser');
-  await page.getByRole('button', {name: '打开 BIN / ZIP'}).click();
+  await page.getByRole('button', {name: '打开笔记'}).click();
   await (await reopen).setFiles(dest);
   await named('icons/upper.jpg').waitFor({state: 'attached'});
   await page.getByText(/3 笔/).first().waitFor({state: 'attached'});
@@ -81,7 +81,7 @@ module.exports = async (page, directory, output) => {
       'sys.stdout.buffer.write(out.getvalue())',
     ].join('\n'),path.join(directory,'sketch-image-versions.zip'),String(version)]);
     const choose = page.waitForEvent('filechooser');
-    await page.getByRole('button',{name:'打开 BIN / ZIP'}).click();
+    await page.getByRole('button',{name:'打开笔记'}).click();
     await (await choose).setFiles({name:'v'+version+'.zip',mimeType:'application/zip',buffer:zip});
     await page.getByText(new RegExp('image-v'+version+'/actions\\.bin')).first().waitFor({state:'attached'});
     await named('center.png').waitFor({state:'attached'});

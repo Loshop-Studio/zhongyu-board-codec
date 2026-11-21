@@ -27,7 +27,7 @@ module.exports = async (page, evidence, output) => {
   try {
     fs.mkdirSync(folder);
     execFileSync('python3',['-m','zipfile','-e',source,folder]);
-    await open('打开 BIN / ZIP',source);
+    await open('打开笔记',source);
     await waitCount(1);
     const raw = path.join(work,'untouched-zip.zip');
     await save(raw);
@@ -43,7 +43,7 @@ module.exports = async (page, evidence, output) => {
     await button('重做').click();await waitCount(2);
     const edited = path.join(output,'folder-note-edited.zip');
     assert.equal(await save(edited),'示例笔记.zip');
-    await open('打开 BIN / ZIP',edited);
+    await open('打开笔记',edited);
     await waitCount(2);
     const report=execFileSync('python3',[path.join(__dirname,'check_note_folder.py'),source,folderZip,edited],{encoding:'utf8'});
     fs.writeFileSync(path.join(output,'note-folders.json'),report);

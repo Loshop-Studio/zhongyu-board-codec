@@ -33,7 +33,7 @@ module.exports = async (page, dir, output) => {
       return original.apply(this,args);
     };
   });
-  await pick('打开 BIN / ZIP',source);
+  await pick('打开笔记',source);
   async function listenOnly() {
     const toggle=button('只听录音');
     await page.getByRole('button',{name:/播放本页/}).first().waitFor();
@@ -67,7 +67,7 @@ module.exports = async (page, dir, output) => {
   await button('重做').click();
   const edited=await save('导出 ZIP','web-page-audio.zip');
   await save('按页面 BIN 导出云笔记副本','web-page-audio-cloud.zip');
-  await pick('打开 BIN / ZIP',edited);
+  await pick('打开笔记',edited);
   await page.getByText('0:00.00 / 0:04.10',{exact:true}).waitFor({state:'attached'});
   await listenOnly();
   await at(.81);
@@ -81,7 +81,7 @@ module.exports = async (page, dir, output) => {
   await page.getByRole('menuitem',{name:/第 2 页/}).click();
   await page.getByText(/p2\/snapshot.bin/).first().waitFor({state:'attached'});
   assert.equal(await play.count(),0);
-  await pick('打开 BIN / ZIP',path.join(dir,'page-audio-split.zip'));
+  await pick('打开笔记',path.join(dir,'page-audio-split.zip'));
   await page.getByText('0:00.00 / 0:02.80',{exact:true}).waitFor({state:'attached'});
   await listenOnly();
   await at(.77);

@@ -7,7 +7,7 @@ module.exports = async (page, fixtures, out) => {
   const note = path.join(fixtures, 'sketch-thumbnails/native.zip');
   async function open(file, strokes) {
     const incoming = page.waitForEvent('filechooser');
-    await button('打开 BIN / ZIP').click();
+    await button('打开笔记').click();
     await (await incoming).setFiles(file);
     await page.getByText(new RegExp(strokes+' 笔')).first().waitFor();
   }
