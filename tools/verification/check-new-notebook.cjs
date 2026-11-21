@@ -35,7 +35,7 @@ module.exports=async(page,dir,output)=>{
   await download('导出 ZIP','web-new-notebook.zip');
   await download('按页面 BIN 导出云笔记副本','web-new-notebook-cloud.zip');
   const picker=page.waitForEvent('filechooser');
-  await button('打开 BIN / ZIP').click();await(await picker).setFiles(path.join(output,'web-new-notebook.zip'));
+  await button('打开笔记').click();await(await picker).setFiles(path.join(output,'web-new-notebook.zip'));
   await page.getByText(/p1\/snapshot.bin/).first().waitFor({state:'attached'});
   await page.getByText(/1 笔/).first().waitFor({state:'attached'});
   await page.getByRole('button',{name:/第 1 页/}).click();

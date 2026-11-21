@@ -13,7 +13,7 @@ module.exports = async (page, directory, output) => {
   const count = n => page.getByText(new RegExp(n + ' 笔\\s+320 × 240')).first().waitFor();
   async function open(filename, n) {
     const chooser = page.waitForEvent('filechooser');
-    await button('打开 BIN / ZIP').click();
+    await button('打开笔记').click();
     await (await chooser).setFiles(filename);
     await page.getByText(path.basename(filename) + " · SimpleBoard", {exact:true}).waitFor();
     await count(n);

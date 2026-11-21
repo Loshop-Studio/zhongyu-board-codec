@@ -186,7 +186,7 @@ class BoardArchive {
     int pageIndex = 0,
     Map<String, int> thumbnailActionCounts = const {},
   }) {
-    return _index(
+    return fromArchive(
       name,
       ZipDecoder().decodeBytes(bytes),
       bytes,
@@ -199,28 +199,37 @@ class BoardArchive {
     String folder,
     Map<String, Uint8List> files,
   ) {
+    return fromArchive('$folder.zip', directoryMembers(files), null, 0);
+  }
+
+  static Archive directoryMembers(Map<String, Uint8List> files) {
     final archive = Archive();
     for (final e in files.entries) {
       archive.addFile(ArchiveFile.bytes(e.key, e.value));
     }
-    return _index('$folder.zip', archive, null, 0);
+    return archive;
   }
 
-  static BoardArchive _index(
+  static List<String> memberNames(Archive zip) {
+    if (zip.length > maxMembers ||
+        zip.fold<int>(0, (sum, f) => sum + f.size) > maxMemberBytes)
+      throw const FormatException('画板包展开后过大');
+    final names = zip.files.where((f) => f.isFile).map((f) => f.name).toList();
+    if (names.toSet().length != names.length)
+      throw const FormatException('ZIP 包含重复文件名');
+    return names;
+  }
+
+  static BoardArchive fromArchive(
     String name,
     Archive zip,
     Uint8List? bytes,
     int pageIndex, [
     Map<String, int> thumbnailActionCounts = const {},
   ]) {
-    if (zip.length > maxMembers ||
-        zip.fold<int>(0, (sum, f) => sum + f.size) > maxMemberBytes)
-      throw const FormatException('画板包展开后过大');
+    final names = memberNames(zip);
     final board = BoardArchive._(name, zip, bytes)
       ..thumbnailActionCounts.addAll(thumbnailActionCounts);
-    final names = zip.files.where((f) => f.isFile).map((f) => f.name).toList();
-    if (names.toSet().length != names.length)
-      throw const FormatException('ZIP 包含重复文件名');
     for (final path in names.where((n) => _leaf(n) == 'page_router.bin')) {
       final base = _dir(path);
       final idx = pages.PageRouter.fromBuffer(board.read(path));

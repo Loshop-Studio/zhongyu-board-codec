@@ -4,7 +4,7 @@ const assert = require('node:assert/strict');
 
 module.exports = async (page, directory, output) => {
   const chooser=page.waitForEvent('filechooser');
-  await page.getByRole('button',{name:'打开 BIN / ZIP'}).click();
+  await page.getByRole('button',{name:'打开笔记'}).click();
   await (await chooser).setFiles(path.join(directory,'sketch-transform.bin'));
   await page.getByText(/2 笔/).first().waitFor({state:'attached'});
 

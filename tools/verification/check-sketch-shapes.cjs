@@ -8,7 +8,7 @@ module.exports = async (page, fixtures, out) => {
   const count = n => page.getByText(new RegExp(n+' 笔\\s+640 × 480')).first().waitFor();
   async function open(file, n) {
     const chooser = page.waitForEvent('filechooser');
-    await button('打开 BIN / ZIP').click();
+    await button('打开笔记').click();
     await (await chooser).setFiles(file);
     if (file.endsWith('.bin')) {
       await page.getByText(path.basename(file)+' · Sketch', {exact:true}).waitFor();

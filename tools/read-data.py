@@ -62,13 +62,13 @@ def main():
  parser.add_argument('--app',default='错题本',help='input APK basename')
  parser.add_argument('--note-base',help='URL directory of fileList.json for local --type note-bundle comparison')
  parser.add_argument('--deleted-page', action='append', help='Android page directory known to contain .page_deleted; repeat for --type cloud-note-room')
- parser.add_argument('--entity',help='select one ObjectBox entity from data.mdb')
+ parser.add_argument('--entity',help='select one ObjectBox entity from a database, notebook directory or ZIP')
  parser.add_argument('--resource-id',type=int,help='write this DataPack resource to stdout as stored, resolving aliases')
  parser.add_argument('--type',choices=['pdf-progress','okdownload','filedownloader','download-room','cloud-note-room','cloud-note','chromium-pak','weather-cities','art-profile','public-suffix','jvm-class','tflite','note-bundle','disk-cache','objectbox-db','json','sqlite','zip','preferences','objectbox-model',*LOCAL_STORE_TYPES,*TYPES])
  args=parser.parse_args()
  name=args.file.name
  kind=args.type
- if not kind and args.file.is_dir() and (args.file/'index.json').is_file():
+ if not kind and args.file.is_dir():
     kind='cloud-note'
  if not kind or kind=='jvm-class':
     with args.file.open('rb') as f: magic=f.read(32)
@@ -83,7 +83,7 @@ def main():
     elif zipfile.is_zipfile(args.file):kind='zip'
     elif name=='China-City-List-latest.csv':kind='weather-cities'
     elif name=='objectbox-model.bin':kind='objectbox-model'
-    elif name=='data.mdb':kind='objectbox-db'
+    elif args.file.suffix.lower()=='.mdb':kind='objectbox-db'
     elif name.endswith('.preferences_pb'):kind='preferences-pb'
     elif name=='updateSettings.pb':kind='ota-settings'
     elif name=='studentInfo.pb':kind='student-info'
@@ -98,10 +98,19 @@ def main():
         for suffix in ('command','touch','matrix','file','text','geometry','audio'):
             if name.endswith('_'+suffix+'.bin'):kind='audio-command' if suffix=='audio' else suffix
  if not kind:parser.error('ambiguous layout; select --type (actions.bin can contain sketch or sketch1)')
- if args.entity and kind!='objectbox-db':parser.error('--entity applies to an ObjectBox database')
  if args.note_base and kind!='note-bundle':parser.error('--note-base applies to --type note-bundle')
  if args.resource_id is not None and kind!='chromium-pak':parser.error('--resource-id applies to Chromium DataPack')
  if args.deleted_page and kind!='cloud-note-room':parser.error('--deleted-page applies to --type cloud-note-room')
+ if kind in ('objectbox-db','cloud-note') or (kind=='zip' and args.type is None):
+    from cloud_note import read_stores
+    try:
+        result=read_stores(args.file,args.entity,force_database=kind=='objectbox-db')
+        if result is not None:
+            print(json.dumps(result,ensure_ascii=False,indent=2))
+            return
+        if kind=='objectbox-db':parser.error('没有找到云笔记数据库 page_mdb/data.mdb')
+    except (OSError,ValueError,zipfile.BadZipFile) as error:parser.error(str(error))
+ if args.entity:parser.error('--entity applies to an ObjectBox database')
  if kind=='pdf-progress':
     from pdf_progress import decode
     try:
@@ -162,11 +171,6 @@ def main():
     with args.file.open('rb') as f:
         subprocess.run(['protoc','-I'+str(schema_dir),'--decode='+message,proto],stdin=f,check=True)
     return
- if kind=='objectbox-db':
-    from objectbox_store import decode
-    try:result=decode(args.file,args.entity)
-    except (OSError,ValueError) as error:parser.error(str(error))
-    print(json.dumps(result,ensure_ascii=False,indent=2));return
  if kind=='disk-cache':
     from disk_cache import decode
     try:result=decode(args.file)

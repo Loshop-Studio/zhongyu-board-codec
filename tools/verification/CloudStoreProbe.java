@@ -114,6 +114,37 @@ public final class CloudStoreProbe extends Instrumentation {
         }
         return pairs;
     }
+    // Open an exported MDB directly and materialize its original stroke with
+    // the APK's ObjectBox cursor, ToMany relation and native resource adapter.
+    private void readEditedInk(ClassLoader loader, Context ctx, Bundle result) throws Exception {
+        File dir = new File(ctx.getCacheDir(), "ink-" + System.nanoTime());
+        if (!dir.mkdir()) throw new IOException("Could not create snapshot directory");
+        copyAssets(ctx, "ink.mdb", new File(dir, "data.mdb"));
+        Class<?> manager = loader.loadClass("na.d");
+        Object singleton = manager.getField("a").get(null);
+        manager.getMethod("h", Context.class, String.class).invoke(singleton, ctx, dir.toString());
+        Object store = manager.getMethod("f").invoke(singleton);
+        try {
+            Class<?> record = loader.loadClass(DAO + "TouchRecordEntity");
+            Object row = get(box(store, record), 1L);
+            String source = (String)record.getMethod("a").invoke(row);
+            Class<?> reader = loader.loadClass("ga.c");
+            Object ink = reader.getMethod("a", String.class, int.class)
+                .invoke(reader.getConstructor().newInstance(), source, 0);
+            result.putString("inkSource", source);
+            Object paint = ink.getClass().getMethod("n").invoke(ink);
+            result.putString("inkColor", paint.getClass().getMethod("getColor").invoke(paint).toString());
+            result.putString("inkWidth", paint.getClass().getMethod("getWidth").invoke(paint).toString());
+            java.util.List<?> points = (java.util.List<?>)ink.getClass().getMethod("getTouchEventList").invoke(ink);
+            org.json.JSONArray samples = new org.json.JSONArray();
+            for (Object point : points) {
+                Class<?> type = point.getClass();
+                samples.put(new org.json.JSONArray().put(type.getMethod("getX").invoke(point))
+                    .put(type.getMethod("getY").invoke(point)).put(type.getMethod("getEventTime").invoke(point)));
+            }
+            result.putString("inkPoints", samples.toString());
+        } finally { store.getClass().getMethod("close").invoke(store); }
+    }
     @Override public void onCreate(Bundle args) { super.onCreate(args); relationFixture=args!=null && "1".equals(args.getString("relations")); start(); }
     @Override public void onStart() {
         Bundle result = new Bundle();
@@ -129,6 +160,11 @@ public final class CloudStoreProbe extends Instrumentation {
                     ctx.getApplicationInfo().nativeLibraryDir, getClass().getClassLoader());
             loader.loadClass("com.blankj.utilcode.util.Utils").getMethod("init", android.app.Application.class)
                     .invoke(null, ctx.getApplicationContext());
+            if (java.util.Arrays.asList(ctx.getAssets().list("")).contains("ink.mdb")) {
+                readEditedInk(loader, ctx, result);
+                finish(Activity.RESULT_OK, result);
+                return;
+            }
             File dir = new File(ctx.getFilesDir(), "page_mdb");
             Class<?> page = loader.loadClass(DAO + "PageEntity"), text = loader.loadClass(DAO + "TextInfoEntity");
             java.util.List<String> types = new java.util.ArrayList<>();

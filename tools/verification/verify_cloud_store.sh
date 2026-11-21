@@ -21,13 +21,15 @@ cat > "$work/AndroidManifest.xml" <<'XML'
 XML
 javac --release 8 -Xlint:-options -cp "$platform" -d "$work/classes" tools/verification/CloudStoreProbe.java
 "$bt/d8" --min-api 26 --lib "$platform" --output "$work/dex" "$work/classes/local/zy/cloudstore/CloudStoreProbe.class"
+if [[ -n "${BOARD_READBACK_MDB:-}" ]]; then
+    cp "$BOARD_READBACK_MDB" "$work/assets/ink.mdb"
+else
 notebook=${BOARD_IMPORT_ZIP:-reports/evidence/board/web-cloud-note.zip}
 if unzip -Z1 "$notebook" 'page_router.bin' >/dev/null 2>&1; then
     unzip -q "$notebook" -d "$work/assets/lesson"
 else
     unzip -q "$notebook" -d "$work/assets"
 fi
-cp 中育apk/中育云笔记.apk "$work/assets/cloud.apk"
 python3 - "$work/assets/entities.txt" <<'PYMODEL'
 import json,sys
 from pathlib import Path
@@ -37,6 +39,8 @@ p.write_text('\n'.join(e['name'] for e in model['entities']))
 names={e['identity']['id']:e['name'] for e in model['entities']}
 p.with_name('relations.tsv').write_text('\n'.join('\t'.join([e['name'],r['name'],names[r['target']['id']]]) for e in model['entities'] for r in e['relations']))
 PYMODEL
+fi
+cp "${BOARD_CLOUD_APK:-中育apk/中育云笔记.apk}" "$work/assets/cloud.apk"
 "$bt/aapt2" link -I "$platform" --manifest "$work/AndroidManifest.xml" -A "$work/assets" -o "$work/app.apk"
 python3 - "$work" <<'PY'
 from pathlib import Path
@@ -49,8 +53,14 @@ with ZipFile(work/'assets/cloud.apk') as src,ZipFile(work/'app.apk','a') as out:
     out.writestr(lib,src.read(lib),compress_type=ZIP_DEFLATED)
 PY
 "$bt/zipalign" -f 4 "$work/app.apk" "$work/aligned.apk"
-"$bt/apksigner" sign --ks .work/build/debug.jks --ks-pass pass:android --out "$work/signed.apk" "$work/aligned.apk"
+"$bt/apksigner" sign --ks "${BOARD_PROBE_KEYSTORE:-.work/build/debug.jks}" --ks-pass pass:android --out "$work/signed.apk" "$work/aligned.apk"
 adb -s "$serial" install -r "$work/signed.apk" >&2
+if [[ -n "${BOARD_READBACK_MDB:-}" ]]; then
+    result=$(adb -s "$serial" shell am instrument -w local.zy.cloudstore/.CloudStoreProbe)
+    echo "$result"
+    [[ "$result" == *'INSTRUMENTATION_CODE: -1'* && "$result" == *'inkPoints='* ]]
+    exit
+fi
 # Only the local fixture app is reset to give its two new entities reproducible IDs.
 adb -s "$serial" shell pm clear local.zy.cloudstore >&2
 result=$(adb -s "$serial" shell am instrument -w -e relations "${BOARD_RELATION_TEST:-0}" local.zy.cloudstore/.CloudStoreProbe)

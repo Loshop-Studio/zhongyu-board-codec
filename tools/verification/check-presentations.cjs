@@ -6,7 +6,7 @@ module.exports = async (page, directory, output, nativeWriter = false) => {
   const prefix=nativeWriter ? 'native-presentation' : 'presentation';
   async function open(file) {
     const chooser = page.waitForEvent('filechooser');
-    await page.getByRole('button',{name:'打开 BIN / ZIP'}).click();
+    await page.getByRole('button',{name:'打开笔记'}).click();
     await (await chooser).setFiles(file);
   }
   const control=page.getByRole('button',{name:'课件控制 · lesson.html'});

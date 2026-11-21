@@ -6,7 +6,7 @@ module.exports = async function(page, fixtures, out) {
   const button = name => page.getByRole('button', {name, exact:true});
   async function open(file, strokes) {
     const choose = page.waitForEvent('filechooser');
-    await button('打开 BIN / ZIP').click();
+    await button('打开笔记').click();
     await (await choose).setFiles(file);
     await page.getByText(new RegExp(strokes+' 笔')).first().waitFor();
     await page.getByRole('img', {name:'thumbnail.jpg',exact:true}).waitFor({state:'attached'});

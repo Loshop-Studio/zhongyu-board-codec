@@ -8,6 +8,32 @@ class _VisualCommand {
   final GeneratedMessage data;
 }
 
+GeneratedMessage? _decodeVisual(
+  ce.CommandEnum kind,
+  List<int> bytes,
+) => switch (kind) {
+  ce.CommandEnum.ACTION_GRAPH_ADD =>
+    cmd.CommandSource_CommandInfo_GraphData.fromBuffer(bytes),
+  ce.CommandEnum.ACTION_GRAPH_REMOVE =>
+    cmd.CommandSource_CommandInfo_GraphRemove.fromBuffer(bytes),
+  ce.CommandEnum.ACTION_GRAPH_CHANGE =>
+    cmd.CommandSource_CommandInfo_GraphChange.fromBuffer(bytes),
+  ce.CommandEnum.ACTION_GRAPH_MATRIX =>
+    cmd.CommandSource_CommandInfo_GraphMatrix.fromBuffer(bytes),
+  ce.CommandEnum.ACTION_CAMERA =>
+    cmd.CommandSource_CommandInfo_Camera.fromBuffer(bytes),
+  ce.CommandEnum.ACTION_CAMERA_MATRIX =>
+    cmd.CommandSource_CommandInfo_CameraMatrix.fromBuffer(bytes),
+  ce.CommandEnum.ACTION_CONFIG =>
+    cmd.CommandSource_CommandInfo_Config.fromBuffer(bytes),
+  ce.CommandEnum.ACTION_REBUILD =>
+    cmd.CommandSource_CommandInfo_REBUILD.fromBuffer(bytes),
+  ce.CommandEnum.ACTION_CURSOR_MOVE =>
+    cmd.CommandSource_CommandInfo_CursorMove.fromBuffer(bytes),
+  _ =>
+    null, // RECORD_STOP and the custom command have no persisted graph effect.
+};
+
 extension BlackboardRecording on BlackboardPage {
   BlackboardReplay get replay => _replay ??= BlackboardReplay._(this);
 }
@@ -62,29 +88,7 @@ class BlackboardReplay {
         if (command.isPlay) clock = end;
         _clockEnd = clock;
         _lastGate = lastGate;
-        final bytes = command.data;
-        final data = switch (command.commandEnum) {
-          ce.CommandEnum.ACTION_GRAPH_ADD =>
-            cmd.CommandSource_CommandInfo_GraphData.fromBuffer(bytes),
-          ce.CommandEnum.ACTION_GRAPH_REMOVE =>
-            cmd.CommandSource_CommandInfo_GraphRemove.fromBuffer(bytes),
-          ce.CommandEnum.ACTION_GRAPH_CHANGE =>
-            cmd.CommandSource_CommandInfo_GraphChange.fromBuffer(bytes),
-          ce.CommandEnum.ACTION_GRAPH_MATRIX =>
-            cmd.CommandSource_CommandInfo_GraphMatrix.fromBuffer(bytes),
-          ce.CommandEnum.ACTION_CAMERA =>
-            cmd.CommandSource_CommandInfo_Camera.fromBuffer(bytes),
-          ce.CommandEnum.ACTION_CAMERA_MATRIX =>
-            cmd.CommandSource_CommandInfo_CameraMatrix.fromBuffer(bytes),
-          ce.CommandEnum.ACTION_CONFIG =>
-            cmd.CommandSource_CommandInfo_Config.fromBuffer(bytes),
-          ce.CommandEnum.ACTION_REBUILD =>
-            cmd.CommandSource_CommandInfo_REBUILD.fromBuffer(bytes),
-          ce.CommandEnum.ACTION_CURSOR_MOVE =>
-            cmd.CommandSource_CommandInfo_CursorMove.fromBuffer(bytes),
-          _ =>
-            null, // RECORD_STOP and the custom command have no persisted graph effect.
-        };
+        final data = _decodeVisual(command.commandEnum, command.data);
         if (data == null) continue;
         if (_commands.isEmpty || !_anchored) {
           if (data is cmd.CommandSource_CommandInfo_REBUILD ||

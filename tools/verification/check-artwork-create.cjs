@@ -4,7 +4,7 @@ module.exports = async (page, directory, output) => {
   const button = name => page.getByRole('button', {name, exact:true});
   async function open(file) {
     const picker = page.waitForEvent('filechooser');
-    await button('打开 BIN / ZIP').click();
+    await button('打开笔记').click();
     await (await picker).setFiles(file);
     await button('插入图元').waitFor();
   }

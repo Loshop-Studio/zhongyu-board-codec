@@ -7,7 +7,7 @@ module.exports = async (page, dir, out) => {
   const source = path.join(dir, 'camera', 'native.zip');
   async function open(file) {
     const chooser = page.waitForEvent('filechooser');
-    await button('打开 BIN / ZIP').click();
+    await button('打开笔记').click();
     await (await chooser).setFiles(file);
     await page.getByText(/^已导出 /).waitFor({state:'hidden'});
     await page.getByText(/1 笔/).first().waitFor();
