@@ -76,7 +76,8 @@ List<Widget> pageLayers(
       continue;
     }
     final transform = _canvasTransform(art.transform, scale);
-    if (art.image case final Uint8List bytes) {
+    if (art.imageName != null || art.image != null) {
+      final bytes = art.image;
       final offset = identical(draggedImage?.art, art)
           ? draggedImage!.delta
           : Offset.zero;
@@ -86,14 +87,26 @@ List<Widget> pageLayers(
           top: offset.dy * scale,
           child: Transform(
             transform: transform,
-            child: Image.memory(
-              bytes,
-              width: art.bounds.width,
-              fit: BoxFit.fitWidth,
-              // The V6 ImageGraph renderer draws its bitmap tiles without a filter.
-              filterQuality: FilterQuality.none,
-              errorBuilder: (_, _, _) => const Text('图片解码失败'),
-            ),
+            child: bytes == null
+                ? SizedBox(
+                    width: art.bounds.width,
+                    height: art.bounds.height,
+                    child: const ColoredBox(
+                      color: Color(0xffeeeeee),
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Icon(Icons.broken_image_outlined),
+                      ),
+                    ),
+                  )
+                : Image.memory(
+                    bytes,
+                    width: art.bounds.width,
+                    fit: BoxFit.fitWidth,
+                    // The V6 ImageGraph renderer draws its bitmap tiles without a filter.
+                    filterQuality: FilterQuality.none,
+                    errorBuilder: (_, _, _) => const Text('图片解码失败'),
+                  ),
           ),
         ),
       );
