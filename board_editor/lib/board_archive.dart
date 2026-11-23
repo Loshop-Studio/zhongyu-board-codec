@@ -614,9 +614,11 @@ class BlackboardPage extends BoardFile {
     String path,
     page.PageSnapshot doc,
     Size size,
-    Uint8List bytes,
-  ) : super._(path, BoardFormat.pageSnapshot, doc, size, bytes);
+    Uint8List bytes, {
+    this.showMissingImages = false,
+  }) : super._(path, BoardFormat.pageSnapshot, doc, size, bytes);
   final BoardArchive bundle;
+  final bool showMissingImages;
   BlackboardAudioTrack? _audioTrack;
   BlackboardReplay? _replay;
   page.PageSnapshot get doc => message as page.PageSnapshot;
@@ -806,6 +808,10 @@ class BlackboardPage extends BoardFile {
           result.image = bundle.read(path);
           return result;
         }
+      }
+      if (showMissingImages) {
+        result.imageName = filename ?? '';
+        return result;
       }
     } else {
       final info = chunk == null

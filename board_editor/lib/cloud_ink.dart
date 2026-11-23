@@ -10,6 +10,22 @@ class CloudInkDocument {
   final CloudMdbStore store;
   final String member;
   final Archive? archive;
+  late final String _root = member.endsWith('page_mdb/data.mdb')
+      ? member.substring(0, member.length - 'page_mdb/data.mdb'.length)
+      : '';
+  // Keep the original image members lazy. All record chunks come from this MDB.
+  late final Archive _imageFiles = _notebookImages();
+
+  Archive _notebookImages() {
+    final images = Archive();
+    for (final file in archive ?? const <ArchiveFile>[]) {
+      if (file.isFile && file.name.startsWith('${_root}res/image/')) {
+        images.addFile(file);
+      }
+    }
+    return images;
+  }
+
   final _undo = <List<_ScalarEdit>>[], _redo = <List<_ScalarEdit>>[];
   bool get canUndo => _undo.isNotEmpty;
   bool get canRedo => _redo.isNotEmpty;
@@ -27,12 +43,10 @@ class CloudInkDocument {
   void openPage(int index) {
     final pageRow = pages[index];
     final pageName = pageRow.string('dirName') ?? '';
-    final path = member.endsWith('page_mdb/data.mdb')
-        ? member.substring(0, member.length - 'page_mdb/data.mdb'.length)
-        : '';
+    final dir = '${_root}p/';
     final snapshot = pageName.isEmpty
         ? null
-        : archive?.findFile('$path$pageName/snapshot.bin');
+        : archive?.findFile('$_root$pageName/snapshot.bin');
     final info = store.rows['HeaderEntity']?[pageRow.long('headerEntityId')];
     final width = info?.int32('width') ?? 0,
         height = info?.int32('height') ?? 0;
@@ -40,14 +54,27 @@ class CloudInkDocument {
       width > 0 ? width.toDouble() : 1200,
       height > 0 ? height.toDouble() : 900,
     );
-    final bundle = BoardArchive._(member, Archive(), null);
+    final bundle = BoardArchive._(member, _imageFiles, null);
+    final configs = store.rows['BackgroundLineConfigEntity'];
+    final lines =
+        configs?[info?.long('lastBackgroundLineConfigId')] ??
+        configs?[info?.long('defaultBackgroundLineConfigId')];
+    var paper = info?.int32('lastBackgroundColor') ?? -1;
+    var ruling = header.BackgroundLineConfig(
+      lineColor: lines?.int32('lineColor'),
+      lineSpace: lines?.real('lineSpace'),
+      lineType: line.BackgroundLineTypeEnum.valueOf(
+        lines?.int32('lineType') ?? 0,
+      ),
+      lineWidth: lines?.real('lineWidth'),
+    );
     final meta = header.Header(
       version: 6,
       width: size.width.toInt(),
       height: size.height.toInt(),
-      lastBackgroundColor: info?.int32('lastBackgroundColor') ?? -1,
+      lastBackgroundColor: paper,
     );
-    bundle.changed['p/header.bin'] = meta.writeToBuffer();
+    bundle.changed['${dir}header.bin'] = meta.writeToBuffer();
     final record = pageRow.long('recordEntityId');
     sources.clear();
     notice = null;
@@ -82,12 +109,29 @@ class CloudInkDocument {
           ),
         );
       }
-      bundle.changed['p/$name'] = touchSource.writeToBuffer();
+      bundle.changed['$dir$name'] = touchSource.writeToBuffer();
+    }
+    for (final chunk in _records('FileRecordEntity', record)) {
+      final name = chunk.string('fileName');
+      if (name == null || name.isEmpty) continue;
+      final files = src.FileSource(
+        fileInfo: store
+            .children(chunk, 'FileInfoEntity')
+            .map((f) => src.FileSource_FileInfo(name: f.string('fileName'))),
+      );
+      bundle.changed['$dir$name'] = files.writeToBuffer();
     }
     final doc = page.PageSnapshot(
       graphSnapshot: _Graph(id: '', graphEnum: ge.GraphEnum.GROUP_GRAPH),
     );
-    board = BlackboardPage._(bundle, 'p/snapshot.bin', doc, size, Uint8List(0));
+    board = BlackboardPage._(
+      bundle,
+      '${dir}snapshot.bin',
+      doc,
+      size,
+      Uint8List(0),
+      showMissingImages: true,
+    );
     bool restored = false;
     if (snapshot != null && snapshot.size > 0) {
       try {
@@ -135,9 +179,11 @@ class CloudInkDocument {
                 ),
               ),
         );
-        bundle.changed['p/$filename'] = matrixSource.writeToBuffer();
+        bundle.changed['$dir$filename'] = matrixSource.writeToBuffer();
       }
-      final player = BlackboardReplay._(board);
+      final player = BlackboardReplay._(board)
+        .._paper = paper
+        .._lines = ruling;
       bool graphHistory = restored, hasCommands = false;
       bool waitingForCursor = restored;
       for (final chunk in _records('CommandRecordEntity', record)) {
@@ -167,6 +213,8 @@ class CloudInkDocument {
           player._apply(board, visual);
         }
       }
+      paper = player._paper;
+      ruling = player._lines;
       if (!restored && !hasCommands && groups.isNotEmpty) {
         notice = '缺少页面图元记录，显示库内保存的采样笔迹';
         for (final group in groups.entries) {
@@ -183,6 +231,15 @@ class CloudInkDocument {
       }
     }
     board.refresh();
+    board.background = paper;
+    board.paperLines = ruling;
+    final missing = board.artwork
+        .where((art) => art.imageName != null && art.image == null)
+        .length;
+    if (missing > 0) {
+      final message = '缺少 $missing 张图片，请打开含 res/image 的完整笔记文件夹或 ZIP';
+      notice = notice == null ? message : '$notice · $message';
+    }
   }
 
   MdbRow eventAt(int stroke) {

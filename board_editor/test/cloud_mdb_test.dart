@@ -172,6 +172,79 @@ void main() {
     },
   );
 
+  test('restores the grid and rotated image between its original strokes', () {
+    final zip = ZipDecoder().decodeBytes(
+      File(
+        '../reports/evidence/board/mdb-ink/image-grid.zip',
+      ).readAsBytesSync(),
+    );
+    const member = 'lesson/page_mdb/data.mdb';
+    const image = 'lesson/res/image/halves.png';
+    final raw = zip.findFile(member)!.content;
+    final saved = CloudInkDocument(raw, member: member, archive: zip)
+      ..openPage(0);
+    final imagesOnly = Archive()..addFile(zip.findFile(image)!);
+    final replay = CloudInkDocument(raw, member: member, archive: imagesOnly)
+      ..openPage(0);
+    for (final d in [saved, replay]) {
+      expect(d.notice, isNull);
+      expect(d.board.background.toUnsigned(32), 0xfffff4dc);
+      expect(d.board.ruling, PaperRuling.grid);
+      expect(d.board.paperLines.lineWidth, 3);
+      expect(d.board.paperLines.lineSpace, 40);
+      expect(d.board.paperLines.lineColor.toUnsigned(32), 0xff318375);
+      expect(d.board.strokes, hasLength(2));
+      final art = d.board.artwork.single;
+      expect(art.beforeStroke, 1);
+      expect(art.image, zip.findFile(image)!.content);
+      expect(art.imageName, 'halves.png');
+      expect(art.bounds.size, const Size(160, 80));
+      final expected = [0, -1.25, 430, 1.25, 0, 180, 0, 0, 1];
+      for (var i = 0; i < expected.length; i++) {
+        expect(art.transform[i], closeTo(expected[i], 0.0001));
+      }
+    }
+    final otherBook = Archive()
+      ..addFile(ArchiveFile.bytes('other/res/image/halves.png', [42]));
+    final missing = CloudInkDocument(raw, member: member, archive: otherBook)
+      ..openPage(0);
+    expect(missing.board.artwork.single.image, isNull);
+    expect(missing.board.artwork.single.beforeStroke, 1);
+    expect(missing.notice, contains('缺少 1 张图片'));
+    expect(missing.board.ruling, PaperRuling.grid);
+  });
+
+  test('loads the saved MDB paper width and uses command paper on replay', () {
+    final zip = ZipDecoder().decodeBytes(
+      File(
+        '../reports/evidence/board/mdb-ink/image-grid.zip',
+      ).readAsBytesSync(),
+    );
+    const member = 'lesson/page_mdb/data.mdb';
+    final store = CloudMdbStore.read(zip.findFile(member)!.content);
+    final id = store.rows['HeaderEntity']![1]!.long(
+      'lastBackgroundLineConfigId',
+    );
+    final width = store.rows['BackgroundLineConfigEntity']![id]!.scalarOffset(
+      'lineWidth',
+    );
+    ByteData.sublistView(store.bytes).setFloat32(width, 6.5, Endian.little);
+    final saved = CloudInkDocument(store.bytes, member: member, archive: zip)
+      ..openPage(0);
+    final replay = CloudInkDocument(store.bytes)..openPage(0);
+    expect(saved.board.paperLines.lineWidth, 6.5);
+    expect(replay.board.paperLines.lineWidth, 3);
+    final ruled = CloudInkDocument(
+      File(
+        '../reports/evidence/board/ruled-paper/cloud-paper.mdb',
+      ).readAsBytesSync(),
+    )..openPage(0);
+    expect(ruled.board.ruling, PaperRuling.horizontal);
+    expect(ruled.board.paperLines.lineSpace, 24);
+    final plain = CloudInkDocument(fixture('native-v6-two-pages'))..openPage(0);
+    expect(plain.board.ruling, PaperRuling.plain);
+  });
+
   test('rejects damaged or unrelated MDBs', () {
     expect(() => CloudMdbStore.read(Uint8List(512)), throwsFormatException);
     expect(

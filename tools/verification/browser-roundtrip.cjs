@@ -23,6 +23,7 @@ const server=http.createServer((req,res)=>{
  if(process.argv.includes('--sketch-backing')) {await require('./check-sketch-backing.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--sketch-shapes')) {await require('./check-sketch-shapes.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--sketch-thumbnail')) {await require('./check-sketch-thumbnail.cjs')(p,dir,outputDir);return;}
+ if(process.argv.includes('--mdb-paper')) {await require('./check-mdb-paper.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--cloud-mdb')) {await require('./check-cloud-mdb.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--cloud-index')) {await require('./check-cloud-index.cjs')(p,dir,outputDir);return;}
  if(process.argv.includes('--page-camera')) {await require('./check-page-camera.cjs')(p,dir,outputDir);return;}

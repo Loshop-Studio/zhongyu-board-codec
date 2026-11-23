@@ -357,15 +357,10 @@ class _CloudInkScreenState extends State<_CloudInkScreen> {
                                     ? Colors.white
                                     : Color(board.background),
                                 child: CustomPaint(
-                                  painter: InkPainter(
-                                    board,
-                                    const [],
-                                    0,
-                                    1,
-                                    false,
-                                    null,
-                                    PenShape.free,
-                                    false,
+                                  painter: _LivePaperPainter(
+                                    board.paperLines,
+                                    board.camera,
+                                    scale,
                                   ),
                                   foregroundPainter: selected == null
                                       ? null
@@ -376,7 +371,36 @@ class _CloudInkScreenState extends State<_CloudInkScreen> {
                                           dragged,
                                           tip,
                                         ),
-                                  size: Size.infinite,
+                                  child: Stack(
+                                    fit: StackFit.expand,
+                                    children: [
+                                      ...pageLayers(
+                                        board,
+                                        board.artwork,
+                                        scale,
+                                        null,
+                                        Offset.zero,
+                                      ),
+                                      CustomPaint(
+                                        painter: InkPainter(
+                                          board,
+                                          const [],
+                                          0,
+                                          1,
+                                          false,
+                                          null,
+                                          PenShape.free,
+                                          false,
+                                          start:
+                                              board
+                                                  .artwork
+                                                  .lastOrNull
+                                                  ?.beforeStroke ??
+                                              0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
