@@ -2,9 +2,9 @@
 
 Open a local Cloud Note MDB, BIN, note ZIP or unpacked notebook directory and edit its supported content in the browser. The Dart codecs support SimpleBoard, Sketch V1–V5 and page-based Blackboard notes. Fixtures and original Android readback evidence accompany the [format and storage report](reports/画板与存储.md).
 
-## Download the BIN and ZIP editor
+## Download the editor
 
-The original BIN/ZIP release is available as [flutter-web.zip](https://github.com/Loshop-Studio/zhongyu-board-codec/releases/download/board-web-v1/flutter-web.zip). Extract it into a directory and run `python3 -m http.server 8765 --bind 127.0.0.1` in that directory. Open [the editor](http://127.0.0.1:8765) in the browser.
+The prebuilt editor opens supported Cloud Note MDB, BIN, and note ZIP files. Download the latest [flutter-web.zip](https://github.com/Loshop-Studio/zhongyu-board-codec/releases/latest/download/flutter-web.zip). Extract it into a directory and run `python3 -m http.server 8765 --bind 127.0.0.1` in that directory. Open [the editor](http://127.0.0.1:8765) in the browser.
 
 ## Run the editor
 
@@ -22,7 +22,7 @@ Open [the local editor](http://127.0.0.1:8765) and select **打开笔记**. Try 
 
 ## Edit Cloud Note handwriting
 
-Build the editor from this checkout for MDB support. Choose **打开笔记** and select a closed Cloud Note 1.13.5 `data.mdb`, a renamed MDB, or a notebook ZIP. Use the folder button for an unpacked notebook. The [two-page native fixture](reports/evidence/board/page_mdb/native-v6-two-pages.mdb) opens with three strokes on its first page.
+Choose **打开笔记** and select a closed Cloud Note 1.13.5 `data.mdb`, a renamed MDB, or a notebook ZIP. Use the folder button for an unpacked notebook. The [two-page native fixture](reports/evidence/board/page_mdb/native-v6-two-pages.mdb) opens with three strokes on its first page.
 
 Click a stroke or select it from the stroke list. Choose a color or line width, use **调整采样点** to drag a point inside the original stroke bounds, or select **平滑笔迹** to smooth its interior points. Undo and redo apply across page switches. **导出 MDB** downloads the selected database. **导出 ZIP** retains the folder layout, companion files and edits to any opened stores.
 
